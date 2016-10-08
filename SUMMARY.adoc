@@ -1,4 +1,4 @@
 = Summary
 
-. link:top.adoc[Top]
+. link:test2.adoc[Top]
 
