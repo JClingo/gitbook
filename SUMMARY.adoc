@@ -1,7 +1,7 @@
 = Summary
 
-. link:Deeper/test3.adoc[Top]
-. Summary
 . link:Deeper/testchapter.adoc[TestChapter]
 .. TestChapter2
+. link:Deeper/test3.adoc[Top]
+. Summary
 
