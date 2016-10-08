@@ -6,5 +6,5 @@
 ... link:Deeper/new_article.adoc[New Article]
 . link:Deeper/test3.adoc[Top]
 . Summary
-. Another Chapter
+. link:another_chapter.adoc[Another Chapter]
 
