@@ -1,4 +1,5 @@
 = Summary
 
-. link:Deeper/test2.adoc[Top]
+. link:test2.adoc[Top]
+. Summary
 
