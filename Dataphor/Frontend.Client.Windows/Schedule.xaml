@@ -1,0 +1,147 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Alphora.Dataphor.Frontend.Client.Windows"
+    xmlns:client="clr-namespace:Alphora.Dataphor.Frontend.Client.WPF;assembly=Alphora.Dataphor.Frontend.Client.WPF"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" >
+
+	<local:FullDateToStringConverter x:Key="FullDateToStringConverter" />
+	<client:ScheduleTimeBlockTimeConverter x:Key="TimeConverter" />
+    <local:BooleanToBorderBrushConverter x:Key="BooleanToBorderBrushConverter" />
+    <local:StringToBorderBackgroundBrushConverter x:Key="StringToBorderBackgroundBrushConverter" />
+	<client:NullToVisibilityConverter x:Key="NullToVisibilityConverter" />
+
+	<Style x:Key="HeaderTextBlockStyle" TargetType="{x:Type TextBlock}">
+		<Setter Property="VerticalAlignment" Value="Bottom"/>
+		<Setter Property="Foreground" Value="#FF191D49"/>
+		<Setter Property="Margin" Value="2,2,4,2"/>
+	</Style>
+
+	<Style x:Key="DataTextBlockStyle" TargetType="{x:Type TextBlock}">
+		<Setter Property="VerticalAlignment" Value="Bottom"/>
+		<Setter Property="Margin" Value="2,2,2,2"/>
+	</Style>
+
+	<Style x:Key="DefaultSchedulerStyle" TargetType="{x:Type client:Scheduler}" >
+		<Setter Property="GroupHeaderMemberPath" Value="Description" />
+		<Setter Property="GroupIDMemberPath" Value="Group" />
+		<Setter Property="AppointmentGroupIDMemberPath" Value="Group" />
+		<Setter Property="AppointmentDateMemberPath" Value="Date" />
+		<Setter Property="ShiftGroupIDMemberPath" Value="Group" />
+		<Setter Property="ShiftDateMemberPath" Value="Date" />
+		<Setter Property="Granularity" Value="10" />
+		<Setter Property="AppointmentContainerStyle">
+			<Setter.Value>
+				<Style TargetType="{x:Type ListBoxItem}">
+					<Setter Property="client:ScheduleDayAppointments.Start" Value="{Binding StartTime}" />
+					<Setter Property="client:ScheduleDayAppointments.End" Value="{Binding EndTime}" />
+					<Setter Property="Background" Value="Transparent"/>
+					<Setter Property="BorderBrush" Value="{x:Null}" />
+					<Setter Property="BorderThickness" Value="0" />
+					<Setter Property="Padding" Value="0" />
+					<Setter Property="Margin" Value="2,0,4,0" />
+					<Setter Property="MinWidth" Value="75" />
+				</Style>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="AppointmentItemTemplate">
+			<Setter.Value>
+				<DataTemplate>
+                    <Border BorderThickness="1" CornerRadius="4" SnapsToDevicePixels="True" Background="{Binding BackgroundColor, Converter={StaticResource StringToBorderBackgroundBrushConverter}}" BorderBrush="{Binding IsSelected, Converter={StaticResource BooleanToBorderBrushConverter}, RelativeSource={RelativeSource AncestorType={x:Type ListBoxItem}}}">
+						<Border BorderBrush="#FF4F4F4F" BorderThickness="1" CornerRadius="3" >							
+							<Border.ToolTip>
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="Auto" />
+										<ColumnDefinition/>
+									</Grid.ColumnDefinitions>
+									<Grid.RowDefinitions>
+										<RowDefinition Height="Auto" />
+										<RowDefinition Height="Auto" />
+										<RowDefinition Height="Auto" />
+										<RowDefinition Height="Auto" />
+										<RowDefinition Height="Auto" />
+									</Grid.RowDefinitions>
+									<TextBlock Text="Date" Style="{StaticResource HeaderTextBlockStyle}"/>
+									<TextBlock Grid.Column="1" Text="{Binding Date, Converter={StaticResource FullDateToStringConverter}}" Style="{StaticResource DataTextBlockStyle}"/>
+									<TextBlock Grid.Row="1" Text="Description" Style="{StaticResource HeaderTextBlockStyle}"/>
+									<TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Description}" Style="{StaticResource DataTextBlockStyle}"/>
+									<!--TextBlock Grid.Row="2" Text="Under" Style="{StaticResource HeaderTextBlockStyle}"/> 
+										<TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Header, RelativeSource={RelativeSource AncestorType={x:Type client:ScheduleDay}}}" Style="{StaticResource DataTextBlockStyle}"/-->
+									<TextBlock Grid.Row="3" Text="Start Time" Style="{StaticResource HeaderTextBlockStyle}"/>
+									<TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding StartTime, Converter={StaticResource TimeConverter}}" Style="{StaticResource DataTextBlockStyle}"/>
+									<TextBlock Grid.Row="4" Text="End Time" Style="{StaticResource HeaderTextBlockStyle}"/>
+									<TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding EndTime, Converter={StaticResource TimeConverter}}" Style="{StaticResource DataTextBlockStyle}"/>
+								</Grid>
+							</Border.ToolTip>
+							<Grid Margin="4,2">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto" />
+									<ColumnDefinition/>
+								</Grid.ColumnDefinitions>
+								<Image Width="16" Height="16" Source="{Binding Image}" Margin="0,0,4,0" Visibility="{Binding Image, Converter={StaticResource NullToVisibilityConverter}}"/>
+								<TextBlock Grid.Column="1" Text="{Binding Description}" MaxWidth="80" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" TextTrimming="CharacterEllipsis"/>
+							</Grid>
+						</Border>
+					</Border>
+				</DataTemplate>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="ShiftContainerStyle">
+			<Setter.Value>
+				<Style TargetType="{x:Type ContentPresenter}">
+					<Setter Property="client:ScheduleDayAppointments.Start" Value="{Binding StartTime}" />
+					<Setter Property="client:ScheduleDayAppointments.End" Value="{Binding EndTime}" />
+				</Style>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="ShiftItemTemplate">
+			<Setter.Value>
+				<DataTemplate>
+					<client:ScheduleShift 
+						SnapsToDevicePixels="True"
+						HighlightInterval="{Binding HighlightInterval}"
+						Granularity="{Binding Granularity, RelativeSource={RelativeSource AncestorType={x:Type client:ScheduleDay}}}"
+						BlockHeight="{Binding TimeBar.BlockHeight, RelativeSource={RelativeSource AncestorType={x:Type client:ScheduleDay}}}"
+						ClipToBounds="True"
+						>
+						<client:ScheduleShift.Background>
+							<LinearGradientBrush EndPoint="0.854,0.5" StartPoint="0.146,0.5">
+								<GradientStop Color="#FFE6C070"/>
+								<GradientStop Color="#FFF6D48F" Offset="1"/>
+							</LinearGradientBrush>
+						</client:ScheduleShift.Background>
+						<client:ScheduleShift.HighlightStyle>
+							<Style TargetType="{x:Type Rectangle}">
+								<Setter Property="Fill">
+									<Setter.Value>
+										<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+											<GradientStop Color="#0C000000" Offset="0"/>
+											<GradientStop Color="#32739CF0" Offset="0.06"/>
+											<GradientStop Offset="1" Color="#00000000"/>
+										</LinearGradientBrush>
+									</Setter.Value>
+								</Setter>
+							</Style>
+						</client:ScheduleShift.HighlightStyle>
+					</client:ScheduleShift>
+				</DataTemplate>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="DayStyle">
+			<Setter.Value>
+				<Style TargetType="{x:Type client:ScheduleDay}">
+					<Setter Property="HeaderStyle">
+						<Setter.Value>
+							<Style TargetType="{x:Type ContentPresenter}" >
+								<Setter Property="MaxWidth" Value="100" />
+							</Style>
+						</Setter.Value>
+					</Setter>
+				</Style>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>

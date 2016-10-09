@@ -1,0 +1,164 @@
+/*
+	Dataphor
+	© Copyright 2000-2008 Alphora
+	This file is licensed under a modified BSD-license which can be found here: http://dataphor.org/dataphor_license.txt
+*/
+
+var LDocumentationRoot := ServerSettings[].LibraryDirectory.Split()[0] + '\..\Documentation\';
+
+var LSaveCurrentDirectory := GetCurrentDirectory();
+SetCurrentDirectory(LDocumentationRoot + '\Docs2.0');
+try
+
+	//regular documentation
+	//  note: if the output directory c:\docbuild\tmp may be changed for supporting different machines
+	DocLibrary
+	(
+		"SQLDeviceReference",
+		LDocumentationRoot + "\Docs2.0\SQLDeviceReference.xml",
+		LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+		LDocumentationRoot + "\docbuild\tmp",
+		"off"
+	);
+
+finally
+	SetCurrentDirectory(LSaveCurrentDirectory);
+end;
+
+DocLibrary
+(
+	"SecurityLibraryReference",
+	LDocumentationRoot + "\Docs2.0\SecurityLibraryReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+DocLibrary
+(
+	"SystemLibraryReference",
+	LDocumentationRoot + "\Docs2.0\SystemLibraryReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+DocLibrary
+(
+	"FrontendReference",
+	LDocumentationRoot + "\Docs2.0\FrontendReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+DocLibrary
+(
+	"GeneralLibraryReference",
+	LDocumentationRoot + "\Docs2.0\GeneralLibraryReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+DocLibrary
+(
+	"SystemInternetLibraryReference",
+	LDocumentationRoot + "\Docs2.0\SystemInternetLibraryReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+DocLibrary
+(
+	"ConnectionLibraryReference",
+	LDocumentationRoot + "\Docs2.0\ConnectionLibraryReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+DocLibrary
+(
+	"ADOConnectionLibraryReference",
+	LDocumentationRoot + "\Docs2.0\ADOConnectionLibraryReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+DocLibrary
+(
+	"ODBCConnectionLibraryReference",
+	LDocumentationRoot + "\Docs2.0\ODBCConnectionLibraryReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+DocLibrary
+(
+	"MSOracleConnectionLibraryReference",
+	LDocumentationRoot + "\Docs2.0\MSOracleConnectionLibraryReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+
+DocLibrary
+(
+	"SimpleDeviceReference",
+	LDocumentationRoot + "\Docs2.0\SimpleDeviceReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+DocLibrary
+(
+	"MSSQLDeviceReference",
+	LDocumentationRoot + "\Docs2.0\MSSQLDeviceReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+DocLibrary
+(
+	"OracleDeviceReference",
+	LDocumentationRoot + "\Docs2.0\OracleDeviceReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+
+DocLibrary
+(
+	"DB2DeviceReference",
+	LDocumentationRoot + "\Docs2.0\DB2DeviceReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+DocLibrary
+(
+	"SASDeviceReference",
+	LDocumentationRoot + "\Docs2.0\SASDeviceReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);
+
+
+DocLibrary
+(
+	"SystemIntegrationLibraryReference",
+	LDocumentationRoot + "\Docs2.0\SystemIntegrationLibraryReference.xml",
+	LDocumentationRoot + "\DocBookManuals\OperatorDocs",
+	LDocumentationRoot + "\docbuild\tmp",
+	"off"
+);

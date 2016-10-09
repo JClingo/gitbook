@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF54209E-0687-4C10-9784-487B1006E0BD}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Dataphoria.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Dataphoria</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Alphora.Dataphor.Dataphoria</RootNamespace>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <StartupObject>Alphora.Dataphor.Dataphoria.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccAuxPath>
+    </SccAuxPath>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>BAB73A918AEDFF9C1D1884B99CFF2A38162A40A8</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Dataphoria_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <TargetFrameworkProfile />
+    <PublishUrl>\\ibas\Dataphoria\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Dataphor Dataphoria</ProductName>
+    <PublisherName>Alphora</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;TRACEFOCUS</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>SIGNASSEMBLIES</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>3</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ascend, Version=1.0.0.6, Culture=neutral, PublicKeyToken=25c7a393ba3f37cd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Ascend.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ascend.Resources, Version=1.0.0.6, Culture=neutral, PublicKeyToken=9c9aecb37b1e03b6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Ascend.Resources.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ascend.Windows.Forms, Version=1.0.0.6, Culture=neutral, PublicKeyToken=ecd86ece2d3eb46d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Ascend.Windows.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.TextEditor, Version=3.2.1.6466, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\External\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <Name>System.Drawing.Design</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Name>System.Runtime.Remoting</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Base.Windows\Base.Windows.csproj">
+      <Project>{24D70A7F-F43A-45A3-8C54-EA31764841C7}</Project>
+      <Name>Base.Windows</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Base\Base.csproj">
+      <Name>Base</Name>
+      <Project>{6EC1F378-510B-48D0-8D00-E36BEF214766}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DAE.Client.Controls\DAE.Client.Controls.csproj">
+      <Name>DAE.Client.Controls</Name>
+      <Project>{A295FB41-D9B6-418C-9EA7-0C0A17BA26DD}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DAE.Client.Provider\DAE.Client.Provider.csproj">
+      <Name>DAE.Client.Provider</Name>
+      <Project>{2A36CE97-A296-462A-8C3F-C194F1A2D758}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DAE.Client\DAE.Client.csproj">
+      <Name>DAE.Client</Name>
+      <Project>{146ABD06-FA98-4B90-9E85-1B4CE7BE598D}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DAE\Engine.csproj">
+      <Name>Engine</Name>
+      <Project>{8FA5FA37-DC03-4E24-900B-AA863CA9650F}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Frontend.Client.Windows\Frontend.Client.Windows.csproj">
+      <Name>Frontend.Client.Windows</Name>
+      <Project>{E7152100-FDC7-4BF1-957C-75051BF7D8E8}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Frontend.Client\Frontend.Client.csproj">
+      <Name>Frontend.Client</Name>
+      <Project>{D054B27F-366C-4C4E-BA32-472BD14DC86D}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Server\Server.csproj">
+      <Project>{1DB01C91-3F92-4094-A8AE-1F7FF01F2E1B}</Project>
+      <Name>Server %28Server\Server%29</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.2.2864.18696, Culture=neutral, PublicKeyToken=d481317c817cec47, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analyzer\Analyzer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analyzer\AnalyzerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Analyzer\PlanNodes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dataphoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataphoria.Designer.cs">
+      <DependentUpon>Dataphoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataphoriaException.cs" />
+    <Compile Include="DataphoriaException.Designer.cs">
+      <DependentUpon>DataphoriaException.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Debug\BreakpointBookmark.cs" />
+    <Compile Include="Debug\StackView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Debug\StackView.Designer.cs">
+      <DependentUpon>StackView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Debug\ProcessesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Debug\ProcessesView.Designer.cs">
+      <DependentUpon>ProcessesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Debug\CurrentLineBookmark.cs" />
+    <Compile Include="Debug\DebugBookmark.cs" />
+    <Compile Include="Debug\Debugger.cs" />
+    <Compile Include="Debug\DebugProcessesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Debug\DebugProcessesView.Designer.cs">
+      <DependentUpon>DebugProcessesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\DesignBuffer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Designers\Designer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Designers\DesignService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Designers\DocumentDesignBuffer.cs" />
+    <Compile Include="Designers\FileDesignBuffer.cs" />
+    <Compile Include="Designers\ProgramDesignBuffer.cs" />
+    <Compile Include="Designers\PropertyDesignBuffer.cs" />
+    <Compile Include="DocumentExpressionForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FormDesigner\CustomFormDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesigner\DesignerTree\DesignerNode.cs" />
+    <Compile Include="FormDesigner\DesignerTree\DesignerNodeData.cs" />
+    <Compile Include="FormDesigner\DesignerTree\DesignerTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormDesigner\DesignerTree\DesignerTreeDropMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormDesigner\DropHightlightDrawFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FormDesigner\FormDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesigner\FormDesigner.Designer.cs">
+      <DependentUpon>FormDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesigner\FormPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormDesigner\PaletteItem.cs" />
+    <Compile Include="FormDesigner\ToolBox\StatusEventArgs.cs" />
+    <Compile Include="FormDesigner\ToolBox\ToolBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormDesigner\ToolBox\ToolBox.Designer.cs">
+      <DependentUpon>ToolBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>General.resx</DependentUpon>
+    </Compile>
+    <Compile Include="IDataphoria.cs" />
+    <Compile Include="Designers\IStatusBarClient.cs" />
+    <Compile Include="Designers\IToolBarClient.cs" />
+    <Compile Include="MenuImages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenuImages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="NativeMethods.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\DataNode.cs" />
+    <Compile Include="ObjectTree\Nodes\ApplicationNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\ConstraintNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\D4DocumentNode.cs" />
+    <Compile Include="ObjectTree\Nodes\DocumentData.cs" />
+    <Compile Include="ObjectTree\Nodes\Menus\DocumentListDropMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\Menus\DocumentListFileDropMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\DocumentListNode.cs" />
+    <Compile Include="ObjectTree\Nodes\FormDocumentNode.cs" />
+    <Compile Include="ObjectTree\Nodes\ViewNode.cs" />
+    <Compile Include="ObjectTree\DataTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\DeviceNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\DocumentNode.cs">
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\LibraryNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\Node.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\OperatorNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\ReferenceNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\RoleNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\ScalarTypeNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\ServerNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\TableNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectTree\Nodes\UserNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Services\PropertyTextEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Debug\SessionsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Debug\SessionsView.Designer.cs">
+      <DependentUpon>SessionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strings.cs" />
+    <Compile Include="Strings.Designer.cs">
+      <DependentUpon>Strings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextEditor\BlockActions\BaseBlockAction.cs" />
+    <Compile Include="TextEditor\D4CompletionData.cs" />
+    <Compile Include="TextEditor\D4CompletionDataProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextEditor\D4CompletionDataProvider.Designer.cs">
+      <DependentUpon>D4CompletionDataProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextEditor\D4Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextEditor\D4Editor.Designer.cs">
+      <DependentUpon>D4Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextEditor\BlockActions\NextBlock.cs" />
+    <Compile Include="TextEditor\BlockActions\PriorBlock.cs" />
+    <Compile Include="TextEditor\ResultPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextEditor\BlockActions\SelectBlock.cs" />
+    <Compile Include="TextEditor\BlockActions\SelectNextBlock.cs" />
+    <Compile Include="TextEditor\BlockActions\SelectPriorBlock.cs" />
+    <Compile Include="TextEditor\ScriptExecutor.cs" />
+    <Compile Include="TextEditor\TextEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextEditor\TextEditor.Designer.cs">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextEditor\BlockActions\ToggleBlockDelimiter.cs" />
+    <Compile Include="TreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnsafeNativeMethods.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Debug\CallStackView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Debug\CallStackView.Designer.cs">
+      <DependentUpon>CallStackView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\DesignerBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\DesignerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\Element.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Visual\GridSurface.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\SingleElementSurface.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\Surface.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\TabbedBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\Table.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\TreeSurface.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analyzer\Analyzer.resx">
+      <DependentUpon>Analyzer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dataphoria.resx">
+      <DependentUpon>Dataphoria.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Debug\StackView.resx">
+      <DependentUpon>StackView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Debug\ProcessesView.resx">
+      <DependentUpon>ProcessesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Debug\DebugProcessesView.resx">
+      <DependentUpon>DebugProcessesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesigner\ToolBox\ToolBox.resx">
+      <DependentUpon>ToolBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Debug\SessionsView.resx">
+      <DependentUpon>SessionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.resx">
+      <DependentUpon>Strings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataphoriaException.resx">
+      <DependentUpon>DataphoriaException.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesigner\CustomFormDesigner.resx">
+      <DependentUpon>CustomFormDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesigner\DesignerTree\DesignerTree.resx">
+      <DependentUpon>DesignerTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesigner\FormDesigner.resx">
+      <DependentUpon>FormDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>General.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Customize.bmp" />
+    <EmbeddedResource Include="Images\Edit.bmp" />
+    <EmbeddedResource Include="Images\EditCopy.bmp" />
+    <EmbeddedResource Include="Images\Rider.gif" />
+    <EmbeddedResource Include="MenuImages.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MenuImages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextEditor\D4CompletionDataProvider.resx">
+      <DependentUpon>D4CompletionDataProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextEditor\D4Editor.resx">
+      <DependentUpon>D4Editor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextEditor\ResultPanel.resx">
+      <DependentUpon>ResultPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextEditor\TextEditor.resx">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Debug\CallStackView.resx">
+      <DependentUpon>CallStackView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="TextEditor\Modes\CS-Mode.xshd">
+    </None>
+    <None Include="TextEditor\Modes\D4-Mode.xshd">
+    </None>
+    <None Include="TextEditor\Modes\Result-Mode.xshd">
+    </None>
+    <None Include="TextEditor\Modes\SQL.xshd">
+    </None>
+    <None Include="TextEditor\Modes\Text-Mode.xshd">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dataphoria.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="SchemaDesigner\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>copy "$(ProjectDir)TextEditor\Modes\*.xshd" "$(TargetDir)" /Y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

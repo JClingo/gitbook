@@ -1,0 +1,37 @@
+= Type Conventions
+
+This section describes the type conventions used in this manual.
+
+[cols=",",options="header",]
+|=======================================================================
+|Description |Example
+|Regular text |D4 provides a powerful set of data manipulation
+capabilities, as well as a rich type system for describing even the most
+complex data.
+
+|Code block with *bold* denoting keywords a|
+....
+create table Employee { ID : Integer, Name : String, key { ID } };
+....
+
+|inline code with *bold* denoting keywords |Any given value has a type
+associated with it, for example, *table* \{ *row* \{ 5 ID } } is a table
+value with type *table* \{ ID : System.Integer }.
+
+|Keywords (also used in code blocks) |*select*
+
+|Introduction of new terms. |_physical representation_
+
+|Dataphor Identifiers |`System.Abs` returns the Absolute value
+(nonnegative) of a given value.
+
+|Keyboard Keys |F1
+
+|Key Combinations |Ctrl+C
+
+|Buttons in the interfaces |Add...
+
+|Commands or Executable files |`DAEService.exe`
+
+|Parameters for Executable files |`/i`
+|=======================================================================

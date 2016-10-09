@@ -1,0 +1,278 @@
+/*
+	Server Link Test Script
+	
+	Assumes a running default Dataphor instance.
+*/
+
+// Create Default Server Link
+create server Test;
+
+if (EvaluateOn('Test', 'select Count(TableDee)') as Integer) <> 1 then
+	raise Error("Evaluate On Default Server Link Failed");
+drop server Test;
+
+// Basic Server Link
+create server Test tags { HostName = "localhost", InstanceName = "Dataphor" };
+
+if (EvaluateOn('Test', 'select Count(TableDee)') as Integer) <> 1 then
+	raise Error("Evaluate on Basic Server Link Failed");
+	
+drop server Test;
+
+// Server Link With Use Session Info
+create server Test tags { HostName = "localhost", InstanceName = "Dataphor", UseSessionInfo = "true" };
+
+SetMaxCallDepth(128);
+if (EvaluateOn('Test', 'select Processes[ProcessID()].MaxNestingLevel') as Integer) = 128 then
+	raise Error("Server link with UseSessionInfo failed");
+	
+drop server Test;
+
+// Server Link With Session Info
+create server Test tags { HostName = "localhost", InstanceName = "Dataphor", DefaultMaxCallDepth = "128" };
+
+if (EvaluateOn('Test', 'select Processes[ProcessID()].MaxNestingLevel') as Integer) <> 128 then
+	raise Error("Server link with Session Info failed");
+	
+drop server Test;
+
+// Server Link With Default User
+CreateUser('TestUser', 'Test User', '');
+create server Test;
+CreateServerLinkUser('', 'Test', 'Admin', '');
+ExecuteAs
+(
+	"
+		if (EvaluateOn('Test', 'select Count(TableDee)') as Integer) <> 1 then
+			raise Error('Server Link With Default User Failed');
+	",
+	'TestUser',
+	''
+);
+
+drop server Test;
+DropUser('TestUser');
+
+// Server Link With User Credentials
+CreateUser('TestUser', 'Test User', '');
+create server Test;
+CreateServerLinkUser('TestUser', 'Test', 'Admin', '');
+ExecuteAs
+(
+	"
+		if (EvaluateOn('Test', 'select Count(TableDee)') as Integer) <> 1 then
+			raise Error('Server Link With User Credentials Failed');
+	",
+	'TestUser',
+	''
+);
+
+drop server Test;
+DropUser('TestUser');
+
+// Alter Server Link
+create server Test tags { HostName = "NONE", InstanceName = "NONE" };
+alter server Test alter tags { alter HostName = "localhost", alter InstanceName = "Dataphor" };
+if (EvaluateOn('Test', 'select Count(TableDee)') as Integer) <> 1 then
+	raise Error('Alter Server Link Failed');
+drop server Test;
+
+// ExecuteOn/EvaluateOn
+create server Test;
+ExecuteOn('Test', 'create table IsCool { IsCool : Boolean };');
+ExecuteOn('Test', 'insert row { true IsCool } into IsCool;');
+if not (EvaluateOn('Test', 'select IsCool') as table { IsCool : Boolean })[].IsCool then
+	raise Error('ExecuteOn failed');
+ExecuteOn('Test', 'drop table IsCool;');
+drop server Test;
+
+// ExecuteOn/EvaluateOn w/ In Params
+create server Test;
+ExecuteOn('Test', 'create table IsCool { IsCool : Boolean };');
+ExecuteOn('Test', 'insert row { AIsCool IsCool } into IsCool;', row { true AIsCool });
+if not (EvaluateOn('Test', 'select IsCool where IsCool = AIsCool', row { true AIsCool }) as table { IsCool : Boolean })[].IsCool then
+	raise Error('EvaluateOn w/ In Params failed');
+ExecuteOn('Test', 'drop table IsCool;');
+ExecuteOn('Test', '5 = Five', row { 5 Five });
+drop server Test;
+
+// ExecuteOn/EvaluateOn w/ In/Out Params
+create server Test;
+begin
+	var LOutRow := row { nil as Boolean AIsReallyCool };
+	ExecuteOn('Test', 'AIsReallyCool := AIsCool;', row { false AIsCool }, var LOutRow);
+	if not LOutRow.AIsReallyCool then
+		raise Error("ExecuteOn w/ In/Out Params failed");
+end;
+
+ExecuteOn
+(
+	'Test',
+	"
+		create operator TestIsCool(const AIsCool : Boolean, var AIsReallyCool : Boolean) : Boolean
+		begin
+			AIsReallyCool := AIsCool;
+			result := AIsReallyCool;
+		end;
+	"
+);
+
+begin
+	var LOutRow := row { nil as Boolean AIsReallyCool };
+	if not (EvaluateOn('Test', 'select TestIsCool(AIsCool, var AIsReallyCool)', row { true AIsCool }, var LOutRow) as Boolean) then
+		raise Error("EvaluateOn w/ In/Out Params failed");
+	if not LOutRow.AIsReallyCool then
+		raise Error("EvaluateOn w/ In/Out Params failed");
+end;
+
+ExecuteOn('Test', 'drop operator TestIsCool(Boolean, var Boolean)');
+drop server Test;
+
+// EvaluateOn w/ complex params
+create server Test;
+if (EvaluateOn('Test', 'select x.y * 5', row { row { 5 y } x }) as Integer) <> 25 then
+	raise Error("EvaluateOn w/ complex params (row) failed.");
+if (EvaluateOn('Test', 'select x[0] * 5', row { { 5 } x }) as Integer) <> 25 then
+	raise Error("EvaluateOn w/ complex params (list) failed.");
+if (EvaluateOn('Test', 'select x[0].y * 5', row { { row { 5 y } } x }) as Integer) <> 25 then
+	raise Error("EvaluateOn w/ complex params (list) failed.");
+drop server Test;
+
+// ServerLinks
+create server Test;
+if not exists (ServerLinks where Name = LibraryName() + '.Test') then
+	raise Error("ServerLinks did not contain the server Test");
+alter server Test alter tags { create HostName = "TEST" };
+if ServerLinks[LibraryName() + ".Test"].HostName <> "TEST" then
+	raise Error("ServerLinks did not contain the correct HostName after an alter");
+drop server Test;
+if exists (ServerLinks where Name = LibraryName() + '.Test') then
+	raise Error("ServerLinks did not refresh after a drop");
+	
+// ServerLinkUsers
+// CreateServerLinkUser
+// CreateServerLinkUserWithEncryptedPassword
+// SetServerLinkUserID
+// SetServerLinkUserPassword
+// ChangeServerLinkUserPassword
+// DropServerLinkUser
+// ServerLinkUserExists
+create server Test;
+CreateUser('TestUser', 'Test User', '');
+CreateServerLinkUser('TestUser', 'Test', 'Admin', '');
+if not exists (ServerLinkUsers where User_ID = 'TestUser' and ServerLink_Name = LibraryName() + '.Test') then
+	raise Error("CreateServerLinkUser failed");
+DropServerLinkUser('TestUser', 'Test');
+if ServerLinkUserExists('TestUser', 'Test') then
+	raise Error("DropServerLinkUser failed");
+ExecuteOn('Test', "CreateUser('TestUser', 'Test User', 'secret');");
+CreateServerLinkUserWithEncryptedPassword('TestUser', 'Test', 'TestUser', EncryptPassword("secret"));
+ExecuteAs
+(
+	"
+		if (EvaluateOn('Test', 'select Count(TableDee)') as Integer) <> 1 then
+			raise Error('CreateServerLinkUserWithEncryptedPassword failed');
+	",
+	'TestUser',
+	''
+);
+SetServerLinkUserID('TestUser', 'Test', 'TestUser');
+SetServerLinkUserPassword('TestUser', 'Test', 'secret');
+ExecuteAs
+(
+	"
+		if (EvaluateOn('Test', 'select Count(TableDee)') as Integer) <> 1 then
+			raise Error('SetServerLinkUserID/Password failed');
+	",
+	'TestUser',
+	''
+);
+ExecuteOn('Test', "SetPassword('TestUser', 'reallysecret')");
+ExecuteAs("ChangeServerLinkUserPassword('Test', 'secret', 'reallysecret');", 'TestUser', '');
+ExecuteAs
+(
+	"
+		if (EvaluateOn('Test', 'select Count(TableDee)') as Integer) <> 1 then
+			raise Error('ChangeServerLinkUserPassword failed');
+	",
+	'TestUser',
+	''
+);
+
+ExecuteOn('Test', 'DropUser("TestUser");');
+DropUser('TestUser');
+drop server Test;
+
+// RemoteSessions
+create server Test;
+ExecuteOn('Test', 'GC.Collect();');
+if not exists (RemoteSessions where Process_ID = ProcessID() and ServerLink_Name = LibraryName() + '.Test') then
+	raise Error("RemoteSessions failed");
+drop server Test;
+
+// On Expression
+create server Test;
+select Devices on Test;
+drop server Test;
+
+// Non-Scalar-Valued Attributes
+create server Test;
+// Test List Result
+select list(Integer) { 1, 2, 3, 4, 5 };
+select EvaluateOn("Test", "select (list(Integer) { 1, 2, 3, 4, 5 })") as list(Integer);
+// Test Row Result
+select row { 1 ID, "Blah" Name };
+select EvaluateOn("Test", "select row { 1 ID, 'Blah' Name }") as row { ID : Integer, Name : String };
+// Test Table Result
+select table { row { 1 ID, "Blah" Name } };
+select EvaluateOn("Test", "select table { row { 1 ID, 'Blah' Name } }") as table { ID : Integer, Name : String };
+// Test Row of List, Row, and Table
+select row { list(Integer) { 1, 2, 3, 4, 5 } ListValue };
+select EvaluateOn("Test", "select row { list(Integer) { 1, 2, 3, 4, 5 } ListValue }") as row { ListValue : list(Integer) };
+select row { row { 1 ID, 'Blah' Name } RowValue };
+select EvaluateOn("Test", "select row { row { 1 ID, 'Blah' Name } RowValue }") as row { RowValue : row { ID : Integer, Name : String } };
+select row { table { row { 1 ID, 'Blah' Name } } TableValue };
+select EvaluateOn("Test", "select row { table { row { 1 ID, 'Blah' Name } } TableValue }") as row { TableValue : table { ID : Integer, Name : String } };
+// Test Table of List, Row, and Table
+select table { row { list(Integer) { 1, 2, 3, 4, 5 } IntegerList } };
+select (table { row { list(Integer) { 1, 2, 3, 4, 5 } IntegerList } }) on Test;
+select table { row { row { 1 ID, 'Blah' Name } RowValue } };
+select (table { row { row { 1 ID, 'Blah' Name } RowValue } }) on Test;
+select table { row { table { row { 1 ID, 'Blah' Name } } TableValue } };
+select (table { row { table { row { 1 ID, 'Blah' Name } } TableValue } }) on Test;
+// Test List of Row
+select list(row) { row { 1 ID, 'Blah' Name } };
+select EvaluateOn("Test", "select list(row) { row { 1 ID, 'Blah' Name } }") as list(row);
+// Test List of Table
+select list(table) { table { row { 1 ID, 'Blah' Name } } };
+select EvaluateOn("Test", "select list(table) { table { row { 1 ID, 'Blah' Name } } }") as list(table);
+// Test List of List
+select list(list(Integer)) { list(Integer) { 1, 2, 3 }, list(Integer) { 4, 5, 6 } };
+select EvaluateOn("Test", "select list(list(Integer)) { list(Integer) { 1, 2, 3 }, list(Integer) { 4, 5, 6 } }") as list(list(Integer));
+
+// Table of list of table with row valued attributes
+select (table { row { list(table) { table { row { 1 ID, 'Blah' Name, row { 'Inner' Inner } RowValue } } } ListValue } }) on Test;
+
+drop server Test;
+
+// Like types over server link
+create server Test;
+
+create type ID like String;
+
+select ID("Test");
+ExecuteOn("Test", "create type ID like String;");
+select EvaluateOn("Test", "select ID('Test');") as ID;
+ExecuteOn("Test", "drop type ID");
+
+drop type ID;
+
+ExecuteOn("Test", "create type DateTimeInMinutes like DateTime;");
+ExecuteOn("Test", "create table TestDateTime { ID : Integer, Data : DateTimeInMinutes, key { ID } };");
+ExecuteOn("Test", "insert row { 1 ID, DateTime() Data } into TestDateTime;");
+select EvaluateOn("Test", "select TestDateTime[].Data") as DateTime;
+select EvaluateOn("Test", "select DateTimeInMinutes(DateTime());") as DateTime;
+ExecuteOn("Test", "drop table TestDateTime;");
+ExecuteOn("Test", "drop type DateTimeInMinutes;");
+
+drop server Test;
