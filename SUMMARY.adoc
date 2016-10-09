@@ -2,9 +2,9 @@
 
 . link:README.adoc[Introduction]
 . link:Deeper/testchapter.adoc[TestChapter]
-.. Chapta
 .. TestChapter2
 ... link:another_chapter.adoc[Another Chapter]
+... Chapta
 ... link:Deeper/new_article.adoc[New Article]
 . link:Deeper/test3.adoc[Top]
 . Summary
