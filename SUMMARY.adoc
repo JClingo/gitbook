@@ -7,5 +7,4 @@
 ... link:another_chapter.adoc[New Article]
 . link:Deeper/test3.adoc[Top]
 . Summary
-. link:another_chapter.adoc[Another Chapter]
 
