@@ -3,8 +3,8 @@
 . link:README.adoc[Introduction]
 . link:Deeper/testchapter.adoc[TestChapter]
 .. TestChapter2
+... link:another_chapter.adoc[Another Chapter]
 ... link:Deeper/new_article.adoc[New Article]
-. link:another_chapter.adoc[Another Chapter]
 . link:Deeper/test3.adoc[Top]
 . Summary
 
