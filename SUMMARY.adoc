@@ -4,6 +4,7 @@
 . link:Deeper/testchapter.adoc[TestChapter]
 .. TestChapter2
 ... link:Deeper/new_article.adoc[New Article]
+... link:another_chapter.adoc[New Article]
 . link:Deeper/test3.adoc[Top]
 . Summary
 . link:another_chapter.adoc[Another Chapter]
