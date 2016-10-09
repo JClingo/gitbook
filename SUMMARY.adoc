@@ -7,15 +7,9 @@
 ... link:Deeper/new_article.adoc[New Article]
 ... Chapta
 .... DeeperChapta
-..... DeeperChapta2
-...... DeeperChapta3
-....... DeeperChapta4
-........ DeeperChapta5
-......... DeeperChapta6
-.......... DeeperChapta7
-........... DeeperChapta8
-............ DeeperChapta9
-............. DeeperChapta10
+.... Anotha
+..... Deper
+...... Hm
 . link:Deeper/test3.adoc[Top]
 . Summary
 
