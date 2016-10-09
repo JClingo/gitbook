@@ -16,7 +16,6 @@
 ...........Deeper Chapta8
 ............Deeper Chapta9
 .............Deeper Chapta10
-.... link:Deeper/newarticle_doc.adoc[New Article]
 . link:Deeper/test3.adoc[Top]
 . Summary
 
