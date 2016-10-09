@@ -1,7 +1,10 @@
 = Summary
 
 . link:README.adoc[Introduction]
-. link:Deeper/testchapter.adoc[TestChapter]
+
+link:Deeper/testchapter.adoc[TestChapter]
+
+. Test
 .. TestChapter2
 ... link:another_chapter.adoc[Another Chapter]
 ... link:Deeper/new_article.adoc[New Article]
@@ -9,9 +12,11 @@
 .... DeeperChapta
 .... Anotha
 ..... Deper
-...... Hm
+..... More
+..... Werks
+...... Sure
+...... Wat
 . link:Deeper/test3.adoc[Top]
 . Summary
-
-
+]
 
