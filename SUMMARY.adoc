@@ -2,7 +2,7 @@
 
 . link:README.adoc[Introduction]
 
-link:Deeper/testchapter.adoc[TestChapter]
+. link:Deeper/testchapter.adoc[TestChapter]
 
 . Test
 .. TestChapter2
