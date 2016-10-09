@@ -7,5 +7,3 @@
 .. link:Documentation/DataphorService.adoc[Dataphor Service]
 .. link:Documentation/Security.adoc[Security]
 .. link:Documentation/UsingDataphorApplications.adoc[Using Dataphor Applications]
-
-. Summary
