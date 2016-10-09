@@ -6,7 +6,7 @@
 ... link:another_chapter.adoc[Another Chapter]
 ... link:Deeper/new_article.adoc[New Article]
 ... Chapta
-.... link:Deeper/new_article.doc[New Article]
+.... link:Deeper/newarticle_doc.adoc[New Article]
 . link:Deeper/test3.adoc[Top]
 . Summary
 
