@@ -26,7 +26,7 @@ characteristics of a web-based solution.
 [[DUGP1ProductTour-DataphorFrontend-FrontendServer]]
 == Frontend Server
 
-he Frontend Server is a library of services within the Dataphor Server
+The Frontend Server is a library of services within the Dataphor Server
 which exposes the user-interface derivation capabilities of the Dataphor
 product. It also introduces the concepts of _documents_ and
 _applications_ into the Dataphor Server.
