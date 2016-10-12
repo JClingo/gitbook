@@ -12,8 +12,7 @@ Dataphor Reference
 Copyright © 2016 Alphora
 ----
 
-image::Images/Dataphor-Logo.gif[Dataphor Logo]
-
+image::../Images/Dataphor-Logo.gif[Dataphor Logo]
 
 .Sections
 . link:D4LanguageGrammar.adoc[D4 Language Grammar]
