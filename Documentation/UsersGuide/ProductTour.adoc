@@ -13,6 +13,7 @@
 . link:DataphoriaSummary.adoc[Dataphoria]
 . link:FrontendClients.adoc[Frontend Clients]
 
+[[DUGP1ProductTour]]
 == Introduction
 
 In order to achieve a more declarative application development platform,

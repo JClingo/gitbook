@@ -7,6 +7,9 @@
 :lang: en
 :encoding: iso-8859-1
 
+[[DUGP1ProductTour-Dataphoria]]
+== Summary
+
 Dataphoria is an Integrated Development Environment (IDE) for the
 Dataphor platform. Dataphoria connects with instances of the Dataphor
 Server for administration, and can host an in-process Dataphor Server

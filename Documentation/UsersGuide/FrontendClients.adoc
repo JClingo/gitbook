@@ -7,6 +7,7 @@
 :lang: en
 :encoding: iso-8859-1
 
+[[DUGP1ProductTour-FrontendClients]]
 == Summary
 
 Dataphor Frontend Clients are responsible for two distinct functions.
@@ -28,6 +29,7 @@ Because the Dataphor Frontend Client architecture is designed to be
 consumed from multiple clients, the same application schema will be
 available on any general-purpose Dataphor Frontend Client.
 
+[[DUGP1ProductTour-FrontendClients-WindowsClient]]
 == Windows Client
 
 The Windows Client is a Windows executable program that communicates
@@ -37,6 +39,7 @@ makes use of the Dataphor Data Access Components to provide access to
 the Dataphor Server. These components take full advantage of the
 application-targeted features exposed by the Dataphor Server.
 
+[[DUGP1ProductTour-FrontendClients-WebClient]]
 == Web Client
 
 The Web Client is an ASP.NET web application that provides HTML based

@@ -7,6 +7,7 @@
 :lang: en
 :encoding: iso-8859-1
 
+[[DUGP1ProductTour-DataphorFrontend]]
 == Summary
 
 The Dataphor Frontend builds on the foundation provided by the Dataphor
@@ -22,6 +23,7 @@ definitions contained within documents on the Dataphor Server. The
 result is a rich client with all the deployment and maintenance
 characteristics of a web-based solution.
 
+[[DUGP1ProductTour-DataphorFrontend-FrontendServer]]
 == Frontend Server
 
 he Frontend Server is a library of services within the Dataphor Server
