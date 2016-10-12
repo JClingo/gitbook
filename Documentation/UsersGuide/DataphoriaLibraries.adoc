@@ -7,8 +7,6 @@
 :lang: en
 :encoding: iso-8859-1
 
-. link:README.adoc[Introduction]
-
 [[DUGP1Dataphoria-DataphorExplorer-Libraries]]
 == Summary
 
