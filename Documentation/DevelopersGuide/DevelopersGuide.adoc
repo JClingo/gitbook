@@ -1,28 +1,19 @@
-Developer's Guide
-===========
+= Developer's Guide
 :author: Alphora
 :doctype: book
-:icons:
 :data-uri:
 :lang: en
 :encoding: iso-8859-1
 
-----
-Copyright © 2016 Alphora
-----
-
-image::../Images/Dataphor-Logo.gif[Dataphor Logo]
-
 .Sections
-. link:D4LanguageGrammar.adoc[D4 Language Grammar]
-. link:FrontendComponents.adoc[Frontend Components]
-. link:CLI.adoc[Call-level Interface (CLI)]
-. link:DAC.adoc[Data Access Components]
-. link:ErrorMessagePrefixCodes.adoc[Error Message Prefix Codes]
-. link:Tags.adoc[Tags]
-. link:Libraries.adoc[Libraries]
+. link:Introduction.adoc[Introduction]
+. link:LogicalApplicationDesign.adoc[Logical Application Design]
+. link:PresentationLayer.adoc[Presentation Layer]
+. link:PhysicalRealization.adoc[Physical Realization]
+. link:D4LanguageGuide.adoc[D4 Language Guide]
 
-== Introduction
+
+== Summary
 
 The Dataphor Developer's Guide discusses the declarative approach to
 application development as a solution to many of the technical problems
@@ -54,6 +45,44 @@ application and the physical implementation of that application.
 Part V is the D4 Language Guide, which provides a complete description
 of the syntax and semantics of the D4 language.
 
+== Type Conventions
+
+This section describes the type conventions used in this manual.
+
+[cols=",",options="header",]
+|=======================================================================
+|Description |Example
+|Regular text |D4 provides a powerful set of data manipulation
+capabilities, as well as a rich type system for describing even the most
+complex data.
+
+|Code block with *bold* denoting keywords a|
+....
+create table Employee { ID : Integer, Name : String, key { ID } };
+....
+
+|inline code with *bold* denoting keywords |Any given value has a type
+associated with it, for example, *table* \{ *row* \{ 5 ID } } is a table
+value with type *table* \{ ID : System.Integer }.
+
+|Keywords (also used in code blocks) |*select*
+
+|Introduction of new terms. |_physical representation_
+
+|Dataphor Identifiers |`System.Abs` returns the Absolute value
+(nonnegative) of a given value.
+
+|Keyboard Keys |F1
+
+|Key Combinations |Ctrl+C
+
+|Buttons in the interfaces |Add...
+
+|Commands or Executable files |`DAEService.exe`
+
+|Parameters for Executable files |`/i`
+|=======================================================================
+
 == Legal
 
 Information in this Dataphor Documentation is subject to change without notice.
@@ -62,7 +91,9 @@ Alphora.
 The software described in this document is furnished under a license agreement and may be used or copied only in
 accordance with the terms of the license agreement.
 
-Copyright © 2001-2016 Alphora.
+----
+Copyright © 2016 Alphora
+----
 All rights reserved.
 
 Dataphor ® is a registered trademark of Alphora.

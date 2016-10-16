@@ -1,7 +1,6 @@
 = Dataphor Glossary
 :author: Alphora
 :doctype: book
-:toc:
 :data-uri:
 :lang: en
 :encoding: iso-8859-1

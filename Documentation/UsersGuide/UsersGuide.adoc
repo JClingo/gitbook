@@ -7,10 +7,6 @@ User's Guide
 :lang: en
 :encoding: iso-8859-1
 
-----
-Copyright © 2016 Alphora
-----
-
 image::../Images/Dataphor-Logo.gif[Dataphor Logo]
 
 The Dataphor User's Guide introduces the Dataphor product, and provides information on using the
@@ -122,7 +118,10 @@ Alphora.
 The software described in this document is furnished under a license agreement and may be used or copied only in
 accordance with the terms of the license agreement.
 
-Copyright © 2001-2016 Alphora.
+----
+Copyright © 2016 Alphora
+----
+
 All rights reserved.
 
 Dataphor ® is a registered trademark of Alphora.

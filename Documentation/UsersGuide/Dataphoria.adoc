@@ -9,7 +9,7 @@
 
 . link:Aliases.adoc[Aliases]
 . link:DataphorExplorer.adoc[Dataphor Explorer]
-. link:DocumentsAndDesigers.adoc[Documents and Designers]
+. link:DocumentsAndDesigners.adoc[Documents and Designers]
 
 [[DUGP1Dataphoria-Introduction]]
 == Introduction
