@@ -3,7 +3,6 @@ User's Guide
 :author: Alphora
 :doctype: book
 :toc:
-:icons:
 :data-uri:
 :lang: en
 :encoding: iso-8859-1

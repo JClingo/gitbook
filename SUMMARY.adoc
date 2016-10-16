@@ -17,7 +17,7 @@
 ... link:Documentation/UsersGuide/StartingDataphorApplications.adoc[Starting a Dataphor Application]
 ... link:Documentation/UsersGuide/UsingDataphorForms.adoc[Using Dataphor Forms]
 ... link:Documentation/UsersGuide/UsingDataphorControls.adoc[Using Dataphor Controls (UI Components)]
-.. link:Documentation/UsersGuide/Documentation/UsersGuide/Tutorials.adoc[Tutorials]
+.. link:Documentation/UsersGuide/Tutorials.adoc[Tutorials]
 ... link:Documentation/UsersGuide/Tutorial_MovieRental.adoc[Movie Rental]
 ... link:Documentation/UsersGuide/Tutorial_BookPublishing.adoc[Book Publishing (with Pubs sample database)]
 ... link:Documentation/UsersGuide/Tutorial_FrontendComponents.adoc[Frontend Components]

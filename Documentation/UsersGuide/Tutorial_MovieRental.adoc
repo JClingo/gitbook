@@ -1,4 +1,11 @@
 = Dataphor Rental Movie Store Tutorial
+:author: Alphora
+:doctype: book
+:toc:
+:icons:
+:data-uri:
+:lang: en
+:encoding: iso-8859-1
 
 This tutorial is designed to walk through building an application in
 Dataphor, from choosing a database design to application completion.
@@ -26,7 +33,7 @@ link:dilrefAlphora.Dataphor.Frontend.Client.IFrame.html[Frame]:: An embedded use
 Component:: A Dataphor form component. e.g., Source
 Control:: A visible Dataphor form component. e.g., TextBox
 
-= Overview
+== Overview
 
 This tutorial will show how to create a Database application designed to
 run a video rental store.
@@ -42,7 +49,7 @@ A few of the procedures, tables, methods, etc. were chosen in order to
 teach a concept and not necessarily because it was the optimum way to
 accomplish the task.
 
-= Connect to a Dataphor Server
+== Connect to a Dataphor Server
 
 You need to be connected to a running Dataphor Server. This can be done
 through the Dataphor Server Login, which can connect to a running server
@@ -63,8 +70,6 @@ Once you are connected the Dataphoria Integrated Design Environment
 (IDE) is displayed. See
 link:DUGP1Dataphoria-Introduction-Environment.html[Environment] for an
 explanation of this screen.
-
-= Tutorial
 
 == Developing the Movie Database
 
@@ -110,6 +115,8 @@ registered. The Green arrow shows that the library is the current
 library. For more about libraries see
 link:D4LGCatalogElements-Libraries.html[Libraries].
 
+image::../Images/RentalTut001.png[Rental Tutorial - 1]
+
 If during this tutorial you close Dataphoria, when you come back to the
 tutorial you must ensure that Sample.Rental is set as the current
 library. This will ensure that any actions take place in the
@@ -138,6 +145,8 @@ device, when it can, to optimize performance.
 The default device and required libraries for a library can be specified
 by editing the library settings. This can be done by selecting the
 library then pressing F2.
+
+image::../Images/RentalTut001.1.png[Rental Tutorial - 1.1]
 
 ==== Using a Memory Device
 
@@ -194,6 +203,8 @@ Without this statement the create device will fail with an error message
 saying the library is not required by Sample.Rental. This could be done
 by selecting the Sample.Rental library then pressing F2. Then adding the
 MSSQLDevice library to the Requisites.
+
+image::../Images/RentalTut001.2.png[Rental Tutorial - 1.2]
 
 The link:DDGReconciliation.html[reconciliation] settings control how the
 Dataphor Server will reconcile its catalog with the tables in the
@@ -295,6 +306,8 @@ link:D4LGProgrammingTopics-UsingGenerators.html[Using Generators].
 
 During this tutorial you will be creating several tables and views. The
 following chart will help in understanding the finished system.
+
+image::../Images/RentalTut001a.png[Rental Tutorial - 1a]
 
 === MovieType Table
 
@@ -880,21 +893,29 @@ In the Dataphor Explorer pane under Sample.Rental right click the Tables
 entry and select refresh. This ensures that all the tables are
 displayed. If the + symbol is displayed to the left of Tables, click it
 to expand the listing. Now you can see all the tables that have been
-created.
+created:
+
+image::../Images/RentalTut001b.png[Rental Tutorial - 1b]
 
 Right click the Movie table, then select `Browse` (or you can double
-click the Movie table). The following form will appear.
+click the Movie table). The following form will appear:
+
+image::../Images/RentalTut002.png[Rental Tutorial - 1]
 
 From here you can completely manipulate the movies in the Movie table.
 If you select a movie and try to change the year value to a year before
 1891 you will get the error:
+
+image::../Images/RentalTut002b.png[Rental Tutorial - 2b]
 
 This is generated because of the constraint on the Year column in the
 Movie table.
 
 The reference from the MovieActor table causes a link under the details
 menu. Select the movie Episode II - Attack of the Clones. Then click on
-Details, MovieActor... and it brings up the following form.
+Details, MovieActor... and it brings up the following form:
+
+image::../Images/RentalTut003.png[Rental Tutorial - 3]
 
 This is a browse on the MovieActor table, but it shows only rows
 associated with the current movie in the prior form. The browse also
@@ -907,11 +928,15 @@ defaults the movie to the current one being worked with, as shown below.
 If this seems confusing, browse on the MovieActor table by double
 clicking on it in the Dataphor Explorer pane to get a better view of the
 MovieActor table and how the Application Server derives forms for it by
-default.
+default:
+
+image::../Images/RentalTut004.png[Rental Tutorial - 4]
 
 The window icon to the right of the information blocks allows you to
 select the values from a lookup. You click on the window icon to select
-an actor. Selecting the lookup will display the following form.
+an actor. Selecting the lookup will display the following form:
+
+image::../Images/RentalTut005.png[Rental Tutorial - 5]
 
 This form is a browse on the Actor table. Note, however, that the form
 has accept/reject toolbar buttons rather than just close.
@@ -923,11 +948,15 @@ actor browse.
 
 When you select Billy Crystal and click `Accept`, the lookup field from
 the previous form is set to the currently selected Actor row, as shown
-below.
+below:
 
-Then when we click accept again a row is inserted into the MovieActor
+image::../Images/RentalTut006.png[Rental Tutorial - 6]
+
+Then when we click `Accept` again a row is inserted into the MovieActor
 table and according to the database, Billy Crystal was in Star Wars.
 Maybe he did a cameo....
+
+image::../Images/RentalTut007.png[Rental Tutorial - 7]
 
 If you browse Actors by double clicking the Actor table in the Dataphor
 Explorer pane, then select Billy Crystal, Star Wars will be listed as
@@ -1040,9 +1069,9 @@ Account := table
  {
   "Bryan" Name,
   "Harvest Cove" Address,
-  "Provo" City,
+  "Orem" City,
   "UT" State,
-  "84601" Zip,
+  "84097" Zip,
   "555-4444" Phone,
   $132 Balance
  }
@@ -1050,9 +1079,13 @@ Account := table
 ....
 
 The Frontend.Group tags on the address columns tell the derivation
-engine to group them together in a group box, as shown. For more
-information about Frontend tags see
-link:../Reference/Tags.adoc#FTRTagsDescriptions-FrontendTags[Frontend Tags].
+engine to group them together in a group box, as shown:
+
+image::../Images/RentalTut008.png[Rental Tutorial - 8]
+
+****
+For more information about Frontend tags see link:../Reference/Tags.adoc#FTRTagsDescriptions-FrontendTags[Frontend Tags].
+****
 
 Notice that the JoinedOn and Balance columns are both defaulted on a new
 row. The client is able to ask the Dataphor Server what a default row
@@ -1228,21 +1261,24 @@ create view AvailableVideo
  { ID, Name, Type, Rating, Year };
 ....
 
-== Designing the User-Interface
+== Designing the User Interface
 
 Now that the database design is essentially done, the rest of the
 application logic can be built around it.
 
-=== Creating a FormHow toCreating a FormForm, CreatingHow toDataphoria
-DesignerDataphoria DesignerCreating an Entry Form
+=== Creating an Entry Form
 
 Forms are created using Dataphoria. To start a new form you can press
 Ctrl-N, or click on the blank form icon under the File title, or click
-File then New. Any of these will display the Select a designer...
-window.
+File then New. Any of these will display the `Select a designer`
+window:
+
+image::../Images/RentalTut010.png[Rental Tutorial - 10]
 
 In this window select DFD - Form Designer and click Accept. The
-Dataphoria windows will look approximately like this.
+Dataphoria windows will look like this:
+
+image::../Images/RentalTut011.png[Rental Tutorial - 11]
 
 The various panes in the window can be moved, sized, or separated from
 the main window completely to be displayed as you like. The thumbtack at
@@ -1291,7 +1327,7 @@ that we can see exactly how it looks and works.
 The first form you'll create is the main form used to run the
 application. Normally the first form of an application has a method for
 accessing the appropriate tables or functions. In this case buttons
-(triggers) are used..
+(triggers) are used.
 
 First give the Form a title. Click the text [FormInterface] in the
 Component Tree. The Properties for the Root Form Component are now
@@ -1301,7 +1337,9 @@ the top of the form.
 
 Rows, columns, and groups, just to name a few, are used to control the
 layout of the elements on the form. To get an idea of what this form
-will look like see the following sketch.
+will look like, see the following sketch:
+
+image::../Images/RentalTut012.png[Rental Tutorial - 12]
 
 First place a Column on the form. In the Palette pane click Static
 Controls to display the static element components. Then click Column,
@@ -1370,6 +1408,8 @@ button.
 
 The form and Note Tree now looks like this:
 
+image::../Images/RentalTut013.png[Rental Tutorial - 13]
+
 === Linking to Tables
 
 The text on the button faces is grey instead of black. This is to show
@@ -1390,7 +1430,9 @@ click the three dots (...) at the right side of the box. A Document
 Expression Editor window will open. Click the Derive tab, in the Query
 box type MovieActor. The Page Type should already be Browse and
 Elaborate is checked. The Master Key Names and Detail Key Names are
-blank.
+blank:
+
+image::../Images/RentalTut014.png[Rental Tutorial - 14]
 
 Click Accept. The Document property is now Derive('MovieActor',
 'Browse')
@@ -1460,9 +1502,7 @@ You now have the current date and time displayed below the buttons on
 the form. Better save your form again by pressing the diskette icon on
 the Dataphoria toolbar.
 
-=== Customizing a FormHow toCustomize a FormForm, CustomizingCreating a
-Filter on a formHow toCreating a Filter on a formCustomizing a Form, add
-a Filter
+=== Customizing a Form, adding Filters
 
 Customers are going to say something like "I want a movie but I can't
 remember the name. I know it has the word 'Fair' in the name. Can you
@@ -1483,7 +1523,9 @@ MovieActor form.
 Sometimes you may want to change something on a derived form, but still
 desire the form to be derived from the data. That is the case this time.
 Click the Movies-Actors button to bring of the Movie Actor form. Click
-the Form menu and select Customize.
+the Form menu and select `Customize`:
+
+image::../Images/RentalTut015.png[Rental Tutorial - 15]
 
 The Browse Movie Actor form is derived by the Dataphor Server based on
 the metadata of the tables and tags. What you will do is add some
@@ -1618,9 +1660,11 @@ Sample.Rental. Type BrowseMovieActor in the Name box and click Accept.
 
 Now help that customer. Type FAIR under Part of Movie Name. Press the
 Set Filter button. Just two movies will now be displayed and the text on
-the button face changed to Clear Filter.
+the button face changed to Clear Filter:
 
-So how does it all work ...
+image::../Images/RentalTut016.png[Rental Tutorial - 16]
+
+So how does it all work?
 
 1.  Text is entered into one, or both, of the Filter text boxes.
 2.  When the Set Filter button is press the SetMainFilter action is
@@ -1670,7 +1714,9 @@ give the clerk a way to enter sales and rentals. On the MainForm, add
 another ShowFormAction named NewRentalSaleAction. In the Document
 property enter Derive('Sale', 'Add'). Set the Mode property to Insert
 which indicates that the shown form should insert a new row buffer into
-the dataset when shown. Link the RentalSaleTrigger to this action.
+the dataset when shown. Link the RentalSaleTrigger to this action:
+
+image::../Images/RentalTut017.png[Rental Tutorial - 17]
 
 On forms, the dark green means that a field is Read Only as well as
 empty. A value must be selected from a list.
@@ -1680,8 +1726,10 @@ been entered into that field yet. A value must be entered into the field
 before it can be posted if nulls are prohibited in the target column of
 the database.
 
-If we click on the Add button next to the SaleItem grid, we should see
-the following.
+If we click on the `Add` button next to the SaleItem grid, we should see
+the following:
+
+image::../Images/RentalTut018.png[Rental Tutorial - 18]
 
 You now have the ability to put in new sales and items within the sale.
 
@@ -1712,7 +1760,9 @@ Server.
 First click the Rentals/Sales button to bring up the Add Sale form.
 Click Form, Customize. This will open the Add Sale form in the Live
 Designer. Click on the Sample.Rental.SaleItem_SaleFrame at the bottom of
-the Component Tree.
+the Component Tree:
+
+image::../Images/RentalTut019.png[Rental Tutorial - 19]
 
 Take note of the Document Property. It reads:
 
@@ -1757,7 +1807,9 @@ Component Tree so a black line appears between AddTrigger and
 EditTrigger, then click the mouse. This adds a Trigger at that point in
 the Component Tree. Name it AddRentalTrigger. Set the Action property to
 AddRental. Pressing the new button should result in a form that looks
-like this.
+like this:
+
+image::../Images/RentalTut020.png[Rental Tutorial - 20]
 
 The Frontend.Add.ReadOnly tag in the NewRental view causes the
 Description TextBox to be ReadOnly. When the user enters data in this
@@ -1795,7 +1847,9 @@ Since the Title property was left empty, the ColumnName is used as the
 title of the text box on the form.
 
 Set the TitleAlign property to Left so the title will be displayed to
-the left side of the text box on the form.
+the left side of the text box on the form:
+
+image::../Images/RentalTut020b.png[Rental Tutorial - 20b]
 
 Save the customized SaleItem frame in the System.Rental library as dfdx
 document and name it SaleItemFrame. Close the SaleItemFrame Designer by
@@ -1824,7 +1878,9 @@ Component Tree, name it ShowRentedVideoAction. Set the Document property
 to Derive('Sample.Rental.RentedVideo', 'Browse').
 
 Click on ReturnVideoTrigger and set the Action property to
-ShowRentedVideoAction. Click on the Return Video button.
+ShowRentedVideoAction. Click on the Return Video button:
+
+image::../Images/RentalTut021.png[Rental Tutorial - 21]
 
 To handle the returning of the videos an operator will be created. The
 following d4 code handles this.
@@ -2085,6 +2141,11 @@ property to BalanceChargedScript. When the button is pressed, the
 PayFees operator will be executed, then the BalanceChargedScript will be
 executed.
 * Your form now looks like this:
++
+image::../Images/RentalTut022.png[Rental Tutorial - 22]
++
+image::../Images/RentalTut023.png[Rental Tutorial - 23]
+
 * The last thing to do is hide the components that should not be seen
 when the form is first displayed.
 +
@@ -2109,12 +2170,18 @@ the Applications entry at the top.
 * Drop the MainForm on Applications by releasing the left mouse button
 while the mouse pointer is on Applications.
 * The Edit Applications form will be displayed. Change the Description
-to read Alphora Video Rental System
-* Select the Client Types tab.
+to read Alphora Video Rental System:
 +
-Add the
+image::../Images/RentalTut024.png[Rental Tutorial - 24]
+
+* Select the Client Types tab:
++
+image::../Images/RentalTut024b.png[Rental Tutorial - 24b]
+
 ** Add the Web Client Type and the Windows Client Type.
 * Click Accept
++
+image::../Images/RentalTut025.png[Rental Tutorial - 25]
 
 This gives the Windows Client and the Web Client an entry point. Now
 when someone connects to the Dataphor Server using the correct port,
@@ -2123,8 +2190,12 @@ them.
 
 With the Windows Client:
 
+image::../Images/RentalTut026.png[Rental Tutorial - 26]
+
 The user selects the desired application and clicks OK.
 
 With the Web Client:
+
+image::../Images/RentalTut027.png[Rental Tutorial - 27]
 
 The user just clicks on the desired application.
