@@ -21,3 +21,5 @@
 ... link:Documentation/UsersGuide/Tutorial_MovieRental.adoc[Movie Rental]
 ... link:Documentation/UsersGuide/Tutorial_BookPublishing.adoc[Book Publishing (with Pubs sample database)]
 ... link:Documentation/UsersGuide/Tutorial_FrontendComponents.adoc[Frontend Components]
+.. link:Documentation/UsersGuide/Glossary.adoc[Glossary]
+.. link:Documentation/UsersGuide/Bibliography.adoc[Bibliography]
