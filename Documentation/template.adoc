@@ -7,3 +7,4 @@
 :encoding: iso-8859-1
 
 . link:README.adoc[Introduction]
+image::../Images/Dataphor-Logo.gif[Dataphor Logo]
