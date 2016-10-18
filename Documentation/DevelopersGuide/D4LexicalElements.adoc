@@ -1,0 +1,681 @@
+= Lexical Elements
+:author: Alphora
+:doctype: book
+:toc:
+:data-uri:
+:lang: en
+:encoding: iso-8859-1
+
+image::../Images/Dataphor-Logo.gif[Dataphor Logo]
+
+[[D4LGLexicalElements]]
+== Summary
+
+The lexical elements of the D4 language allow special symbols (or
+tokens) in an input string to be recognized. These tokens help the
+parser determine the syntax of a given statement. A complete BNF
+reference for the D4 lexical analyzer can be found in
+link:DRBnfDiagrams.html[D4 BNF Lanquage Diagrams].
+
+[[D4LGLexicalElements-Whitespace]]
+== Whitespace
+
+The D4 language, like most computer languages, reserves certain
+characters as "whitespace". This means that the characters are only used
+to delimit tokens. The following D4 statements are syntactically
+equivalent:
+
+....
+X := 5 * 3;
+
+X:= 5*      3       ;
+
+X :=
+5
+*
+3;
+
+X:=5*3;
+....
+
+The following Unicode character values are considered whitespace in D4:
+0x0009 (tab), 0x000a (line feed), 0x000b (vertical tab), 0x000c (form
+feed), 0x000d (carriage return), 0x0085, 0x2028, and 0x2029.
+
+[[D4LGLexicalElements-Comments]]
+== Comments
+
+Comments are sections of text within D4 code that are ignored by the
+compiler. Block comments allow for multi-line annotations, whereas line
+comments are terminated by the line break. Block comments in D4 can be
+nested, which allows for sections of code to be easily and temporarily
+"commented out". The following are some examples of D4 comments:
+
+....
+/* This is a multi
+   line... /* nested */ ...comment */
+
+X := 5; // Assigns 5 to variable X
+....
+
+[[D4LGLexicalElements-Keywords]]
+== Keywords
+
+A _keyword_ is a special symbol used by the parser to delimit syntactic
+structure. For example, the keyword *begin* is used to delimit the
+beginning of a statement block. To avoid ambiguity while parsing, some
+keywords are also __reserved words__. Reserved words are keywords that
+cannot be used as identifiers because the parser would not be able to
+distinguish between an identifier and the keyword.
+
+The following is a list of all keywords in D4. Keywords with an asterisk
+(*) denote reserved words. The link provided will show one possible use
+of the keyword however there may be more. Use the help search to find
+all uses of a keyword.
+
+***link:O-System.iExtend.html[add]**,
+
+***link:O-System.iAdorn.html[adorn]**,
+
+**link:D4LGCatalogElements-EventHandlers.html[after]**,
+
+**link:O-System.iAggregate.html[aggregate]**,
+
+**link:D4LGCatalogElements-Operators-AggregateOperators.html[aggregation]**,
+
+**link:O-System.All.html[all]**,
+
+***link:DRD4ParserBNF.html#D4ParserBNFalterstatement[alter]**,
+
+***link:O-System.iAnd.html[and]**,
+
+**link:D4LGCatalogElements-Security.html[apply]**,
+
+***link:D4LGLanguageElements-Expressions-TypeOperatorClause.html[as]**,
+
+**link:D4LGOrders.html[asc]**,
+
+***link:D4LGCatalogElements-EventHandlers.html[attach]**,
+
+**link:D4LGCatalogElements-Objects-ClassDefinitions.html[attributes]**,
+
+**link:D4LGCatalogElements-EventHandlers.html[before]**,
+
+***link:D4LGImperativeStatements-BlocksandScoping.html[begin]**,
+
+***link:D4LGLanguageElements-Expressions-BetweenClause.html[between]**,
+
+***link:D4LGBreakandContinue.html[break]**,
+
+**link:O-System.iBrowse.html[browse]**,
+
+**link:DRD4ParserBNF.html[by]**,
+
+**link:DRD4ParserBNF.html#D4ParserBNFcursorcapabilities[capabilities]**,
+
+**link:D4LGCatalogElements-References.html[cascade]**,
+
+***link:D4LGCaseStatement.html[case]**,
+
+**link:D4LGCatalogElements-EventHandlers.html[change]**,
+
+**link:D4LGCatalogElements-Objects-ClassDefinitions.html[class]**,
+
+**link:D4LGCatalogElements-References.html[clear]**,
+
+**link:DRD4ParserBNF.html#D4ParserBNFaltercolumndefinition[column]**,
+
+***link:D4LGImperativeStatements-ExceptionHandling-TryCommitStatement.html[commit]**,
+
+***link:D4LGCatalogElements-Operators-Operators.html[const]**,
+
+***link:D4LGCatalogElements-Constraints.html[constraint]**,
+
+***link:D4LGBreakandContinue.html[continue]**,
+
+**link:D4LGCatalogElements-Conversions.html[conversion]**,
+
+***link:DRD4ParserBNF.html#D4ParserBNFcreatestatement[create]**,
+
+***link:D4LGLanguageElements-Values-CursorValues.html[cursor]**,
+
+**link:D4LGCatalogElements-ScalarTypes-Defaults.html[default]**,
+
+***link:D4LGCatalogElements-References.html[delete]**,
+
+**link:D4LGOrders.html[desc]**,
+
+***link:D4LGCatalogElements-EventHandlers.html[detach]**,
+
+**link:D4LGCatalogElements-Devices.html[device]**,
+
+**link:D4LGTableExpressions-Aggregate.html[distinct]**,
+
+***link:D4LGLanguageElements-Expressions-ArithmeticExpression.html[div]**,
+
+***link:DRD4ParserBNF.html#D4ParserBNFbinarytableoperator[divide]**,
+
+***link:D4LGDoWhileStatement.html[do]**,
+
+***link:D4LGForStatement.html[downto]**,
+
+***link:D4LGCatalogElements.html[drop]**,
+
+**link:DRD4ParserBNF.html[dynamic]**,
+
+***link:D4LGIfStatement.html[else]**,
+
+***link:D4LGLanguageElements-Expressions-BetweenClause.html[end]**,
+
+***link:D4LGImperativeStatements-ExceptionHandling-TryExceptStatement.html[except]**,
+
+**link:D4LGOrders.html[exclude]**,
+
+***link:O-System.iExists.html[exists]**,
+
+***link:D4LGImperativeStatements-FlowControl-ExitStatement.html[exit]**,
+
+***link:D4LGTableExpressions.html[explode]**,
+
+***link:D4LGLexicalElements-ParserLiterals-BooleanParserLiterals.html[false]**,
+
+**link:D4LGCatalogElements-Operators-AggregateOperators.html[finalization]**,
+
+***link:D4LGImperativeStatements-ExceptionHandling-TryFinallyStatement.html[finally]**,
+
+***link:D4LGForStatement.html[for]**,
+
+**link:D4LGTableExpressions-RowExtractor.html[from]**,
+
+**link:D4LGLanguageElements-Types.html[generic]**,
+
+***link:D4LGCatalogElements-Security.html[grant]**,
+
+***link:D4LGTableExpressions-Aggregate.html[group]**,
+
+***link:D4LGTableExpressions-Having.html[having]**,
+
+***link:D4LGIfStatement.html[if]**,
+
+***link:O-System.iIn.html[in]**,
+
+***link:DRD4ParserBNF.html[include]**,
+
+**link:DRD4ParserBNF.html#D4ParserBNFindexdefinition[index]**,
+
+**link:DRD4ParserBNF.html#D4ParserBNFdevicestoredefinition[indexes]**,
+
+***link:D4LGCatalogElements-Security.html[inherited]**,
+
+**link:D4LGCatalogElements-Operators-AggregateOperators.html[initialization]**,
+
+***link:D4LGDataManipulation-InsertStatement.html[insert]**,
+
+***link:D4LGTableExpressions.html[intersect]**,
+
+**link:D4LGDataManipulation-InsertStatement.html[into]**,
+
+***link:D4LGCatalogElements-EventHandlers.html[invoke]**,
+
+***link:D4LGLanguageElements-Expressions-TypeOperatorClause.html[is]**,
+
+**link:DRD4ParserBNF.html#D4ParserBNFcursorisolation[isolation]**,
+
+***link:D4LGTableExpressions.html[join]**,
+
+***link:D4LGKeys.html[key]**,
+
+***link:D4LGTableExpressions-OuterJoin.html[left]**,
+
+**link:D4LGTableExpressions-Explode.html[level]**,
+
+***link:D4LGCatalogElements-Conversions-LikeTypes.html[like]**,
+
+***link:D4LGLanguageElements-Types-ListTypes.html[list]**,
+
+***link:D4LGTableExpressions-Join.html[lookup]**,
+
+**link:D4LGCatalogElements-Devices.html[master]**,
+
+***link:O-System.iMatches.html[matches]**,
+
+***link:D4LGTableExpressions.html[minus]**,
+
+***link:O-System.iMod.html[mod]**,
+
+**link:D4LGCatalogElements-Devices.html[mode]**,
+
+**modify**,
+
+**link:D4LGCatalogElements-Conversions.html[narrowing]**,
+
+**link:D4LGRowConstraints.html[new]**,
+
+***link:D4LGNilSemantics.html[nil]**,
+
+***link:O-System.iNot.html[not]**,
+
+**link:D4LGLanguageElements-Values-TableValues.html[of]**,
+
+**link:D4LGRowConstraints.html[old]**,
+
+***link:D4LGImperativeStatements-ExceptionHandling-TryExceptStatement.html[on]**,
+
+**link:D4LGCatalogElements-Operators-Operators.html[operator]**,
+
+***link:O-System.iOr.html[or]**,
+
+***link:D4LGOrders.html[order]**,
+
+***origin**,
+
+***link:D4LGTableExpressions.html[over]**,
+
+***link:D4LGLanguageElements-Expressions-Factor.html[parent]**,
+
+***link:D4LGImperativeStatements-ExceptionHandling-RaiseStatement.html[raise]**,
+
+***link:D4LGProperties.html[read]**,
+
+**link:D4LGCatalogElements-Devices.html[reconciliation]**,
+
+**link:D4LGCatalogElements-Security.html[recursively]**,
+
+***link:D4LGTableExpressions.html[redefine]**,
+
+***link:D4LGCatalogElements-References.html[reference]**,
+
+**link:D4LGCatalogElements-References.html[references]**,
+
+***link:D4LGTableExpressions.html[remove]**,
+
+***link:D4LGTableExpressions.html[rename]**,
+
+***link:D4LGRepeatUntilStatement.html[repeat]**,
+
+**link:D4LGCatalogElements-ScalarTypes-PossibleRepresentations.html[representation]**,
+
+**link:D4LGCatalogElements-References.html[require]**,
+
+**link:D4LGCatalogElements-Operators-Operators.html[result]**,
+
+***link:D4LGTableExpressions-Quota.html[return]**,
+
+***link:D4LGCatalogElements-Security.html[revert]**,
+
+***link:D4LGCatalogElements-Security.html[revoke]**,
+
+***link:D4LGTableExpressions-OuterJoin.html[right]**,
+
+**link:D4LGCatalogElements-Security.html[role]**,
+
+***link:D4LGTableExpressions-RowExtractor.html[row]**,
+
+**link:D4LGTableExpressions-OuterJoin.html[rowexists]**,
+
+**link:D4LGLanguageElements-Types-ScalarTypes.html[scalar]**,
+
+***link:D4LGDataManipulation-SelectStatement.html[select]**,
+
+***link:D4LGCatalogElements-ScalarTypes-PossibleRepresentations.html[selector]**,
+
+**link:D4LGTableExpressions-Explode.html[sequence]**,
+
+**link:D4LGCatalogElements-Operators-Operators.html[session]**,
+
+**link:D4LGCatalogElements-References.html[set]**,
+
+**link:D4LGOrders.html[sort]**,
+
+***source**,
+
+**link:D4LGCatalogElements-ScalarTypes-SpecialValues.html[special]**,
+
+**link:DRD4ParserBNF.html#D4ParserBNFcursortype[static]**,
+
+***link:D4LGForStatement.html[step]**,
+
+**link:DRD4ParserBNF.html#D4ParserBNFdevicestoredefinition[store]**,
+
+***link:D4LGTableExpressions.html[table]**,
+
+***link:DRD4ParserBNF.html#D4ParserBNFtags[tags]**,
+
+***target**,
+
+**link:D4LGCaseStatement.html[then]**,
+
+***link:D4LGTableExpressions.html[times]**,
+
+***link:D4LGCatalogElements-Conversions.html[to]**,
+
+***link:D4LGRowConstraints.html[transition]**,
+
+***link:DRD4LexerBNF.html#D4LexerBNFliteral[true]**,
+
+***link:D4LGImperativeStatements-ExceptionHandling.html[try]**,
+
+**link:D4LGCatalogElements-ScalarTypes.html[type]**,
+
+***link:D4LGCatalogElements-ScalarTypes.html[typeof]**,
+
+***link:D4LGTableExpressions.html[union]**,
+
+***link:D4LGRepeatUntilStatement.html[until]**,
+
+***link:D4LGDataManipulation-UpdateStatement.html[update]**,
+
+**link:D4LGCatalogElements-Security.html[usage]**,
+
+**link:D4LGCatalogElements-Security.html[user]**,
+
+**link:D4LGCatalogElements-Security.html[users]**,
+
+**link:D4LGCatalogElements-Sorts.html[using]**,
+
+**link:D4LGCatalogElements-EventHandlers.html[validate]**,
+
+***value**,
+
+***link:D4LGImperativeStatements-Variables-VariableDeclarationStatement.html[var]**,
+
+**link:D4LGCatalogElements-TableVariables-Views.html[view]**,
+
+**link:D4LGCaseStatement.html[when]**,
+
+***link:D4LGTableExpressions.html[where]**,
+
+***link:D4LGImperativeStatements-FlowControl-LoopingStatements.html[while]**,
+
+**link:D4LGCatalogElements-Conversions.html[widening]**,
+
+***link:D4LGLanguageElements-Expressions-LanguageModifiers.html[with]**,
+
+***link:D4LGTableExpressions-Without.html[without]**,
+
+***link:D4LGProperties.html[write]**,
+
+***link:O-System.iXor.html[xor]**
+
+[[D4LGLexicalElements-Symbols]]
+== Symbols
+
+The D4 language also includes several special symbols that are used by
+the parser to delimit syntatic structure. These include parentheses,
+brackets, operator symbols, and other characters that have specific
+meaning within statements of D4. None of these symbols may be used in
+identifier names.
+
+The following are parser-recognized symbols in D4.
+
+link:O-System.iSubtraction.html[-],
+
+link:D4LGLexicalElements-ParserLiterals-MoneyParserLiterals.html[$],
+
+link:O-System.iBitwiseAnd.html[&],
+
+link:D4LGOperatorInvocation.html[(],
+
+link:D4LGOperatorInvocation.html[)],
+
+link:O-System.iMultiplication.html[*],
+
+link:O-System.iPower.html[**],
+
+link:DRD4LexerBNF.html[,],
+
+link:D4LGLexicalElements-Identifiers-QualifiedIdentifiers.html[.],
+
+link:O-System.iDivision.html[/],
+
+link:D4LGLanguageElements-Variables.html[:],
+
+link:D4LGImperativeStatements-Variables-AssignmentStatement.html[:=],
+
+link:D4LGScriptsandExecution.html[;],
+
+link:O-System.iCompare.html[?=],
+
+link:O-System.iIndexer.html[[],
+
+link:O-System.iIndexer.html[]],
+
+link:O-System.iBitwiseXor.html[^],
+
+link:D4LGLanguageElements-Values-ListValues.html[\{],
+
+link:O-System.iBitwiseOr.html[|],
+
+link:D4LGLanguageElements-Values-ListValues.html[}],
+
+link:O-System.iBitwiseNot.html[~],
+
+link:O-System.iAddition.html[+],
+
+link:O-System.iLess.html[<],
+
+link:O-System.iShiftLeft.html[<<],
+
+link:O-System.iInclusiveLess.html[<=],
+
+link:O-System.iNotEqual.html[<>],
+
+link:O-System.iEqual.html[=],
+
+link:O-System.iGreater.html[>],
+
+link:O-System.iInclusiveGreater.html[>=],
+
+link:O-System.iShiftRight.html[>>]
+
+[[D4LGLexicalElements-ParserLiterals]]
+== Parser Literals
+
+A _parser literal_ is a value which is directly understood by the lexer
+as a token. For example the symbol 5 is a parser literal which
+represents the System.Integer value 5. The following types of parser
+literals are available in D4:
+
+* Boolean
+* Integer
+* Decimal
+* Money
+* String
+
+Here are some examples of parser literals within D4:
+
+....
+"Welcome to the ""community"" website."
+'"Hello," she said.'
+135
+332.12d
+31415926535897932e-16
+$40.00
+true
+....
+
+[[D4LGLexicalElements-ParserLiterals-BooleanParserLiterals]]
+=== Boolean
+
+The boolean parser literal allows values of type
+link:T-System.Boolean.html[System.Boolean] to be represented directly
+within D4.
+
+The boolean parser literal in D4 has the following syntax:
+
+....
+<boolean parser literal> ::=
+    true | false
+....
+
+[[D4LGLexicalElements-ParserLiterals-IntegerParserLiterals]]
+=== Integer
+
+The integer parser literal allows values of type
+link:T-System.Integer.html[System.Integer] to be represented directly
+within D4. Integer values can be specified as a base 10 number using
+decimal digits, or as a base 16 number using hex digits. Base 16
+representations must be prefixed with the symbol 0x.
+
+The integer parser literal in D4 has the following syntax:
+
+....
+<integer parser literal> ::=
+    <digit>{<digit>} | 0x<hexdigit>{<hexdigit>}
+....
+
+[[D4LGLexicalElements-ParserLiterals-DecimalParserLiterals]]
+=== Decimal
+
+The decimal parser literal allows values of type
+link:T-System.Decimal.html[System.Decimal] to be represented directly
+within D4. Note that a sequence of digits alone will be interpreted as a
+value of type System.Integer so the trailing d must be used.
+
+The decimal parser literal in D4 has the following syntax:
+
+....
+<decimal parser literal> ::=
+    <digit>{<digit>}[.{<digit>}][(e|E)[+|-]{<digit>}][d]
+....
+
+[[D4LGLexicalElements-ParserLiterals-MoneyParserLiterals]]
+=== Money
+
+The money parser literal allows values of type
+link:T-System.Money.html[System.Money] to be represented directly within
+D4.
+
+The money parser literal in D4 has the following syntax:
+
+....
+<money parser literal> ::=
+    $<digit>{<digit>}[.{<digit>}]
+....
+
+The $ symbol is just a symbol for the compiler to identify a data type
+of money. It does _not_ specifiy the currency used, i.e. dollars.
+
+[[D4LGLexicalElements-ParserLiterals-StringParserLiterals]]
+=== String
+
+The string parser literal allows values of type
+link:T-System.String.html[System.String] to be represented directly
+within D4. Note that the straight single quote character (') or the
+straight double quote character (") can be used to delimit a string. Do
+not use curved quote characters. Within the string, the delimiting quote
+character can be represented by double quoting.
+
+The string parser literal in D4 has the following syntax:
+
+....
+<string parser literal> ::=
+    ""{<character>}"" | '{<character>}'
+....
+
+[[D4LGLexicalElements-Identifiers]]
+== Identifiers
+
+Identifiers are user-defined names for catalog objects such as variables
+and types.
+
+D4 identifiers have the following syntax:
+
+....
+<identifier> ::=
+    _ | <letter> {_ | <letter> | <digit>}
+....
+
+Here is an example of a valid D4 identifier:
+
+....
+Customers
+....
+
+[[D4LGLexicalElements-Identifiers-QualifiedIdentifiers]]
+=== Qualified Identifiers
+
+The D4 language uses the concept of namespaces to allow identifiers to
+be named more completely, yet accessed more concisely. An identifier
+that utilizes namespaces is called a qualified identifier because it is
+prefixed by one or more identifiers called qualifiers.
+
+Qualified identifiers have the following syntax:
+
+....
+<qualified identifier> ::=
+    [.]{<identifier>.}<identifier>
+....
+
+Name resolution with qualified identifiers is based on the notion of
+__name equivalence__. A given name is equivalent to another name if and
+only if it is equal, case-sensitively, to some unqualified version of
+the name. Thus:
+
+* A is equivalent to A
+* A is equivalent to A.A and B.A, but not A.B
+* A.A is equivalent to A.A, but not B.A
+
+When attempting to resolve a name reference against a list of names such
+as the set of columns in a table, if the reference is equivalent to more
+than one name in the list, the reference is considered ambiguous.
+
+The following is an example of a qualified identifier:
+
+....
+MyCompany.MyProduct.Customers
+....
+
+[[D4LGLexicalElements-Identifiers-DisambiguatingIdentifiers]]
+=== Disambiguating Identifiers
+
+Unless ambiguous, schema objects can be accessed using their unqualified
+names. Names must be qualified only to the point where they are no
+longer ambiguous, but may be qualified more completely if desired.
+
+The following example illustrates the use of namespaces in D4:
+
+....
+var MyCompany.MyProduct.MyVariable : Integer;
+var MyCompany.OtherProduct.MyVariable : Integer;
+MyVariable := 5;  // Error, MyVariable must be disambiguated
+OtherProduct.MyVariable := 5; // Valid
+MyCompany.MyProduct.MyVariable := 6;  // Also valid
+....
+
+The root of the namespace can be accessed using a dot qualifier with no
+preceding identifier as follows:
+
+....
+var .I : Integer;
+.I := 5;
+....
+
+[[D4LGLexicalElements-Case]]
+== Case
+
+D4 is a case-sensitive language, meaning that the symbols and
+identifiers read by the compiler will be compared case-sensitively. In
+other words, the symbol A is different than the symbol a. The following
+code sample illustrates this behavior.
+
+....
+begin
+    var I : Integer;
+    I := Length("Relational"); // valid reference
+    i := Length("Relational"); // unknown identifier
+end;
+....
+
+Because D4 is case-sensitive, Alphora recommends the use of
+Pascal-casing for all identifiers. In Pascal-casing, the first letter of
+each word in the identifier is capitalized, for example PascalCasing.
+This allows identifiers to have a completely open identifier space
+because all keywords are all lower case. For example, value is not a
+valid identifier because it conflicts with the reserved word **value**,
+but Value is a valid identifier.
+
+NOTE: Most SQL-based systems are
+case-insensitive, so be careful not to rely on casing for identifier
+resolution, as it could lead to problems when translating into the
+various dialects of SQL.
