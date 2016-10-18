@@ -1,0 +1,73 @@
+= D4 Language Grammar
+:author: Alphora
+:doctype: chapter
+:data-uri:
+:lang: en
+:encoding: iso-8859-1
+
+[[DRBnfDiagrams]]
+== Summary
+....
+The following non terminals in the Lexer BNF are referenced by the D4 BNF with equivalent meaning:
+    <identifier>
+    <literal>
+    <string>
+
+The same conventions found in the The Third Manifesto are used here, namely:
+    <XYZ list> ::= {<XYZ>}
+    <XYZ commalist> ::= [<XYZ>{,<XYZ>}]
+    <ne XYZ list> ::= <XYZ>{<XYZ>}
+    <ne XYZ commalist> ::= <XYZ>{,<XYZ>}
+
+    <script> ::=
+        <commented script>{<commented script>}
+
+    <commented script> ::=
+        {<comment>}{<symbol> | <literal>}{<comment>}
+
+    <symbol> ::=
+        <identifier> | <operator>
+
+    <identifier> ::=
+        _ | <letter> {_ | <letter> | <digit>}
+
+    <operator> ::=
+        * | / | % | + | - | = | <> | < | > | <= | >= |
+        . | , | "(" | ")" | "[" | "]" | "{" | "}" | ~ |
+        ^ | & | "|" | << | >> | ** | ; | : | := | ?=
+
+    <literal> ::=
+        <integer> |
+        <float> |
+        <decimal> |
+        <numeric> |
+        <money> |
+        <string> |
+        true |
+        false
+
+    <integer> ::=
+        <digit>{<digit>} | 0x<hexdigit>{<hexdigit>}
+
+    <float> ::=
+        <numeric>f
+
+    <decimal> ::=
+        <numeric>[d]
+
+    <numeric> ::=
+        <digit>{<digit>}[.{<digit>}][(e|E)[+|-]{<digit>}]
+
+    <money> ::=
+        $<digit>{<digit>}[.{lt;digit>}]
+
+    <string> ::=
+        ""{<character>}"" | '{<character>}'
+
+    <comment> ::=
+        // <comment text> |
+        /* <comment text> */
+
+    <comment text> ::=
+        {<comment>}{<character>}{<comment>}
+....
