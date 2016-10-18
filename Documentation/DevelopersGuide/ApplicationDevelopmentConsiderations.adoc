@@ -48,7 +48,7 @@ Reporting:: Providing general analysis and presentation of the
 application data to support decision making within the organization.
 Integration:: Allowing the application to interact with other software
 systems.
-Presentation:: Providing a user-interface for entry and manipulation of
+Presentation:: Providing a user interface for entry and manipulation of
 the application data.
 
 In addition to these problems, the application will inevitably encounter

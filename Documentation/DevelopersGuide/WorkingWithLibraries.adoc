@@ -7,7 +7,7 @@
 :encoding: iso-8859-1
 
 [[DDGWorkingWithLibraries]]
-== Summmary
+== Summary
 
 Libraries provide a mechanism for managing groups of catalog objects in
 the Dataphor Server. They also provide the fundamental deployment
@@ -145,7 +145,7 @@ accessible by the server instance. On startup, the Dataphor Server scans
 the configured library directories for available libraries. In addition,
 existing libraries can be made available within the Dataphor Server by
 attaching them to the server instance, either through the
-user-interfaces available in the Dataphor Explorer, or using the library
+user interfaces available in the Dataphor Explorer, or using the library
 management operators in the system library. Available libraries may also
 be detached from the Dataphor Server, however if the library definition
 is within a library directory of the server, it will be available the

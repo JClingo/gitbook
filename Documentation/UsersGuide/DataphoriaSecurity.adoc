@@ -10,18 +10,18 @@
 [[DUGP1Dataphoria-DataphorExplorer-Security]]
 == Summary
 
-Dataphoria provides various user-interfaces for managing the security
+Dataphoria provides various user interfaces for managing the security
 model of the Dataphor Server. The Security node displays the Users as
 child nodes:
 
 image::../Images/DataphorExplorerSecurity.bmp[Dataphor Explorer - Security]
 
 Right-clicking on the Security node and selecting the Manage Users
-command displays the following user-interface:
+command displays the following user interface:
 
 image::../Images/DataphorExplorerManageUsers.bmp[Dataphor Explorer - User Management]
 
-This user-interface allows for the administration of all users. Note
+This user interface allows for the administration of all users. Note
 that the capabilities available from this form still require an
 appropriate authorization check. If a user with access to this form does
 not have the rights to perform a particular operation, an error message

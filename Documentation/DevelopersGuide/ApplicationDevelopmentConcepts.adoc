@@ -346,7 +346,7 @@ could expose services for server participation in client interfaces. For
 example, when inserting a new row, the client could ask the server to
 provide default values for any columns in the table. Validation rules
 could also be checked in this way, enabling a much more sophisticated
-user-interface, without additional developer effort. The data access
+user interface, without additional developer effort. The data access
 layer could automatically invoke these services when necessary.
 
 [[DDGApplicationDevelopmentConcepts-Presentation-EnforcingBusiness-Rules]]
@@ -404,45 +404,45 @@ and data volume, all without developer intervention.
 If all these services could be provided generically for arbitrary
 perspectives of the application schema, then the benefits of logical
 data independence can be applied not only to expressions and statements
-within the server-side process logic, but to the user-interfaces
+within the server-side process logic, but to the user interfaces
 produced in the presentation layer consuming the application schema. In
 other words, the declarative approach, if properly realized, enables the
-automation of user-interfaces based on the definitions contained within
+automation of user interfaces based on the definitions contained within
 the application schema.
 
-In it's simplest form, user-interface derivation involves analyzing the
+In it's simplest form, user interface derivation involves analyzing the
 structure and metadata of a given result set, and producing a
-user-interface based on that structure. Note that due to the type and
+user interface based on that structure. Note that due to the type and
 metadata inference mechanisms of the relational system, this process
 will work for _arbitrary_ expressions, not just base tables.
 
 In addition to these basic elements, the system could analyze the
 relationship of a given result set with the structures in the
-application schema, and provide appropriate user-interface elements for
+application schema, and provide appropriate user interface elements for
 navigating the relationships of the application schema. For example,
 because the employee types table is referenced by the type column of the
-employee table, the resulting user-interface could provide a lookup into
+employee table, the resulting user interface could provide a lookup into
 the employee types table, simply based on the existence of the reference
 constraint. Again, because of type inference, this process will work for
 arbitrary expressions, not just base tables. A view of the employees
 table will still be aware of the lookup to the employee types table.
 
 Ideally, this process will produce a complete and intuitive
-user-interface for manipulating the application schema. However, there
-may be cases where the resulting user-interfaces will not meet the
+user interface for manipulating the application schema. However, there
+may be cases where the resulting user interfaces will not meet the
 requirements of the application. In order to address this issue, the
 declarative system must provide mechanisms for steering this process.
 Such mechanisms may include the use of metadata in the appropriate
 places in the application schema, customizing the appearance of the
 resulting interfaces, or, in the most extreme cases, departing from the
-process entirely and reverting to manually building user-interfaces. If
+process entirely and reverting to manually building user interfaces. If
 the platform is layered properly, then the services enabled by the data
 access layer will still be available when customizing derived
-user-interfaces or building user-interfaces manually.
+user interfaces or building user interfaces manually.
 
-Additionally, as new user-interface patterns are encountered, the system
+Additionally, as new user interface patterns are encountered, the system
 could be extended to handle them in future applications, resulting in
-continual improvement of user-interface automation as the system
+continual improvement of user interface automation as the system
 evolves.
 
 [[DDGApplicationDevelopmentConcepts-PhysicalRealization]]
@@ -491,7 +491,7 @@ Deployment of an application based on a declarative platform is simply a
 matter of deploying the definition of the application to the system.
 * Maintenance
 +
-The centralized schema and automated user-interface derivation features
+The centralized schema and automated user interface derivation features
 of the system allow changes to the application schema to be made without
 necessarily having to make the corresponding changes to the presentation
 layer. The applications simply react to the change. These changes could

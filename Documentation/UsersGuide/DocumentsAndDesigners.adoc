@@ -403,7 +403,7 @@ within the Dataphoria IDE.
 ==== Dataphor Forms
 
 A Dataphor Form is a client independent description of the visual and
-non-visual elements of a user-interface. These elements are all called
+non-visual elements of a user interface. These elements are all called
 _nodes_ and are completely described within the form document. This
 document is known as a Dataphor user-Interface Language (DIL) document.
 
@@ -411,22 +411,22 @@ Dataphor Forms are capable of _visual form inheritance_ in that forms
 can be based on existing forms, and introduce new elements and behaviors
 without affecting the parent form. Note that the parent form need not be
 an actual document within a library. The base form may be, and indeed
-often is, a derived user-interface requested from the Dataphor Server,
+often is, a derived user interface requested from the Dataphor Server,
 or even another customized form.
 
 This inheritance mechanism allows for customizations to be made to the
-results of the user-interface derivation process, while still taking
+results of the user interface derivation process, while still taking
 advantage of the dynamic aspects of derivation. When the underlying
-application schema changes, derived user-interfaces will reflect the
+application schema changes, derived user interfaces will reflect the
 changes. Because customized forms save only the changes, the underlying
 form can change without affecting the customizations footnote:[This
 assumes, of course, that the customizations do not reference elements
-that no longer exist in the new user-interface. For example, if a
+that no longer exist in the new user interface. For example, if a
 customization is made to the title of a column, and that column is
 subsequently removed from the application schema, the customization will
 be lost.].
 
-The Frontend library exposes a wide variety of user-interface elements
+The Frontend library exposes a wide variety of user interface elements
 in both visual and non-visual classes. Nodes are available for managing
 the data connections with the server and attaching data-aware controls
 to this managed connection. Visual elements are available to control the
@@ -495,7 +495,7 @@ structure to the form, but are not data-aware.
 node for data binding.
 
 |Actions |Non-Visual elements that perform various actions in the
-user-interface such as displaying forms, or posting modified data
+user interface such as displaying forms, or posting modified data
 values.
 
 |Non Visual |Non-Visual elements such as menus, timers, and data

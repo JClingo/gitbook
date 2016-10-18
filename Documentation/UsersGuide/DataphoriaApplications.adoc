@@ -40,7 +40,7 @@ available applications are displayed, and the user selects which
 application to run.
 
 The Start Document is the entry point for the application. It is the
-first user-interface that the user running the application will see. All
+first user interface that the user running the application will see. All
 the functionality required by the application should be available from
 this starting point. Once the user closes this main form, the
 application is closed and the Frontend Client shuts down.

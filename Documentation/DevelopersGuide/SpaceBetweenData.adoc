@@ -16,7 +16,7 @@ entry forms in an application, and the transaction-oriented processing
 capabilities of traditional database management systems, large portions
 of application-specific code must be devoted to managing the potential
 concurrency and resource contention issues surrounding common
-user-interface and application logic processing tasks.
+user interface and application logic processing tasks.
 
 In addition, because traditional database management systems typically
 provide little or no services for extending the business rules
@@ -49,9 +49,9 @@ application schema on the server.
 [[DDGTheSpaceBetweentheData-NavigationalAccess]]
 == Navigational Access
 
-Searching and navigation user-interfaces make up a large part of any
+Searching and navigation user interfaces make up a large part of any
 application. Almost every process will involve some kind of browse style
-user-interface to allow the user to select information for data entry,
+user interface to allow the user to select information for data entry,
 or manipulation. Moreover, for the vast majority of these interfaces,
 the most intuitive approach from the user's perspective is simply to
 provide a searchable list of the rows available.
@@ -84,7 +84,7 @@ or equal to the given value, and the first few rows that are less than
 the value. These rows are returned to the client application for
 display.
 
-The resulting user-interface displays the result set as though all the
+The resulting user interface displays the result set as though all the
 rows were present at all times, when in reality, only those rows
 required to maintain that illusion are retrieved. The grid displaying
 the result set becomes a kind of "sliding window" ranging over the rows
@@ -131,7 +131,7 @@ of a master/detail relationship, where in order for a row to exist in a
 detail table, such as EmployeePhone, a row must exist in the master
 table first, such as Employee.
 
-A typical user-interface for entering an Employee row involves an edit
+A typical user interface for entering an Employee row involves an edit
 for the columns of the Employee row itself, with an embedded browse for
 the EmployeePhone rows associated with the employee. The problem arises
 as soon as the user attempts to post the first EmployeePhone row while

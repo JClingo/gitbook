@@ -160,7 +160,7 @@ them to be viewed, edited, or deleted. Additional commands appropriate
 to the type of the document will also be available. For example, D4
 scripts have an Execute command which executes the document on the
 current session. Dataphor Form Documents (dfds) have a Show command
-which displays the user-interface outside the context of a designer.
+which displays the user interface outside the context of a designer.
 
 Note that documents can be saved as files, or loaded from files, by
 dragging and dropping to and from a Windows Explorer. Documents can also
@@ -182,7 +182,7 @@ the context menu of a library:
 image::../Images/DataphorExplorerUpgradesBrowse.bmp[Dataphor Explorer Library Upgrades]
 
 This interface allows the upgrades of a given library to be managed.
-While this is largely a development-level user-interface, it can also be
+While this is largely a development-level user interface, it can also be
 used by administrators to resolve problems with deployed upgrades.
 
 Upgrades can be added or injected. When an upgrade is added, the version
@@ -285,37 +285,37 @@ behavior on the right-click.
 [[DUGP1Tables]]
 ==== Tables
 
-Tables can be browsed using the Browse command, or a user-interface can
+Tables can be browsed using the Browse command, or a user interface can
 be derived using the Derive... command.
 
-The Browse command uses the user-interface derivation capabilities of
-the Dataphor Frontend to produce a browse user-interface for the table.
+The Browse command uses the user interface derivation capabilities of
+the Dataphor Frontend to produce a browse user interface for the table.
 This provides a convenient entry point to view the data in a given
 table.
 
-The Derive... command displays a user-interface that allows an arbitrary
-derived user-interface to be requested from the Dataphor Frontend. The
-following screen capture shows this user-interface:
+The Derive... command displays a user interface that allows an arbitrary
+derived user interface to be requested from the Dataphor Frontend. The
+following screen capture shows this user interface:
 
 image::../Images/DataphorExplorerDerivedFormLauncher.bmp[Dataphor Explorer Derived Form Launcher]
 
 The Query is defaulted to the table being launched, but can be an
 arbitrary table-valued D4 expression. The Page Type indicates what type
-of user-interface should be produced. Master Key Names and Detail Key
-Names determine the derived user-interface's relationship with the
+of user interface should be produced. Master Key Names and Detail Key
+Names determine the derived user interface's relationship with the
 calling form. The Elaborate check box indicates whether or not
 derivation should perform an elaboration step on the expression for
-which the user-interface is derived.
+which the user interface is derived.
 
 Once the desired settings have been entered, click the
-Launch Derived Form button to display the requested user-interface. This
-technique is useful for requesting user-interfaces that can then be
+Launch Derived Form button to display the requested user interface. This
+technique is useful for requesting user interfaces that can then be
 customized.
 
 This form can also be displayed at any time by selecting the
 Launch Form... command from the *File* menu, or by pressing *F6*.
 
-For more information on query elaboration and user-interface derivation,
+For more information on query elaboration and user interface derivation,
 refer to the link:DDGPresentationLayer.html[Presentation Layer] part of
 the Dataphor Developer's Guide.
 

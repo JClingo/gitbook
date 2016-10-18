@@ -32,7 +32,7 @@ Aggregate Operator::
   aggregate operations to be computed efficiently.
 Application Schema::
   The structure and metadata definitions of a Dataphor application. This
-  information is used by the Frontend Server to derive user-interfaces.
+  information is used by the Frontend Server to derive user interfaces.
 Application Transaction::
   A long-running optimistically concurrent transaction which is managed
   by the Dataphor Server. Updates are maintained in a transparent data
@@ -158,7 +158,7 @@ Dataphor Server::
   The DBMS portion of the Dataphor toolset. An instance of a Dataphor
   Server can be hosted within a running Dataphoria, or as a service.
 Derivation::
-  The process of constructing a user-interface based on the structural
+  The process of constructing a user interface based on the structural
   information available in the application schema for particular table,
   view, or table-valued expression.
 Derived Table Variable::
@@ -172,7 +172,7 @@ Device::
   wrap a comma delimited text file.
 DIL::
   Dataphor Interface Language. An XML format for describing
-  user-interfaces independent of the platform on which they will be
+  user interfaces independent of the platform on which they will be
   realized.
 DILX::
   DIL Transform Language. An XML format used to store the difference
@@ -186,7 +186,7 @@ Durability::
 Elaboration::
   The process of using the business model to derive a meaningful
   expression to manipulate the contents of a given query. Elaboration is
-  used by the Frontend Server to derive user-interfaces from the
+  used by the Frontend Server to derive user interfaces from the
   application schema.
 Event::
   System or user event that fires in response to some occurrence such as
@@ -214,7 +214,7 @@ Frontend::
 Frontend Server::
   The server-side components of the Dataphor Frontend responsible for
   the application layer extensions to the Dataphor Server such as
-  documents, query elaboration, and user-interface derivation.
+  documents, query elaboration, and user interface derivation.
 
 Host-Implemented Operator::
   An operator of D4 whose implementation is provided by a .NET class.
@@ -266,7 +266,7 @@ Key Inference::
   within the result of a given table-valued expression. This information
   is used by the compiler and distributed query processor to perform
   semantic optimization, as well as by the Frontend to perform query
-  elaboration and user-interface derivation.
+  elaboration and user interface derivation.
 
 List (Value)::
   A list in the Dataphor Server is an ordered collection of values, all
@@ -285,7 +285,7 @@ Metadata Inference::
   The process by which the compiler determines the metadata that applies
   to the result set of a given table-valued expression. This information
   is used by the Dataphor Server, as well as the Frontend Server to
-  perform functions such as query elaboration and user-interface
+  perform functions such as query elaboration and user interface
   derivation.
 
 Native Accessor::
@@ -350,7 +350,7 @@ Reference Inference::
   The process by which the compiler determines the references that apply
   to the result of a given table-valued expression. This information is
   used by the Frontend Server during query elaboration and
-  user-interface derivation.
+  user interface derivation.
 Referential Integrity::
   A special type of integrity referring to the relationships between
   tables. Specifically, a referential integrity constraint says that if

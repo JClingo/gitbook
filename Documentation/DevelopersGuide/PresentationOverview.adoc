@@ -10,18 +10,18 @@
 == Summary
 
 From the user's perspective, a Dataphor application
-consists of a set of user-interfaces that display information and accept
+consists of a set of user interfaces that display information and accept
 input. The presentation layer of the Dataphor platform contains the
-architecture and services that provide these user-interfaces. It is
+architecture and services that provide these user interfaces. It is
 comprised of several layers of technology that enable successively
-higher levels of user-interface automation, raising the level of
-abstraction at which user-interfaces can be described and executed. This
+higher levels of user interface automation, raising the level of
+abstraction at which user interfaces can be described and executed. This
 chapter introduces each of these layers in terms of the overall
 architecture of the Dataphor Frontend.
 
 Architecturally, the Frontend is divided into two main categories: the
 Frontend Server, and the Frontend Clients. The Frontend Server provides
-the services required by the presentation layer such as user-interface
+the services required by the presentation layer such as user interface
 derivation and document retrieval. The Frontend Clients then use these
 services to produce the presentation layer of a Dataphor application.
 
@@ -31,12 +31,12 @@ accessed through this layer using a set of components called the Data
 Access Components (DAC).
 
 The Forms Layer consists of the components and controls that make up the
-user-interfaces in a Dataphor application. These forms are defined as
+user interfaces in a Dataphor application. These forms are defined as
 documents and stored within the libraries of the application.
 Effectively, the Forms layer enables a client-independent Rapid
 Application Development (RAD) paradigm that can be used to build forms
 either manually using a traditional forms designer, or dynamically by
-invoking the user-interface derivation services of the Frontend Server.
+invoking the user interface derivation services of the Frontend Server.
 
 Lastly, the Frontend Clients bring all the capabilities and services of
 the Frontend Server, Data Access, and Forms Layers together to present
@@ -53,7 +53,7 @@ the Shipping application.
 The Frontend Server is actually a library within the Dataphor Server
 called Frontend. This library extends the concept of a library within
 the Dataphor Server to include __documents__, and introduces several
-operators for producing user-interface descriptions called _forms_ based
+operators for producing user interface descriptions called _forms_ based
 on the application schema.
 
 === Documents
@@ -102,14 +102,14 @@ in the database. In order to achieve this goal the application must be,
 as much as possible, defined by the structure of the database. The
 Frontend library provides the process of _derivation_ to enable this.
 
-Internally, the process of user-interface derivation is divided into two
+Internally, the process of user interface derivation is divided into two
 main steps: __elaboration__, and __derivation__. Elaboration consists of
 constructing an extended query based on a given query expression, and
 the relationship between the given expression and other table variables
 in the database. Derivation is in turn divided into three main steps:
 __structuring__, __layout__, and __production__.
 
-Structuring in derivation is the process of constructing user-interface
+Structuring in derivation is the process of constructing user interface
 controls for each column in the query, and grouping those controls as
 appropriate for the context of each column. Layout consists of
 determining the visual layout of the controls and groups constructed
@@ -118,15 +118,15 @@ actually building the form definition based on the controls and visual
 layout determined by the previous steps.
 
 The input to the derivation process is called the derivation __seed__,
-and consists of the expression for which a user-interface is to be
-derived, the form type, or type of user-interface, an optional set of
+and consists of the expression for which a user interface is to be
+derived, the form type, or type of user interface, an optional set of
 master and detail key names, and an indicator to determine whether or
 not elaboration should be performed.
 
 During the derivation process, the engine uses metadata tags associated
 with the various structural definitions produced by the compiler. For
 example, when determining the title for a particular derived
-user-interface, the derivation engine searches for the Frontend.Title
+user interface, the derivation engine searches for the Frontend.Title
 tag on the result set definition. If found, the value of this tag is
 used as the title, otherwise, the unqualified name of the table, or the
 expression itself is used as the title.
@@ -140,13 +140,13 @@ the structure of the table variable itself, as well as the relationship
 of that table variable with the rest of the database.
 
 The derivation engine uses the concept of _form types_ to differentiate
-between the various types of user-interfaces that can be derived.
+between the various types of user interfaces that can be derived.
 Generally, these form types break down into two different categories:
-_plural_ user-interfaces, and _singular_ user-interfaces.
+_plural_ user interfaces, and _singular_ user interfaces.
 
-Plural user-interfaces are used primarily to expose searching and
+Plural user interfaces are used primarily to expose searching and
 navigation capabilities, and are capable of displaying the result set
-for a particular table or expression. Singular user-interfaces display
+for a particular table or expression. Singular user interfaces display
 only a single row at any given time, and are used for adding, editing,
 or viewing the information for a given entity.
 
@@ -169,12 +169,12 @@ engine:
 |View |Singular |Viewing an existing row (read only)
 
 |Preview |Singular |Previewing a corresponding row as an embedded group
-within another user-interface
+within another user interface
 |=======================================================================
 
-Note that user-interfaces do not necessarily correspond one-to-one with
+Note that user interfaces do not necessarily correspond one-to-one with
 form definitions. User-interfaces can be embedded within controls in
-other forms, allowing user-interface definitions to be used as building
+other forms, allowing user interface definitions to be used as building
 blocks for assembling complex forms with multiple entities exposed. For
 example, the Customer edit may have a page control containing browses
 for ContactEmail and ContactPhone.
@@ -186,27 +186,27 @@ information is used by the derivation process.
 ===== Columns
 
 Each column in the result set will correspond with a single control in
-the resulting user-interface definition. By default the data type of the
+the resulting user interface definition. By default the data type of the
 column is used to determine the type of control to be used, and the
 title of the control is the unqualified name of the column.
 
 Barring other considerations such as derivation tags and grouping based
 on reference participation, the order of the controls displayed in the
-user-interface is determined by the order in which the columns appear in
+user interface is determined by the order in which the columns appear in
 the result set.
 
 Because the result is being presented within the data access layer,
 defaults, constraints, and event handlers defined on the column or its
-data type are exposed as behavior within the user-interface. This is
+data type are exposed as behavior within the user interface. This is
 accomplished using the proposable interfaces. Although these interfaces
 are discussed in more detail later in this part, it is worth noting that
 defaults, constraints, and event handlers defined at the column and data
-type levels will be acted on immediately within the user-interface.
+type levels will be acted on immediately within the user interface.
 
 For example, if a user attempts to enter an invalid value for a
 particular column, the error message is displayed immediately, rather
 than waiting for the entire row to be completed. This affords a more
-intuitive user-interface, and is one reason for declaring constraints as
+intuitive user interface, and is one reason for declaring constraints as
 locally as possible. In other words, even though a given column level
 constraint could be expressed in terms of a row level constraint, doing
 so would mean that validation of the column value would not take place
@@ -217,9 +217,9 @@ upon entering the invalid value.
 
 Keys and orders of the result set, whether inferred by the compiler or
 explicitly defined on table variables, will be exposed in the derived
-user-interface as possible orderings for the result set. By default, the
+user interface as possible orderings for the result set. By default, the
 derivation process will select the clustering key to order the result
-set in the user-interface. While the notion of a clustering key is an
+set in the user interface. While the notion of a clustering key is an
 admittedly physical consideration, the reason for the selection is that
 the clustering key is most likely to be supported by a physical index,
 and therefore most likely to perform acceptably when presented in a
@@ -251,7 +251,7 @@ Elaboration is an optional step, as indicated by the Elaborate component
 of the derivation seed. If elaboration is not used, not only will the
 initial query be unaffected, but the relationships between the query and
 the rest of the database will not be exposed on the resulting
-user-interface, neither in user-interface controls, nor through menu and
+user interface, neither in user interface controls, nor through menu and
 tool bar items.
 
 The relationship of the query with other objects in the database is
@@ -259,7 +259,7 @@ determined by examining the set of references in the result set. These
 references may be inferred by the compiler, or explicitly defined on
 table variables in the database. In either case, the cardinality of each
 reference is used to determine how it should be exposed in the
-user-interface.
+user interface.
 
 By far the most important input to the elaboration process is the
 structural information inferred by the compiler about the result set.
@@ -268,10 +268,10 @@ using the link:O-System.Diagnostics.ShowPlan.html[ShowPlan] operator.
 
 Reference information is used in two different ways by the derivation
 process: first, to extend the expression to be used to provide the
-result set for the user-interface, and second, in building
-user-interface controls, menu items, and tool bars to allow the user to
+result set for the user interface, and second, in building
+user interface controls, menu items, and tool bars to allow the user to
 navigate to related information in the database from the derived
-user-interface.
+user interface.
 
 The fact that references must target keys gives rise to two different
 cardinalities for references: one-to-one, and one-to-many. A one-to-one
@@ -353,7 +353,7 @@ Navigational Access is concerned with enabling efficient, scalable
 access to relational datasets of any size. Using this technology,
 Dataphor applications can expose the data in any application in an
 intuitive, searchable manner without the need for developer intervention
-or complex "filter-down" style user-interfaces.
+or complex "filter-down" style user interfaces.
 
 Proposable Interfaces are provided to enable the application to
 participate in the business-rules enforcement of the Dataphor Server. By
@@ -364,7 +364,7 @@ rather than waiting for the server to reject any invalid information.
 Application Transactions enable the application to perform data
 manipulation even in the presence of complex multi-table integrity
 constraints without requiring data to be entered in a particular order,
-or using pessimistic transactions. The resulting user-interfaces
+or using pessimistic transactions. The resulting user interfaces
 naturally manage concurrency issues and minimize resource contention.
 
 Each of these services will be discussed in detail in
@@ -374,7 +374,7 @@ link:DDGTheSpaceBetweentheData.html[The Space Between the Data].
 
 The Forms which make use of the Data Access Layer are defined in terms
 of component hierarchies that describe not only the layout and visual
-controls of the user-interface, but the behavior of the form, and it's
+controls of the user interface, but the behavior of the form, and it's
 connection to other parts of the application. These form definitions are
 represented as Dataphor Form Documents (DFDs) and stored within the
 various libraries that make up the application. Each Frontend Client is
@@ -404,8 +404,8 @@ documents is called Dataphor user-Interface Language (DIL).
 
 === Components and Controls
 
-Forms are the fundamental unit of user-interface in a Dataphor
-application. Forms are made up of groups of user-interface controls that
+Forms are the fundamental unit of user interface in a Dataphor
+application. Forms are made up of groups of user interface controls that
 provide the mechanisms for the user to interact with the data in the
 database, as well as the application itself. In this respect, forms in a
 Dataphor application are very similar to the forms in a classic
@@ -463,11 +463,11 @@ broadcast component events within the form. Each visual element, or
 control, in the form also has a _parent_ property that determines the
 visual containership of the control within the form.
 
-Forms are actually hosts for user-interfaces, in that a given
-user-interface may appear hosted within a particular form, or within a
-frame within a control of another form. When a user-interface is
+Forms are actually hosts for user interfaces, in that a given
+user interface may appear hosted within a particular form, or within a
+frame within a control of another form. When a user interface is
 embedded within another, the containership hierarchy can be followed to
-its root from any component within the embedded user-interface to access
+its root from any component within the embedded user interface to access
 the parent form.
 
 Note that although the components themselves are instances of classes,
@@ -487,7 +487,7 @@ the actual Frontend client in which it runs.
 
 Actions are specific types of components that perform some operation
 within the form. Actions are an abstraction that is used to model the
-commands that are available within any given user-interface. These
+commands that are available within any given user interface. These
 commands can be triggered from various sources such as buttons, menu
 items, pop-ups, and so on. In addition, actions can be attached to
 various events that occur on other components within the form, or
@@ -544,8 +544,8 @@ the toolbar. When not in this state, these buttons are replaced by a
 standard Close button.
 
 In addition to form state, a Dataphor Form may be __modal__, indicating
-the form from which the user-interface was launched is not accessible
-until the child user-interface is closed. This is called _child modal_
+the form from which the user interface was launched is not accessible
+until the child user interface is closed. This is called _child modal_
 because only the launching form is inaccessible. Other forms in the
 application can still be reached, allowing multiple "threads" of
 execution within the same application.
@@ -588,7 +588,7 @@ and icons to be loaded using streams.
 * Frontend.Derive(<expression>, <pagetype>, <master key names>, <detail
 key names>, <elaborate>)
 +
-This operator invokes the Frontend Server process of user-interface
+This operator invokes the Frontend Server process of user interface
 derivation based on the given expression. For more information on the
 usage and functioning of this operator, refer to
 link:DDGTheAutomationofForms.html[The Automation of Forms] later in this

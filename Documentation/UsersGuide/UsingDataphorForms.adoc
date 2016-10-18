@@ -10,7 +10,7 @@
 [[DUGP1UsingDataphorApplications-Forms]]
 == Summary
 
-Dataphor Applications consist of a collection of user-interfaces called
+Dataphor Applications consist of a collection of user interfaces called
 __forms__. These forms generally fall into three different categories:
 
 * Dashboards
@@ -74,7 +74,7 @@ the form.
 
 The rest of the area within the form is called the _client area_ and
 contains the main contents of the form. This will typically be filled
-with __controls__, or user-interface elements such as text boxes and
+with __controls__, or user interface elements such as text boxes and
 buttons.
 
 Surrounding the entire form is a thin margin called the __border__. When
@@ -110,16 +110,16 @@ organizational controls such as a __group__, or a __page control__.
 Groups provide a visual grouping of a set of controls and do not have
 any special behavior.
 
-Page controls allow multiple user-interfaces to be embedded into a
+Page controls allow multiple user interfaces to be embedded into a
 single space using tabs to allow for the selection of the embedded
-user-interfaces. The following screen capture provides an example of
+user interfaces. The following screen capture provides an example of
 this type of control:
 
 image::../Images/SampleApplicationAddPerson.bmp[Sample Application - Add Person]
 
 This form shows a group for the address, as well as a page control
 displaying phone numbers, associated organizations, websites, and email
-addresses. Each embedded user-interface can be selected by clicking on a
+addresses. Each embedded user interface can be selected by clicking on a
 tab in the page control. While focused on a control within a tab, the
 page control can be navigated using Ctrl+Tab to select the next tab, and
 Ctrl+Shift+Tab to select the previous tab.
@@ -231,7 +231,7 @@ accepted.
 Pattern
 
 By clearly defining the role of each type of form in an application, the
-overall flow through the user-interfaces follows an intuitive and
+overall flow through the user interfaces follows an intuitive and
 flexible pattern called __browse-to-edit__. As the name indicates, the
 pattern begins with a browse form, and all editing of the items
 displayed is done using a form built expressly for adding, editing, or

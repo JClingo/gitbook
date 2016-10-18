@@ -16,7 +16,7 @@ server. In addition to allowing access control to objects defined in the
 system catalog, the security system allows developers to define
 application-specific rights that are managed in the same way. This
 allows a flexible and powerful security model that applications can not
-only extend, but query to dynamically control user-interface appearance
+only extend, but query to dynamically control user interface appearance
 based on security context.
 
 [[DUGP3Security-SecurityPrimitives]]

@@ -39,7 +39,7 @@ of the application may affect the actual colors, but the different
 states will still be indicated visually.
 
 There are relatively few different types of controls in a Dataphor
-Application. This keeps the user-interface simple and intuitive, without
+Application. This keeps the user interface simple and intuitive, without
 sacrificing any power or flexibility. However, specific applications may
 introduce new types of controls as necessary to support the
 functionality of the application. In these cases, refer to the

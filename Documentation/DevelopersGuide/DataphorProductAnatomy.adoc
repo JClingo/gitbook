@@ -156,7 +156,7 @@ is additional information that is ignored by the logical model. Metadata
 is used by specific applications to provide extra information about each
 object. For example, the Frontend uses a tag called Frontend.Title to
 determine the presentation layer description for a corresponding
-user-interface element.
+user interface element.
 
 The entire catalog is divided into units called libraries. Every catalog
 object is contained within some library. Libraries provide the
@@ -460,10 +460,10 @@ desired.
 
 The Frontend Services utilize this metadata, along with other structural
 information exposed by the application schema to enable the process of
-user-interface derivation. The metadata can be used to provide hints to
+user interface derivation. The metadata can be used to provide hints to
 the derivation process such as what the title of a given column should
 be, or whether or not to include a reference as an embedded detail on a
-particular user-interface.
+particular user interface.
 
 Metadata is also inferred by the compiler through expressions of the D4
 language. The type inference mechanisms of the D4 compiler have been
@@ -495,7 +495,7 @@ support this), but because transaction concurrency is handled
 pessimistically (i.e. by locking resources), transactions must be kept
 as short as possible to minimize resource contention.
 
-For this reason, most applications do not solve this user-interface
+For this reason, most applications do not solve this user interface
 problem using transaction support. Rather, it is typically handled by
 the developer within the presentation layer. Even with the aid of
 development tools that help developers accomplish the tasks of caching,
@@ -506,7 +506,7 @@ general way, without requiring additional effort by the developer.
 
 An application transaction is a managed buffer that mirrors exactly the
 application schema, with the exception of the constraints that would
-cause problems in the user-interfaces, namely any constraint that
+cause problems in the user interfaces, namely any constraint that
 involves more than one table. All the structural information available
 in the application schema is visible as part of the application
 transaction. And because the management of application transactions is
@@ -569,7 +569,7 @@ The Frontend Server is a set of services built as a library in D4 and
 housed within the Dataphor Server. These services are primarily
 concerned with the presentation layer of a Dataphor application. The
 Frontend Server provides _document_ support, query elaboration
-capabilities, user-interface derivation services, and application entry
+capabilities, user interface derivation services, and application entry
 points.
 
 [[DDGDataphorProductAnatomy-FrontendServer-FrontendLibraryExtensions]]
@@ -592,7 +592,7 @@ as other, more specialized functionality.
 
 One important type of document is a Dataphor Form Document. These
 documents contain the complete description of a presentation layer
-user-interface. These documents can be built manually, or the Frontend
+user interface. These documents can be built manually, or the Frontend
 Server can be used to derive them automatically. In either case, the
 Frontend Server provides the ability to customize these forms through
 the use of __visual form inheritance__.
@@ -604,7 +604,7 @@ the various elements on the form, and even the addition of new elements
 to the form. These modifications are then saved in a Customized Dataphor
 Form Document, which saves only the difference between the original form
 and the customization. When a customization is based on a derived
-user-interface, this allows the customization to be made without
+user interface, this allows the customization to be made without
 impacting the dynamic nature of the application.
 
 [[DDGDataphorProductAnatomy-FrontendServer-User-InterfaceDerivation]]
@@ -614,27 +614,27 @@ The Frontend Server also exposes an API for automatically producing
 Dataphor Form Documents based on the application schema. Various types
 of interfaces can be produced, for example, a _Browse_ interface for a
 given table can be produced, which will provide a table-level
-user-interface to the data in the table. Row-level user-interfaces can
+user interface to the data in the table. Row-level user interfaces can
 also be produced.
 
-The user-interface derivation process by default also includes
+The user interface derivation process by default also includes
 references to other tables and views in the database. These references
-are exposed appropriately on the derived user-interface. For example,
+are exposed appropriately on the derived user interface. For example,
 when browsing the employees table, the employee phones table could
-appear as an item on the _Details_ menu of the resulting user-interface.
+appear as an item on the _Details_ menu of the resulting user interface.
 
 In addition to the default behavior provided by the Frontend Server, the
 derivation can be controlled through the use of metadata in the
 application schema. For example, the _Frontend.Embedded_ tag can be used
 to indicate that a given reference should be embedded into the
-user-interface for a given table. This allows the user-interfaces to be
+user interface for a given table. This allows the user interfaces to be
 tailored to an application's specific requirements, while still allowing
-those user-interfaces to be derived.
+those user interfaces to be derived.
 
 [[DDGDataphorProductAnatomy-FrontendClients]]
 == Frontend Clients
 
-The Dataphor platform utilizes a generic user-interface description
+The Dataphor platform utilizes a generic user interface description
 language to allow clients based on different platforms to consume the
 same application. In this way, Dataphor applications can be defined one
 time, and deployed on multiple platforms.
@@ -651,11 +651,11 @@ to select an application from the list of applications deployed on that
 Dataphor Server instance. This process can be bypassed, if desired.
 
 Each client communicates with the Dataphor Server using the Data Access
-Layer, requests the user-interfaces described by the application, and
+Layer, requests the user interfaces described by the application, and
 manages the interaction with the user. Because of the services and
 capabilities exposed by the Dataphor Server, these processes can be
 completely automated. The resulting clients provide a rich
-user-interface experience that is defined entirely within the
+user interface experience that is defined entirely within the
 centralized application schema.
 
 The Dataphor product ships with a Windows and Web Client, but the

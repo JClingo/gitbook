@@ -762,7 +762,7 @@ constraint enforcement by the user's of an application.
 First, constraint definitions in D4 can include a custom violation
 message that will be displayed to the user when the constraint is
 violated. Take advantage of this feature. Clear and concise error
-messages can be the difference between a good user-interface experience,
+messages can be the difference between a good user interface experience,
 and a frustrated user. Along these same lines, constraint expressions
 consisting of multiple conditions should be broken out into multiple
 constraint definitions, each with a specific message describing the
@@ -776,7 +776,7 @@ than raising an error and requiring the user to resolve the issue.
 
 For example, suppose a contact must always have a primary phone number
 specified among the list of phone numbers for that contact. The
-user-interface to satisfy this requirement may involve simply providing
+user interface to satisfy this requirement may involve simply providing
 an editable indicator for each phone number showing whether or not it is
 the primary phone number for the contact. Rather than require the user
 to select a phone number as primary by raising an error, the system
@@ -1044,7 +1044,7 @@ In addition to keys, references form a critical component of the design
 of any database. Next to keys, they are perhaps the most common type of
 constraint, and are used not only to enforce referential integrity, but
 to enable the more sophisticated features of the Dataphor Frontend such
-as query elaboration and user-interface derivation.
+as query elaboration and user interface derivation.
 
 As a result, references should _always_ be declared. Note that this does
 not necessarily imply enforcement, as we shall discuss in the following
@@ -1160,7 +1160,7 @@ create table EmployeePhone
 [[DDGUnenforcedReferences]]
 ==== Unenforced References
 
-Because references form the basis for user-interface derivation in the
+Because references form the basis for user interface derivation in the
 Frontend, references can be used simply to guide derivation, rather than
 enforcing an actual constraint.
 
@@ -1185,7 +1185,7 @@ create table Contact
 In this design the Description column of the Contact table may or may
 not draw its value from the ContactDescription table. The lookup list is
 merely a convenience for data entry for the end-users. Rather than build
-the user-interface for this manually in the Frontend, we can simply
+the user interface for this manually in the Frontend, we can simply
 declare an unenforced reference:
 
 ....
@@ -1253,7 +1253,7 @@ be present in the database when the entry is posted. In this case, the
 constraint can be checked immediately. This is done by setting the
 DAE.IsDeferred tag to false. Note that this is only valid if the
 Employee row will always be entered after the EmployeeType row. In other
-words, this enforcement strategy depends on certain user-interface
+words, this enforcement strategy depends on certain user interface
 patterns.
 
 [[DDGDatabaseDesignTechniques-RepresentingTemporalData]]

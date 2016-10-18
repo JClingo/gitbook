@@ -574,7 +574,7 @@ Storage.ShouldReconcile = "true | false"
 == Frontend Tags
 
 This section lists the tags recognized by the Frontend.
-Note that these tags may appear in various contexts throughout the metadata, and that the Frontend Server will search for these tags in specific ways, based on the type of user-interface being derived.
+Note that these tags may appear in various contexts throughout the metadata, and that the Frontend Server will search for these tags in specific ways, based on the type of user interface being derived.
 For more information on how the Frontend uses these tags, refer to link:DDGPresentationLayer.html[Presentation Layer].
 For more specific information on the use of tags to guide derivation of the user interface see link:DDGTheAutomationofForms-GuidingDerivation.html[Guiding Derivation].
 
@@ -584,15 +584,15 @@ Frontend tags can be specific or general. For example:
 ID : Integer tags { Frontend.Visible = "false" }
 ....
 
-indicates that the ID is not to appear on any user-interface (form)
-regardless of what mode the user-interface is in.
+indicates that the ID is not to appear on any user interface (form)
+regardless of what mode the user interface is in.
 
 ....
 ID : Integer tags { Frontend.Browse.Visible = "false" }
 ....
 
 indicates ID will not be visible when the user-inteface (form) is in the
-browse mode. When the user-interface is in any other mode, ID will be
+browse mode. When the user interface is in any other mode, ID will be
 visible.
 
 [[FTRTagsDescriptions-FrontendTags-Break]]
@@ -615,7 +615,7 @@ Frontend.Break = "true | false"
 [[FTRTagsDescriptions-FrontendTags-Caption]]
 === Caption
 
-Determines the caption of the user-interface or control for the object
+Determines the caption of the user interface or control for the object
 on which it appears.
 
 *Syntax*
@@ -652,7 +652,7 @@ Frontend.DetailKeyNames = "<column name semicolonlist>"
 [[FTRTagsDescriptions-FrontendTags-Document]]
 === Document
 
-Determines the document to present a user-interface for the objects on
+Determines the document to present a user interface for the objects on
 which it appears. Can also be used prefixed with the Add, Edit, Delete,
 and View page types to specify documents for those commands within a
 plural page type.
@@ -708,7 +708,7 @@ Frontend.ElementType = "<identifier>"
 === Embedded
 
 Determines whether the object on which it appears will be embedded in
-derived expressions or user-interfaces.
+derived expressions or user interfaces.
 
 *Syntax*
 
@@ -724,7 +724,7 @@ Frontend.Embedded = "true | false"
 === Exposed
 
 Determines whether the object on which it appears will be exposed (in
-the toolbar) in derived user-interfaces.
+the toolbar) in derived user interfaces.
 
 *Syntax*
 
@@ -740,7 +740,7 @@ Frontend.Exposed = "true | false"
 === Flow
 
 Determines the flow to be used when performing layout for derived
-user-interfaces.
+user interfaces.
 
 *Syntax*
 
@@ -818,7 +818,7 @@ Frontend.Group = "<qualified identifier>"
 [[FTRTagsDescriptions-FrontendTags-Hint]]
 === Hint
 
-Determines the hint to display in derived user-interfaces for the object
+Determines the hint to display in derived user interfaces for the object
 on which it appears.
 
 *Syntax*
@@ -942,7 +942,7 @@ Frontend.Query = "<table expression>"
 === ReadOnly
 
 Indicates that the object on which it appears should be presented with a
-read-only user-interface. The default value for this tag depends on
+read-only user interface. The default value for this tag depends on
 context, and is usually based on the inferred read-only characteristics
 for each column.
 
@@ -965,9 +965,9 @@ scalar type "defaults" the tag for all columns of that type.]
 === Secure
 
 Determines how the object on which it appears should behave in derived
-user-interfaces if it is not accessible by the current user because of
+user interfaces if it is not accessible by the current user because of
 security. The default value for this tag is hidden, indicating that no
-user-interface element will be visible for the object.
+user interface element will be visible for the object.
 
 *Syntax*
 
@@ -985,10 +985,10 @@ Frontend.Secure = "visible | disabled | hidden"
 === ShouldEnlist
 
 Indicates whether or not to enlist in an existing application
-transaction within the derived user-interface for the table variable on
+transaction within the derived user interface for the table variable on
 which it appears. The default value for this tag is default, indicating
 that the determination should be made based on the cardinality of the
-result set for the derived user-interface being displayed.
+result set for the derived user interface being displayed.
 
 *Syntax*
 
@@ -1029,7 +1029,7 @@ lookup reference. If the reference is treated as a parent reference, the
 target table will be included in the result set using an inner join. If
 the reference is treated as a lookup reference (the default), the target
 table will be included in the result set using a left outer join, and
-the user-interface will be constructed as though the reference were a
+the user interface will be constructed as though the reference were a
 lookup reference (i.e. using lookup controls to browse for the item to
 be selected, rather than entering the information directly on the
 derived form).
@@ -1048,7 +1048,7 @@ Frontend.TreatAsLookup = "true | false"
 === UseApplicationTransactions
 
 Indicates whether or not application transactions should be used within
-the derived user-interface for the table variable on which it appears.
+the derived user interface for the table variable on which it appears.
 
 *Syntax*
 
@@ -1065,7 +1065,7 @@ Frontend.UseApplicationTransactions = "true | false"
 === UseBrowse
 
 Indicates whether or not a browse clause should be used to specify the
-ordering within the derived user-interface for the table variable on
+ordering within the derived user interface for the table variable on
 which it appears. The default value for this tag is true.
 
 *Syntax*
@@ -1101,7 +1101,7 @@ Frontend.UseList = "true | false"
 === UseFullLookup
 
 Determines that a full lookup control should be used to display the
-lookup for this reference in derived user-interfaces.
+lookup for this reference in derived user interfaces.
 
 *Syntax*
 
@@ -1117,7 +1117,7 @@ Frontend.UseFullLookup = "true | false"
 === Visible
 
 Determines whether the object on which it appears will be visible in
-derived user-interfaces.
+derived user interfaces.
 
 *Syntax*
 

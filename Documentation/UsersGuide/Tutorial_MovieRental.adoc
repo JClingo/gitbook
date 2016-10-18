@@ -28,8 +28,8 @@ your own applications.
 *Technical Terms*
 
 [horizontal]
-link:DUGP1UsingDataphorApplications-Forms.html[Form]:: A user-interface to the application and data.
-link:dilrefAlphora.Dataphor.Frontend.Client.IFrame.html[Frame]:: An embedded user-interface (form) as an element of a form.
+link:DUGP1UsingDataphorApplications-Forms.html[Form]:: A user interface to the application and data.
+link:dilrefAlphora.Dataphor.Frontend.Client.IFrame.html[Frame]:: An embedded user interface (form) as an element of a form.
 Component:: A Dataphor form component. e.g., Source
 Control:: A visible Dataphor form component. e.g., TextBox
 
@@ -371,15 +371,15 @@ Frontend tags can be specific or general. For example:
 ID : Integer tags { Frontend.Visible = "false" }
 ....
 
-would indicate that the ID is not to appear on any user-interface (form)
-regardless of what mode the user-interface is in.
+would indicate that the ID is not to appear on any user interface (form)
+regardless of what mode the user interface is in.
 
 ....
 ID : Integer tags { Frontend.Browse.Visible = "false" }
 ....
 
 would indicate ID will not be visible when the user-inteface (form) is
-in the browse mode. When the user-interface is in any other mode, ID
+in the browse mode. When the user interface is in any other mode, ID
 will be visible.
 
 For more information about tags see link:FTRTagsDescriptions.html[Tags].
@@ -609,7 +609,7 @@ set using the first order found in the following manner:
 
 The Frontend.Visible metadata tag attached to the Position column is set
 to False. This tells the Frontend that Position is not to be shown in a
-derived user-interface.
+derived user interface.
 
 The Position column exists to ensure that the ratings are presented in
 their commonly regarded order. The order of selected tables is
@@ -774,7 +774,7 @@ source column is a key, then the reference describes a one to one or
 parent/extension relationship. If the source column is not a key, the
 reference describes a one to many or lookup/detail relationship. This
 information is used by the Dataphor Frontend to derive appropriate
-user-interfaces for any given table, view, or even expression. For more
+user interfaces for any given table, view, or even expression. For more
 information about references, see
 link:D4LGCatalogElements-References.html[References].
 

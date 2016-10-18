@@ -127,7 +127,7 @@ create view EnterContactNotes
 
 This view works by introducing a new column NewNotes with an extension
 operator. In addition to appearing in the result set, the DAE.IsComputed
-tag will allow it to be an editable column in the user-interface.
+tag will allow it to be an editable column in the user interface.
 
 By default, update propagation for the extension operator will simply
 discard the values for the extended columns and propagate the update
@@ -323,13 +323,13 @@ Sample.Shipping library.
 
 In some cases, the default view updatability behavior may not provide
 the desired behavior. An example of this in the Shipping Application is
-the user-interface to select contact categories. The following diagram
+the user interface to select contact categories. The following diagram
 depicts the base table variables involved:
 
 .Shipping Database Design: Contact Categories
 image::../Images/ContactCategoryDiagram.svg[Contact Category - Diagram]
 
-Rather than utilizing the default user-interfaces, the application would
+Rather than utilizing the default user interfaces, the application would
 be much more user-friendly if the list of categories to which a contact
 belonged could be entered as a comma-separated list. To achieve this, we
 define a view, ContactCategories, and attach an event handler to replace
@@ -432,9 +432,9 @@ Although these interfaces will be discussed in greater detail in part
 III, this section will cover the use of these handlers to update values
 during data entry.
 
-As the motivating example, consider the user-interface for recording the
+As the motivating example, consider the user interface for recording the
 address of a Location, with City, State_ID, and ZipCode columns. We
-would like the user-interface to auto-populate the city and state values
+would like the user interface to auto-populate the city and state values
 based on the current contents of the ZipCode table for the selected
 zipcode.
 

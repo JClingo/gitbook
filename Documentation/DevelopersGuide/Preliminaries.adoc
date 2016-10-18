@@ -61,7 +61,7 @@ Because Dataphor is a declarative development environment, much of the
 application will be defined in terms of declarative constructs like
 tables, views, and constraints. The Dataphor Frontend Clients take
 advantage of these constructs and attempt to automate as much of the
-work of building user-interfaces as possible. For this reason, the
+work of building user interfaces as possible. For this reason, the
 resulting applications are extremely dynamic and react instantly to
 changes in the application schema. This flexibility allows the
 application to evolve as it is being developed, and even extends into
@@ -71,7 +71,7 @@ Overall, Dataphor application development typically consists of:
 
 * Designing a database to meet the data requirements of the application.
 * Identifying the main entry points into the application and refining
-the derived user-interfaces.
+the derived user interfaces.
 * Development of the process logic required to provide a working
 solution.
 
@@ -85,7 +85,7 @@ application.
 
 Dataphoria is the Integrated Development Environment (IDE) used to
 develop Dataphor applications. It is essentially a Dataphor Frontend
-Client itself, and many of the user-interfaces it exposes are derived
+Client itself, and many of the user interfaces it exposes are derived
 from the system catalog of the Dataphor Server. One of the most
 important aspects of the Dataphoria IDE is designer support, and several
 designers are provided for opening and manipulating documents within
@@ -152,7 +152,7 @@ manual. However, this separation is largely used to organize the
 material in these manuals, just as it is used to structure the
 architecture of the product. Because the presentation layer is
 intimately tied to the logical model, a little time spent thinking about
-user-interfaces up front will go a long way towards producing usable
+user interfaces up front will go a long way towards producing usable
 derived interfaces from the outset. Similarly, the physical layer should
 not be completely ignored when initially designing the application.
 Planning for the target environment can be the difference between a
@@ -168,10 +168,10 @@ containing the statements necessary to upgrade an existing deployment to
 the new version. These scripts are then deployed with the updated
 library, and run sequentially on the production environment.
 
-Because most of the user-interfaces in a Dataphor application are
+Because most of the user interfaces in a Dataphor application are
 derived, changes to the structures of the application schema will
-automatically propagate to the user-interfaces. In cases where derived
-user-interfaces have been customized, or forms have been manually built,
+automatically propagate to the user interfaces. In cases where derived
+user interfaces have been customized, or forms have been manually built,
 changes to the structures may affect the form definitions, and these
 will have to be updated. Because the updated documents are deployed with
 the updated library, the Dataphor Frontend Clients will download the new
@@ -356,9 +356,9 @@ eliminating redundancy in a database design. Intuitively, each table
 should talk about one concept, and one concept only. A properly designed
 database will tend to consist of lots of tables, all having very few
 columns. Note that just because the logical design is fully normalized,
-doesn't mean the user-interface has to be. As we will see,
-user-interfaces for views in the Dataphor platform are just as
-functional as user-interfaces for base table.
+doesn't mean the user interface has to be. As we will see,
+user interfaces for views in the Dataphor platform are just as
+functional as user interfaces for base table.
 * Write out the meaning of each table or view
 +
 Use code comments to explicitly specify the meaning of each table and

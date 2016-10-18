@@ -111,14 +111,14 @@ application, or as the result of a stimulus-response rule.
 
 Metadata in a Dataphor Application allows application-specific
 information to be attached to the data model. This includes presentation
-layer information such as titles for user-interface elements, as well as
-hints for controlling how user-interfaces should be built from the
+layer information such as titles for user interface elements, as well as
+hints for controlling how user interfaces should be built from the
 application schema.
 
 The presentation layer elements of a Dataphor Application describe the
-user-interfaces required to manipulate the data in the data model.
+user interfaces required to manipulate the data in the data model.
 Because the Dataphor platform enables a high level of automation, the
-majority of the user-interfaces required by the presentation layer can
+majority of the user interfaces required by the presentation layer can
 be built as needed based on the information contained in the application
 schema.
 
@@ -157,7 +157,7 @@ interrelated libraries.
 Dataphor libraries also contain various documents that essentially
 constitute the "source code" for the library. These include D4 scripts
 that are used to "install" the application by constructing the initial
-state of the catalog, as well as user-interface definitions and
+state of the catalog, as well as user interface definitions and
 customizations stored as Dataphor Form Documents.
 
 [[DUGP1ProductTour-DataphorServer-DataAccessLayer]]

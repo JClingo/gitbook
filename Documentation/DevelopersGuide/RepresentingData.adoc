@@ -93,7 +93,7 @@ between shipping locations and vendors.
 
 The above table definition includes several metadata tags that, along
 with the definition of the table itself, are used to derive
-user-interfaces for the table. We will have more to say about these tags
+user interfaces for the table. We will have more to say about these tags
 in Part III of this guide. We include them here to show that although
 this guide covers logical, presentation, and physical design
 considerations separately, when developing applications in Dataphor, it
@@ -151,7 +151,7 @@ assumed as the key.
 
 Each table definition can also include any number of order definitions.
 These definitions serve two purposes in the application schema. First,
-they provide the list of possible orderings for user-interfaces in the
+they provide the list of possible orderings for user interfaces in the
 Frontend. Second, they provide a mapping for index creation in the
 physical layer.
 
@@ -1402,4 +1402,4 @@ As we shall see in Part III, this logical data independence functions
 not only at the logical level within the conceptual model, but, because
 of the advanced inference mechanisms of the D4 compiler, extends to the
 presentation layer as well, allowing views to serve as first-class entry
-points into the schema from the user-interface perspective.
+points into the schema from the user interface perspective.

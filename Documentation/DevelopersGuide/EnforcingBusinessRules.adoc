@@ -75,7 +75,7 @@ create table Contact
 
 Because defaults are part of the application schema and available to the
 Frontend clients, they can provide the default values for new rows
-during the data entry process within the user-interface. This is done
+during the data entry process within the user interface. This is done
 using the _default_ proposable interface available through the CLI. If
 the expression for a default does not reference table variables in the
 database, then the default is considered __remotable__, and the default
@@ -253,7 +253,7 @@ relationship, but it allows the Dataphor Server to understand the
 semantics of the data involved. The Dataphor Server can then use this
 information in a variety of ways, from providing an efficient
 implementation for enforcing the constraint, to using the meaning of the
-relationship to elaborate queries, and produce user-interfaces for the
+relationship to elaborate queries, and produce user interfaces for the
 presentation layer.
 
 The following example shows a simple reference constraint from Invoice

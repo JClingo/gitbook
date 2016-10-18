@@ -109,10 +109,10 @@ and Inventory Clerk.
 Management users are responsible for managing other users, and
 maintaining their access rights to the application. Fortunately, this
 role is already handled by the Dataphor Security library. The Security
-library provides user-interfaces for administering security in a
+library provides user interfaces for administering security in a
 Dataphor Server, and exposes the SecurityUser role. Any user that is a
 member of this role will have access to all the objects required to use
-the user-interfaces exposed in the Security library.
+the user interfaces exposed in the Security library.
 
 To handle Customer Service users, the Shipping Application introduces
 the CustomerService role. This role is granted access to table variables

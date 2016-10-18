@@ -2010,10 +2010,10 @@ called __reference inference__. This process is part of _type inference_
 and means that not only are references known for the table variables on
 which they are declared, but expressions that reference those table
 variables as well. This process becomes exteremely important when a
-general solution to the problem of user-interface derivation is
+general solution to the problem of user interface derivation is
 approached. The solution provided by the Dataphor Server through
 reference inference is one of the main reasons for the advanced
-user-interface derivation capabilities of the Frontend.
+user interface derivation capabilities of the Frontend.
 
 The following example creates a referential integrity constraint between
 the Dog and Owner tables. This constraint ensures that there can be no

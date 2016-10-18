@@ -4,7 +4,7 @@
 	This file is licensed under a modified BSD-license which can be found here: http://dataphor.org/dataphor_license.txt
 	
 	This sample creates a detail many-to-many relationship, and shows how to build
-	a user-interface that skips the add form containing only the lookup to Category.
+	a user interface that skips the add form containing only the lookup to Category.
 	
 	First, the tables were created without the Frontend.Detail.Document tag on the Detail_Master
 	reference. A derivation on the Master table was then used to get the document expression to be

@@ -1653,7 +1653,7 @@ can reference global objects.
 
 Other than the restrictions on dependencies mentioned above,
 session-specific objects behave exactly like their global counterparts.
-They can be used as seeds for user-interface derivation in the Frontend,
+They can be used as seeds for user interface derivation in the Frontend,
 and they can participate in application transactions, just like global
 objects.
 
@@ -1706,7 +1706,7 @@ of a dynamically evaluated expression. We must therefore _cast_ the
 resulting value as the type we know it will be using the *as* operator.
 
 This operator can then be used to construct the views and operators for
-the order entry user-interfaces. For a continued discussion of these
+the order entry user interfaces. For a continued discussion of these
 interfaces, refer to
 link:DDGPuttingItAllTogether-InvoiceManagement.html[Invoice Management]
 in the Presentation Layer part of this guide.
@@ -1886,9 +1886,9 @@ the OnHand level is increased. For a sales order, both the OnOrder and
 OnHand levels are decreased.
 
 Rather than allow the invoice status to be edited through a
-user-interface, we simply provide an operator to perform the update, and
+user interface, we simply provide an operator to perform the update, and
 then expose the operator in the presentation layer of the application.
-We will build the user-interfaces that do this in Part III. The
+We will build the user interfaces that do this in Part III. The
 following listing shows the operators that perform the update:
 
 ....
