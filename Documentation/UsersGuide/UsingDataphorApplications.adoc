@@ -1,12 +1,11 @@
 = Using Dataphor Applications
 :author: Alphora
 :doctype: book
-:toc:
-:icons:
 :data-uri:
 :lang: en
 :encoding: iso-8859-1
 
+.Sections
 . link:StartingDataphorApplications.adoc[Starting a Dataphor Application]
 . link:UsingDataphorForms.adoc[Using Dataphor Forms]
 . link:UsingDataphorControls.adoc[Using Dataphor Controls (UI Components)]
