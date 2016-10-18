@@ -39,3 +39,8 @@
 ... link:Documentation/DevelopersGuide/EnforcingSecurity.adoc[Enforcing Security]
 ... link:Documentation/DevelopersGuide/WorkingWithLibraries.adoc[Working With Libraries]
 ... link:Documentation/DevelopersGuide/DatabaseDesignTechniques.adoc[Database Design Techniques]
+.. link:Documentation/DevelopersGuide/PhysicalRealization.adoc[Physical Realization]
+... link:Documentation/DevelopersGuide/StorageIntegrationArchitecture.adoc[Storage Integration Architecture]
+... link:Documentation/DevelopersGuide/Devices.adoc[Devices]
+... link:Documentation/DevelopersGuide/ScalarTypeMapping.adoc[Scalar Type Mapping]
+... link:Documentation/DevelopersGuide/OperatorMapping.adoc[Operator Mapping]
