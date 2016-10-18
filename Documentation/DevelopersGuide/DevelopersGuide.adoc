@@ -1,3 +1,5 @@
+image::../Images/Dataphor-Logo.gif[Dataphor Logo]
+
 = Developer's Guide
 :author: Alphora
 :doctype: book

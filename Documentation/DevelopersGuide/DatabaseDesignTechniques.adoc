@@ -7,8 +7,7 @@
 :encoding: iso-8859-1
 
 [[DDGDatabaseDesignTechniques]]
-== Summmary
-TechniquesDatabase Design Techniques
+== Summary
 
 As we have seen in the previous chapters, a large part of Dataphor
 Application development is simply database design. In fact, the Dataphor
@@ -304,7 +303,7 @@ take the opposite extreme and ask: why not just define everything in
 terms of table variables, why allow for scalar types of arbitrary
 complexity? This section addresses these issues footnote:[This section
 is largely a summary of Appendix C: A Design Dilemma of The Third
-Manifesto [3]. The interested reader is referred to that discussion for
+Manifesto [3]]. The interested reader is referred to that discussion for
 a more exhaustive treatment of this issue.].
 
 To make the problem concrete, consider the following simplified Contact

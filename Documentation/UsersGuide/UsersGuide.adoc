@@ -1,3 +1,5 @@
+image::../Images/Dataphor-Logo.gif[Dataphor Logo]
+
 User's Guide
 ===========
 :author: Alphora
@@ -6,8 +8,6 @@ User's Guide
 :data-uri:
 :lang: en
 :encoding: iso-8859-1
-
-image::../Images/Dataphor-Logo.gif[Dataphor Logo]
 
 The Dataphor User's Guide introduces the Dataphor product, and provides information on using the
 Dataphor product. The Guide provides an overview of the motivation behind Dataphor, introduces

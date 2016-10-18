@@ -1,4 +1,4 @@
-= Template
+= Implementing Data Types
 :author: Alphora
 :doctype: book
 :toc:
@@ -33,25 +33,15 @@ refer to this document.
 Scalar types in D4 have many different __representations__, falling into
 the following general categories:
 
-* Logical, or possible representations
-+
-Logical representations provide the conceptual representations for
+Logical, or possible representations:: Logical representations provide the conceptual representations for
 values of the type.
-* Native representation
-+
-The native representation determines the internal representation for
+Native representation:: The native representation determines the internal representation for
 values of the type.
-* Physical representation
-+
-The physical representation is used to encode values of the type as a
+Physical representation:: The physical representation is used to encode values of the type as a
 string of bits.
-* Device representations
-+
-Device representations are used to encode values of the type for the
+Device representations:: Device representations are used to encode values of the type for the
 various storage devices used by the Dataphor Server.
-* Frontend, or presentation layer representations
-+
-Frontend representations are used to display and retrieve values of the
+Frontend, or presentation layer representations:: Frontend representations are used to display and retrieve values of the
 type in the presentation layer.
 
 Each scalar type must have at least one logical representation, and may

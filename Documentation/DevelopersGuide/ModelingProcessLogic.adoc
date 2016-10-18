@@ -145,9 +145,7 @@ end;
 
 The following operators are defined for lists:
 
-* Comparison Operators
-+
-The comparison operators link:O-System.iEqual.html[=] and
+Comparison Operators:: The comparison operators link:O-System.iEqual.html[=] and
 link:O-System.iNotEqual.html[<>] are defined for list values. Two lists
 are equal if they are of the same type, have the same number of values,
 and the values in each list are equal by ordinal position:
@@ -160,9 +158,7 @@ begin
         raise Error("Lists not equal");
 end;
 ....
-* Membership Operator
-+
-The membership operator *link:O-System.iIn.html[in]* is defined for
+Membership Operator:: The membership operator *link:O-System.iIn.html[in]* is defined for
 lists and returns true if the given value is in the specified list:
 +
 ....
@@ -172,9 +168,7 @@ begin
         raise Error("3 is not in the list");
 end;
 ....
-* List Indexer
-+
-The indexer operator (link:O-System.iIndexer.html[[]]) is defined for
+List Indexer:: The indexer operator (link:O-System.iIndexer.html[[]]) is defined for
 lists and allows the values of a list to be accessed by ordinal position
 within the list. Indexes are zero-based:
 +
@@ -185,32 +179,18 @@ begin
         raise Error("First item is not 1");
 end;
 ....
-* link:O-System.Count.html[Count]
-+
-Returns the number of values in the given list.
-* link:O-System.Clear.html[Clear]
-+
-Removes all values from the specified list. The target list must be a
+link:O-System.Count.html[Count]:: Returns the number of values in the given list.
+link:O-System.Clear.html[Clear]:: Removes all values from the specified list. The target list must be a
 list variable.
-* link:O-System.iExtend.html[Add]
-+
-Adds the specified value into the given list. The target list must be a
+link:O-System.iExtend.html[Add]:: Adds the specified value into the given list. The target list must be a
 list variable.
-* link:O-System.Insert.html[Insert]
-+
-Inserts the specified value in the given list at the desired location.
+link:O-System.Insert.html[Insert]:: Inserts the specified value in the given list at the desired location.
 The target list must be a list variable.
-* link:O-System.iRemove.html[Remove]
-+
-Removes the specified value from the given list. The target list must be
+link:O-System.iRemove.html[Remove]:: Removes the specified value from the given list. The target list must be
 a list variable.
-* link:O-System.RemoveAt.html[RemoveAt]
-+
-Removes the value at the specified location from the given list. The
+link:O-System.RemoveAt.html[RemoveAt]:: Removes the value at the specified location from the given list. The
 target list must be a list variable.
-* link:O-System.IndexOf.html[IndexOf]
-+
-Returns the index of the specified value within the given list. If the
+link:O-System.IndexOf.html[IndexOf]:: Returns the index of the specified value within the given list. If the
 value is not in the list, -1 is returned.
 
 For more information on these operators, refer to
@@ -254,22 +234,16 @@ result := row of typeof(result) { };
 
 The following operators are defined for row types:
 
-* Comparison Operators
-+
-The comparison operators link:O-System.iEqual.html[=] and
+Comparison Operators:: The comparison operators link:O-System.iEqual.html[=] and
 link:O-System.iNotEqual.html[<>] are defined for row values. Two row
 values are equal if they are of the same row type and both rows have
 values for the same set of columns by name, and those values are equal.
-* Column Extractor
-+
-The column extraction operator . (dot) retrieves the value for a single
+Column Extractor:: The column extraction operator . (dot) retrieves the value for a single
 column in the row. If the row does not have a value for the given
 column, the result is nil. If the row variable that is the target of the
 extraction does not have a value, the result of evaluating the
 extraction is also nil.
-* Row Update
-+
-Row *link:D4LGDataManipulation-UpdateStatement.html[update]* allows the
+Row Update:: Row *link:D4LGDataManipulation-UpdateStatement.html[update]* allows the
 values for specific columns within a given row to be changed. The target
 of a row update must be a variable:
 +
@@ -279,9 +253,7 @@ begin
     update LRow set { Name := "Jack" };
 end;
 ....
-* Row Project
-+
-Row project (**link:O-System.iProject.html[over]**) returns a row with
+Row Project:: Row project (**link:O-System.iProject.html[over]**) returns a row with
 only the specified columns of the given row:
 +
 ....
@@ -290,9 +262,7 @@ begin
     var LRow2 := LRow1 over { ID };
 end;
 ....
-* Row Remove
-+
-Row *link:O-System.iRemove.html[remove]* returns a row with the
+Row Remove:: Row *link:O-System.iRemove.html[remove]* returns a row with the
 specified columns removed from the given row:
 +
 ....
@@ -301,9 +271,7 @@ begin
     var LRow2 := LRow1 remove { Name };
 end;
 ....
-* Row Add
-+
-Row *link:O-System.iExtend.html[add]* allows columns to be added to a
+Row Add:: Row *link:O-System.iExtend.html[add]* allows columns to be added to a
 given row. The current values of the columns in the source row are
 available by column name within the expressions defining the new
 columns:
@@ -314,9 +282,7 @@ begin
     var LRow2 := LRow1 add { "John" Name };
 end;
 ....
-* Row Redefine
-+
-Row *link:D4LGTableExpressions-Redefine.html[redefine]* allows columns
+Row Redefine:: Row *link:D4LGTableExpressions-Redefine.html[redefine]* allows columns
 of a given row to be redefined. The current values of the columns in the
 source row are available by column name within the expressions defining
 the new columns. Just as with table redefine, this operator is defined
@@ -336,9 +302,7 @@ begin
             rename { X ID };
 end;
 ....
-* Row Rename
-+
-Row *link:O-System.iRename.html[rename]* allows columns of a given row
+Row Rename:: Row *link:O-System.iRename.html[rename]* allows columns of a given row
 to be renamed. The values of the renamed columns are unaffected:
 +
 ....
@@ -347,14 +311,10 @@ begin
     var LRow2 := LRow1 rename { ID X, Name Y };
 end;
 ....
-* Row Specify
-+
-Row specify allows the desired columns to be specified. Just as for
+Row Specify:: Row specify allows the desired columns to be specified. Just as for
 table-valued expressions, this operator is shorthand for an
 extend-project-rename operation.
-* Row Join
-+
-Row *link:O-System.iJoin.html[join]* allows two rows to be joined
+Row Join:: Row *link:O-System.iJoin.html[join]* allows two rows to be joined
 together. If the two rows have common column names, the values for those
 columns in each row must be equal:
 +
@@ -497,9 +457,7 @@ Statement].
 Once a cursor is open, all operations against it are done using the
 cursor operators:
 
-* link:O-System.Select.html[Select]
-+
-Select(**const** ACursor : **cursor**) : *row*
+link:O-System.Select.html[Select]:: Select(**const** ACursor : **cursor**) : *row*
 +
 Select(**const** ACursor : **cursor**, *var* ARow : **row**)
 +
@@ -513,9 +471,7 @@ the cursor.
 The row specified by ARow need not conform to the heading for the table
 over which the cursor ranges. Columns are matched by name with the given
 row.
-* link:O-System.Insert.html[Insert]
-+
-Insert(**const** ACursor : **cursor**, *const* ARow : **row**)
+link:O-System.Insert.html[Insert]:: Insert(**const** ACursor : **cursor**, *const* ARow : **row**)
 +
 Inserts the row given by ARow into the cursor specified by ACursor. The
 position of the cursor after the insert is determined by the cursor type
@@ -530,9 +486,7 @@ link:O-System.Reset.html[Reset] had been called.
 The row specified by ARow need not conform to the heading for the table
 over which the cursor ranges. Columns are matched by name with the given
 row.
-* link:O-System.Update.html[Update]
-+
-Update(**const** ACursor : **cursor**, *const* ARow : **row**)
+link:O-System.Update.html[Update]:: Update(**const** ACursor : **cursor**, *const* ARow : **row**)
 +
 Updates the current row of the cursor specified by ACursor to the values
 given by ARow. It is an error to call Update if either BOF or EOF is
@@ -548,9 +502,7 @@ link:O-System.Reset.html[Reset] had been called.
 The row specified by ARow need not conform to the heading for the table
 over which the cursor ranges. Columns are matched by name with the given
 row.
-* link:O-System.Delete.html[Delete]
-+
-Delete(**const** ACursor : **cursor**)
+link:O-System.Delete.html[Delete]:: Delete(**const** ACursor : **cursor**)
 +
 Deletes the current row of the cursor specified by ACursor. It is an
 error to call Delete if either BOF or EOF is true. The position of the
@@ -567,65 +519,47 @@ called.
 The row specified by ARow need not conform to the heading for the table
 over which the cursor ranges. Columns are matched by name with the given
 row.
-* link:O-System.BOF.html[BOF]
-+
-BOF(**const** ACursor : **cursor**) : Boolean
+link:O-System.BOF.html[BOF]:: BOF(**const** ACursor : **cursor**) : Boolean
 +
 Returns true if the cursor specified by ACursor is positioned on the BOF
 crack, or before the first row in the result set, and false otherwise.
-* link:O-System.EOF.html[EOF]
-+
-EOF(**const** ACursor : **cursor**) : Boolean
+link:O-System.EOF.html[EOF]:: EOF(**const** ACursor : **cursor**) : Boolean
 +
 Returns true if the cursor specified by ACursor is positioned on the EOF
 crack, or after the last row in the result set, and false otherwise.
-* link:O-System.First.html[First]
-+
-First(**const** ACursor : **cursor**)
+link:O-System.First.html[First]:: First(**const** ACursor : **cursor**)
 +
 Positions the cursor specified by ACursor on the BOF crack. BOF is
 guaranteed to be true after a call to First.
-* link:O-System.Prior.html[Prior]
-+
-Prior(**const** ACursor : **cursor**) : Boolean
+link:O-System.Prior.html[Prior]:: Prior(**const** ACursor : **cursor**) : Boolean
 +
 Navigates the cursor specified by ACursor to the prior row in the result
 set. If the navigation is successful, i.e. the cursor is positioned on a
 row, the operator returns true. Otherwise, the operator returns false.
-* link:O-System.Next.html[Next]
-+
-Next(**const** ACursor : **cursor**) : Boolean
+link:O-System.Next.html[Next]:: Next(**const** ACursor : **cursor**) : Boolean
 +
 Navigates the cursor specified by ACursor to the next row in the result
 set. If the navigation is successful, i.e. the cursor is positioned on a
 row, the operator returns true. Otherwise, the operator returns false.
-* link:O-System.Last.html[Last]
-+
-Last(**const** ACursor : **cursor**)
+link:O-System.Last.html[Last]:: Last(**const** ACursor : **cursor**)
 +
 Positions the cursor specified by ACursor on the EOF crack.
 link:O-System.EOF.html[EOF] is guaranteed to be true after a call to
 Last.
-* link:O-System.Reset.html[Reset]
-+
-Reset(**const** ACursor : **cursor**)
+link:O-System.Reset.html[Reset]:: Reset(**const** ACursor : **cursor**)
 +
 Refreshes the result set for the cursor specified by ACursor from the
 underlying database and positions the cursor on the BOF crack. Note that
 even a static cursor will be refreshed after a call to Reset.
 link:O-System.BOF.html[BOF] is guaranteed to be true after a call to
 Reset.
-* link:O-System.GetKey.html[GetKey]
-+
-GetKey(**const** ACursor : **cursor**) : *row*
+link:O-System.GetKey.html[GetKey]:: GetKey(**const** ACursor : **cursor**) : *row*
 +
 Gets the key value for the current row of the cursor specified by
 ACursor. This row can be used in subsequent calls to
 link:O-System.FindKey.html[FindKey] and
 link:O-System.FindNearest.html[FindNearest].
-* link:O-System.FindKey.html[FindKey]
-+
-FindKey(**const** ACursor : **cursor**, ARow : **row**) : Boolean
+link:O-System.FindKey.html[FindKey]:: FindKey(**const** ACursor : **cursor**, ARow : **row**) : Boolean
 +
 Finds the key value given by ARow in the cursor specified by ACursor. If
 the find is successful, the operator returns true, indicating that the
@@ -634,9 +568,7 @@ by ARow. Otherwise, the operator returns false, and the position of the
 cursor is unaffected. Note that if the key value specified by ARow is a
 partial key, then the cursor is not guaranteed to be on any particular
 row within the set of rows matching the partial key.
-* link:O-System.FindNearest.html[FindNearest]
-+
-FindNearest(**const** ACursor : **cursor**, ARow : **row**)
+link:O-System.FindNearest.html[FindNearest]:: FindNearest(**const** ACursor : **cursor**, ARow : **row**)
 +
 Finds the row most closely matching the key value given by ARow in the
 cursor specified by ACursor. No guarantees are made about the position
@@ -644,17 +576,13 @@ of the cursor after a call to FindNearest. As specified for the FindKey
 operator, if the key value given by ARow is a partial key, then the
 cursor is not guaranteed to be on any particular row within the set of
 rows matching the partial key.
-* link:O-System.Refresh.html[Refresh]
-+
-Refresh(**const** ACursor : **cursor**, ARow : **row**)
+link:O-System.Refresh.html[Refresh]:: Refresh(**const** ACursor : **cursor**, ARow : **row**)
 +
 Refreshes the result set for the cursor specified by ACursor and
 attempts to position the cursor on the row given by ARow. This operator
 is conceptually equivalent to calling link:O-System.Reset.html[Reset]
 followed by link:O-System.FindNearest.html[FindNearest].
-* link:O-System.GetBookmark.html[GetBookmark]
-+
-GetBookmark(**const** ACursor : **cursor**) : *row*
+link:O-System.GetBookmark.html[GetBookmark]:: GetBookmark(**const** ACursor : **cursor**) : *row*
 +
 Gets a bookmark for the current row of the cursor specified by ACursor.
 This bookmark can then be used in subsequent calls to
@@ -663,9 +591,7 @@ link:O-System.CompareBookmarks.html[CompareBookmarks]. Note that the
 structure of the row returned by GetBookmark is implementation defined
 and not guaranteed to be meaningful. A bookmark is only guaranteed to be
 valid for the cursor from which it was retrieved.
-* link:O-System.GotoBookmark.html[GotoBookmark]
-+
-GotoBookmark(**const** ACursor : **cursor**, *const* ABookmark :
+link:O-System.GotoBookmark.html[GotoBookmark]:: GotoBookmark(**const** ACursor : **cursor**, *const* ABookmark :
 **row**) : Boolean
 +
 Positions the cursor specified by ACursor on the row corresponding to
@@ -675,9 +601,7 @@ The operator returns true if the bookmark is valid and the cursor is
 positioned on the correct row. The operator returns false if the
 bookmark is invalid, or the row could not be located. If the operator
 returns false, the position of the cursor is unaffected.
-* link:O-System.CompareBookmarks.html[CompareBookmarks]
-+
-CompareBookmarks(**const** ACursor : **cursor**, *const* ABookmark1 :
+link:O-System.CompareBookmarks.html[CompareBookmarks]:: CompareBookmarks(**const** ACursor : **cursor**, *const* ABookmark1 :
 **row**, *const* ABookmark2 : **row**) : Integer
 +
 Compares the bookmarks given by ABookmark1 and ABookmark2 using the
@@ -686,9 +610,7 @@ previously retrieved with a call to
 link:O-System.GetBookmark.html[GetBookmark]. The operator returns -1 if
 ABookmark1 is less than ABookmark2, 0 if they are equal, and 1 if
 ABookmark1 is greater than ABookmark2.
-* link:O-System.Close.html[Close]
-+
-Close(**const** ACursor : **cursor**)
+link:O-System.Close.html[Close]:: Close(**const** ACursor : **cursor**)
 +
 Closes the cursor specified by ACursor and deallocates any associated
 resources. All cursors opened using a cursor selector must be closed
@@ -1232,35 +1154,26 @@ available within the D4 language by calling transaction management
 operators. The following list details the available transaction
 management operators:
 
-* BeginTransaction()
-+
+BeginTransaction()::
 Begins a transaction on the current process at the default isolation
 level for the process.
-* BeginTransaction(const AIsolationLevel : String)
-+
+BeginTransaction(const AIsolationLevel : String)::
 Begins a transaction on the current process at the specified isolation
 level.
-* PrepareTransaction()
-+
+PrepareTransaction()::
 Prepares the current transaction for commit by checking all deferred
 integrity constraints and invoking all deferred event handlers. This
 call will be invoked internally if not called prior to transaction
 commit. It is only exposed to allow the Dataphor Server to participate
 in two-phase commit distributed transactions.
-* CommitTransaction()
-+
-Prepares the current transaction if necessary, and commits it.
+CommitTransaction():: Prepares the current transaction if necessary, and commits it.
 * RollbackTransaction()
 +
 Rolls back the current transaction, undoing any data modifications that
 were performed during the transaction.
-* InTransaction()
-+
-Indicates whether or not the current process is participating in any
+InTransaction():: Indicates whether or not the current process is participating in any
 transactions.
-* TransactionCount()
-+
-Returns the number of transactions currently active on the current
+TransactionCount():: Returns the number of transactions currently active on the current
 process.
 
 After calling BeginTransaction(), the number of active transactions on

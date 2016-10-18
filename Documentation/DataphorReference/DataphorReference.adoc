@@ -1,3 +1,5 @@
+image::../Images/Dataphor-Logo.gif[Dataphor Logo]
+
 = Dataphor Reference
 :author: Alphora
 :doctype: book
@@ -5,8 +7,6 @@
 :toc:
 :lang: en
 :encoding: iso-8859-1
-
-image::../Images/Dataphor-Logo.gif[Dataphor Logo]
 
 .Sections
 . link:D4LanguageGrammar.adoc[D4 Language Grammar]

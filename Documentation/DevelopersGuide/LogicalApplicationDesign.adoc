@@ -1,11 +1,11 @@
 = Logical Application Design
 :author: Alphora
 :doctype: book
-:toc:
 :data-uri:
 :lang: en
 :encoding: iso-8859-1
 
+.Sections
 . link:Preliminaries.adoc[Preliminaries]
 . link:ImplementingDataTypes.adoc[Implementing Data Types]
 . link:RepresentingData.adoc[Representing Data with Tables and Views]
