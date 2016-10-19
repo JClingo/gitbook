@@ -1,4 +1,5 @@
 {
+  "root": "./Documentation",
   "plugins": [
     "navigator",
     "expandable-chapters-small"
