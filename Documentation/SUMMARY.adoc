@@ -1,6 +1,9 @@
 = Dataphor
 
 . link:README.adoc[Introduction]
+
+### User's Guide
+
 . link:Documentation/UsersGuide/UsersGuide.adoc[User's Guide]
 .. link:Documentation/UsersGuide/ProductTour.adoc[Product Tour]
 ... link:Documentation/UsersGuide/DataphorServer.adoc[Dataphor Server]
@@ -24,6 +27,9 @@
 ... link:Documentation/UsersGuide/Tutorial_MovieRental.adoc[Movie Rental]
 ... link:Documentation/UsersGuide/Tutorial_BookPublishing.adoc[Book Publishing (with Pubs sample database)]
 ... link:Documentation/UsersGuide/Tutorial_SampleComponents.adoc[Frontend Components]
+
+### Developer's Guide
+
 . link:Documentation/DevelopersGuide/DevelopersGuide.adoc[Developer's Guide]
 .. link:Documentation/DevelopersGuide/Introduction.adoc[Introduction]
 ... link:Documentation/DevelopersGuide/ApplicationDevelopmentConsiderations.adoc[Application Development Considerations]
@@ -55,6 +61,9 @@
 ... link:Documentation/DevelopersGuide/D4TableOperators.adoc[Table Operators]
 ... link:Documentation/DevelopersGuide/D4ImperativeStatements.adoc[Imperative Statements]
 ... link:Documentation/DevelopersGuide/D4ComparisonWithSQL.adoc[Comparison with SQL]
+
+### Dataphor Reference
+
 . link:Documentation/DataphorReference/DataphorReference.adoc[Dataphor Reference]
 .. link:Documentation/DataphorReference/D4LanguageGrammar.adoc[D4 Language Grammar]
 .. link:Documentation/DataphorReference/FrontendComponents.adoc[Frontend Components]
