@@ -11,7 +11,7 @@
 This chapter describes each Dataphor metadata tag.
 
 .Further reference
-*link:D4LGCatalogElements-Objects-Metadata.html[Tags in Data Definition Language (DDL) statements]*
+*link:../DevelopersGuide/D4Catalog#D4LGCatalogElements-Objects-Metadata[Tags in Data Definition Language (DDL) statements]*
 
 *link:D4LGTableExpressions-Adorn.html[The Adorn Operator]*
 
