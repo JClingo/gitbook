@@ -11,7 +11,7 @@
 This chapter describes each Dataphor metadata tag.
 
 .Further reference
-*link:../DevelopersGuide/D4Catalog[Tags in Data Definition Language (DDL) statements]*
+*link:../DevelopersGuide/D4Catalog.adoc[Tags in Data Definition Language (DDL) statements]*
 
 *link:D4LGTableExpressions-Adorn.html[The Adorn Operator]*
 
@@ -236,8 +236,7 @@ DAE.<native accessor name> = "<representation name>"
 * Scalar Types
 
 [[FTRTagsDescriptions-DAETags-ShouldTranslate]]
-== DAE.ShouldTranslate - Metadata TagDAE
-TagsShouldTranslateShouldTranslate
+=== ShouldTranslate
 
 Overrides the default determination for whether the object on which it
 appears should be translated into an application transaction. The
