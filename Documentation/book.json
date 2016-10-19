@@ -1,3 +1,6 @@
 {
-    plugins: ["navigator"],
+  "plugins": [
+    "navigator",
+    "expandable-chapters-small"
+  ]
 }
