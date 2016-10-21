@@ -4,7 +4,7 @@ image::../Images/Dataphor-Logo.gif[Dataphor Logo]
 :author: Alphora
 :doctype: book
 :data-uri:
-:toc:
+
 :lang: en
 :encoding: iso-8859-1
 

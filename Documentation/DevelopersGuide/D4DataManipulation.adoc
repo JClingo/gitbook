@@ -1,7 +1,7 @@
 = Data Manipulation
 :author: Alphora
 :doctype: book
-:toc:
+
 :data-uri:
 :lang: en
 :encoding: iso-8859-1
@@ -122,7 +122,7 @@ The basis of the cursor definition is a table expression specified by
 <expression>. For a detailed description of the <expression> production
 rule, refer to link:D4LGLanguageElements-Expressions.html[Expressions].
 For a complete description of the table operators avaialable in D4,
-refer to link:D4LGTableExpressions.html[Table Operators].
+refer to <<D4TableOperators.adoc#D4LGTableExpressions, Table Operators>>.
 
 [[D4LGDataManipulation-SelectStatement-OrderingTheResultSet]]
 === Ordering the Result Set
@@ -616,7 +616,7 @@ expression specifying the new value for each column can access the
 current values of the target row by name.
 
 The update statement includes an optional
-*link:D4LGTableExpressions-Where.html[where]* specification that
+<<D4TableOperators.adoc#D4LGTableExpressions-Where, where>> specification that
 indicates which rows of the target expression are to be updated. It is
 an error to specify an update condition when the target is a row
 variable.

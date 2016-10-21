@@ -1,7 +1,7 @@
 = Using Dataphor Forms
 :author: Alphora
 :doctype: book
-:toc:
+
 :icons:
 :data-uri:
 :lang: en

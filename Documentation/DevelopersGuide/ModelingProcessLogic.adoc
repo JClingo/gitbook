@@ -1,7 +1,7 @@
 = Modeling Process Logic
 :author: Alphora
 :doctype: book
-:toc:
+
 :data-uri:
 :lang: en
 :encoding: iso-8859-1
@@ -282,7 +282,7 @@ begin
     var LRow2 := LRow1 add { "John" Name };
 end;
 ....
-Row Redefine:: Row *link:D4LGTableExpressions-Redefine.html[redefine]* allows columns
+Row Redefine:: Row <<D4TableOperators.adoc#D4LGTableExpressions-Redefine, redefine>> allows columns
 of a given row to be redefined. The current values of the columns in the
 source row are available by column name within the expressions defining
 the new columns. Just as with table redefine, this operator is defined

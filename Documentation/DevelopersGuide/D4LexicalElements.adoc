@@ -1,7 +1,7 @@
 = Lexical Elements
 :author: Alphora
 :doctype: book
-:toc:
+
 :data-uri:
 :lang: en
 :encoding: iso-8859-1
@@ -149,7 +149,7 @@ all uses of a keyword.
 
 **link:D4LGCatalogElements-Devices.html[device]**,
 
-**link:D4LGTableExpressions-Aggregate.html[distinct]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, distinct>>*,
 
 ***link:D4LGLanguageElements-Expressions-ArithmeticExpression.html[div]**,
 
@@ -175,7 +175,7 @@ all uses of a keyword.
 
 ***link:D4LGImperativeStatements-FlowControl-ExitStatement.html[exit]**,
 
-***link:D4LGTableExpressions.html[explode]**,
+*<<link:D4TableOperators.adoc#D4LGTableExpressions, explode>>*,
 
 ***link:D4LGLexicalElements-ParserLiterals-BooleanParserLiterals.html[false]**,
 
@@ -185,15 +185,15 @@ all uses of a keyword.
 
 ***link:D4LGForStatement.html[for]**,
 
-**link:D4LGTableExpressions-RowExtractor.html[from]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions-RowExtractor, from>>*,
 
 **link:D4LGLanguageElements-Types.html[generic]**,
 
 ***link:D4LGCatalogElements-Security.html[grant]**,
 
-***link:D4LGTableExpressions-Aggregate.html[group]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, group>>*,
 
-***link:D4LGTableExpressions-Having.html[having]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions-Having, having>>*,
 
 ***link:D4LGIfStatement.html[if]**,
 
@@ -211,7 +211,7 @@ all uses of a keyword.
 
 ***link:D4LGDataManipulation-InsertStatement.html[insert]**,
 
-***link:D4LGTableExpressions.html[intersect]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions, intersect>>*,
 
 **link:D4LGDataManipulation-InsertStatement.html[into]**,
 
@@ -221,25 +221,25 @@ all uses of a keyword.
 
 **link:DRD4ParserBNF.html#D4ParserBNFcursorisolation[isolation]**,
 
-***link:D4LGTableExpressions.html[join]**,
+*<<link:D4TableOperators.adoc#D4LGTableExpressions, join>>*,
 
 ***link:D4LGKeys.html[key]**,
 
-***link:D4LGTableExpressions-OuterJoin.html[left]**,
+*<<link:D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, left>>*,
 
-**link:D4LGTableExpressions-Explode.html[level]**,
+*<<link:D4TableOperators.adoc#D4LGTableExpressions-Explode, level>>*,
 
 ***link:D4LGCatalogElements-Conversions-LikeTypes.html[like]**,
 
 ***link:D4LGLanguageElements-Types-ListTypes.html[list]**,
 
-***link:D4LGTableExpressions-Join.html[lookup]**,
+*<<link:D4TableOperators.adoc#D4LGTableExpressions-Join, lookup>>*,
 
 **link:D4LGCatalogElements-Devices.html[master]**,
 
 ***link:O-System.iMatches.html[matches]**,
 
-***link:D4LGTableExpressions.html[minus]**,
+*<<link:D4TableOperators.adoc#D4LGTableExpressions, minus>>*,
 
 ***link:O-System.iMod.html[mod]**,
 
@@ -269,7 +269,7 @@ all uses of a keyword.
 
 ***origin**,
 
-***link:D4LGTableExpressions.html[over]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions, over>>*,
 
 ***link:D4LGLanguageElements-Expressions-Factor.html[parent]**,
 
@@ -281,15 +281,15 @@ all uses of a keyword.
 
 **link:D4LGCatalogElements-Security.html[recursively]**,
 
-***link:D4LGTableExpressions.html[redefine]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions, redefine>>*,
 
 ***link:D4LGCatalogElements-References.html[reference]**,
 
 **link:D4LGCatalogElements-References.html[references]**,
 
-***link:D4LGTableExpressions.html[remove]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions, remove>>*,
 
-***link:D4LGTableExpressions.html[rename]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions, rename>>*,
 
 ***link:D4LGRepeatUntilStatement.html[repeat]**,
 
@@ -299,19 +299,19 @@ all uses of a keyword.
 
 **link:D4LGCatalogElements-Operators-Operators.html[result]**,
 
-***link:D4LGTableExpressions-Quota.html[return]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions-Quota, return>>*,
 
 ***link:D4LGCatalogElements-Security.html[revert]**,
 
 ***link:D4LGCatalogElements-Security.html[revoke]**,
 
-***link:D4LGTableExpressions-OuterJoin.html[right]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, right>>*,
 
 **link:D4LGCatalogElements-Security.html[role]**,
 
-***link:D4LGTableExpressions-RowExtractor.html[row]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions-RowExtractor, row>>*,
 
-**link:D4LGTableExpressions-OuterJoin.html[rowexists]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, rowexists>>*,
 
 **link:D4LGLanguageElements-Types-ScalarTypes.html[scalar]**,
 
@@ -319,7 +319,7 @@ all uses of a keyword.
 
 ***link:D4LGCatalogElements-ScalarTypes-PossibleRepresentations.html[selector]**,
 
-**link:D4LGTableExpressions-Explode.html[sequence]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions-Explode, sequence>>*,
 
 **link:D4LGCatalogElements-Operators-Operators.html[session]**,
 
@@ -337,7 +337,7 @@ all uses of a keyword.
 
 **link:DRD4ParserBNF.html#D4ParserBNFdevicestoredefinition[store]**,
 
-***link:D4LGTableExpressions.html[table]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions, table>>*,
 
 ***link:DRD4ParserBNF.html#D4ParserBNFtags[tags]**,
 
@@ -345,7 +345,7 @@ all uses of a keyword.
 
 **link:D4LGCaseStatement.html[then]**,
 
-***link:D4LGTableExpressions.html[times]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions, times>>*,
 
 ***link:D4LGCatalogElements-Conversions.html[to]**,
 
@@ -359,7 +359,7 @@ all uses of a keyword.
 
 ***link:D4LGCatalogElements-ScalarTypes.html[typeof]**,
 
-***link:D4LGTableExpressions.html[union]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions, union>>*,
 
 ***link:D4LGRepeatUntilStatement.html[until]**,
 
@@ -383,7 +383,7 @@ all uses of a keyword.
 
 **link:D4LGCaseStatement.html[when]**,
 
-***link:D4LGTableExpressions.html[where]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions, where>>*,
 
 ***link:D4LGImperativeStatements-FlowControl-LoopingStatements.html[while]**,
 
@@ -391,7 +391,7 @@ all uses of a keyword.
 
 ***link:D4LGLanguageElements-Expressions-LanguageModifiers.html[with]**,
 
-***link:D4LGTableExpressions-Without.html[without]**,
+*<<D4TableOperators.adoc#D4LGTableExpressions-Without, without>>*,
 
 ***link:D4LGProperties.html[write]**,
 

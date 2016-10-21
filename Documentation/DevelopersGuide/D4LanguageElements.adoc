@@ -1,7 +1,7 @@
 = Language Elements
 :author: Alphora
 :doctype: book
-:toc:
+
 :data-uri:
 :lang: en
 :encoding: iso-8859-1
@@ -544,7 +544,7 @@ select table of { DecimalNumber : Decimal } { };
 ....
 
 For more information on using table values in D4, see
-link:D4LGTableExpressions.html[Table Operators].
+<<D4TableOperators.adoc#D4LGTableExpressions, Table Operators>>.
 
 *See Also*
 
@@ -953,7 +953,7 @@ D4 expressions have the following syntax:
 ....
 
 For a detailed description of the <table operator clause> production
-rule see link:D4LGTableExpressions.html[Table Operators].
+rule see <<D4TableOperators.adoc#D4LGTableExpressions, Table Operators>>.
 
 [[D4LGNilSemantics]]
 === Nil Semantics

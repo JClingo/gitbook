@@ -1,7 +1,6 @@
 = Representing Data with Tables and Views
 :author: Alphora
 :doctype: book
-:toc:
 :data-uri:
 :lang: en
 :encoding: iso-8859-1
@@ -268,7 +267,7 @@ Sample.Shipping library.
 
 Note that this discussion only includes the most common table operators.
 For a complete description of all the available table operators, refer
-to the link:D4LGTableExpressions.html[Table Operators] chapter of the D4
+to the <<D4TableOperators.adoc#D4LGTableExpressions, Table Operators>> chapter of the D4
 Language Guide.
 
 [[DDGRepresentingDatawithTablesandViews-TableOperators-CompilerInferenceMechanisms]]
@@ -453,19 +452,19 @@ projection. The extension and rename operations are only included when
 necessary.
 
 For more information on the *over* and *remove* operators, refer to the
-link:D4LGTableExpressions-OverandRemove.html[Over and Remove] discussion
+<<D4TableOperators.adoc#D4LGTableExpressions-OverandRemove, Over and Remove>> discussion
 in the D4 Language Guide.
 
 For more information on the specify operator, refer to the
-link:D4LGTableExpressions-Specify.html[Specify] discussion in the D4
+<<D4TableOperators.adoc#D4LGTableExpressions-Specify, Specify>> discussion in the D4
 Language Guide.
 
 For more information on the *rename* operator, refer to the
-link:D4LGTableExpressions-Rename.html[Rename] discussion in the D4
+<<D4TableOperators.adoc#D4LGTableExpressions-Rename, Rename>> discussion in the D4
 Language Guide.
 
 For more information on the *add* operator, refer to the
-link:D4LGTableExpressions-Add.html[Extension] discussion in the D4
+<<D4TableOperators.adoc#D4LGTableExpressions-Add, Extension>> discussion in the D4
 Language Guide.
 
 [[DDGRepresentingDatawithTablesandViews-TableOperators-Restriction]]
@@ -547,7 +546,7 @@ select Location['01001'].Name
 ....
 
 For more information on the *where* operator, refer to the
-link:D4LGTableExpressions-Where.html[Restriction] discussion in the D4
+<<D4TableOperators.adoc#D4LGTableExpressions-Where, Restriction>> discussion in the D4
 Language Guide.
 
 ==== Quota Queries
@@ -615,7 +614,7 @@ ID Location_ID User_ID Date      Status_ID
 ....
 
 For more information on the *return* operator, refer to the
-link:D4LGTableExpressions-Quota.html[Quota] discussion in the D4
+<<D4TableOperators.adoc#D4LGTableExpressions-Quota, Quota>> discussion in the D4
 Language Guide.
 
 === Combining Rows From Multiple Tables
@@ -649,7 +648,7 @@ ID
 ....
 
 For more information on the *union* operator, refer to the
-link:D4LGTableExpressions-Union.html[Union] discussion in the D4
+<<D4TableOperators.adoc#D4LGTableExpressions-Union, Union>> discussion in the D4
 Language Guide.
 
 ==== Difference
@@ -680,7 +679,7 @@ ID
 ....
 
 For more information on the *minus* operator, refer to the
-link:D4LGTableExpressions-Minus.html[Minus] discussion in the D4
+<<D4TableOperators.adoc#D4LGTableExpressions-Minus, Minus>> discussion in the D4
 Language Guide.
 
 ==== Join
@@ -893,11 +892,11 @@ the Cartesian product of the keys of the inputs, or
 \{ ID, Contact_ID, Number }.
 
 For more information on the various *join* operators, refer to the
-link:D4LGTableExpressions-Join.html[Join] discussion in the D4 Language
+<<D4TableOperators.adoc#D4LGTableExpressions-Join, Join>> discussion in the D4 Language
 Guide.
 
 For more information on outer joins specifically, refer to the
-link:D4LGTableExpressions-OuterJoin.html[Outer Join] discussion in the
+<<D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, Outer Join>> discussion in the
 D4 Language Guide.
 
 [[DDGRepresentingDatawithTablesandViews-TableOperators-Aggregation]]
@@ -935,7 +934,7 @@ Invoice_ID InvoiceTotal
 ....
 
 For more information on the *group* operator, refer to the
-link:D4LGTableExpressions-Aggregate.html[Aggregate] discussion in the D4
+<<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, Aggregate>> discussion in the D4
 Language Guide.
 
 The following aggregate operators are defined in the System library:
@@ -976,7 +975,7 @@ the Frontend. As such, discussion of this operator will be deferred to
 the next part.
 
 For more information on the *adorn* operator, refer to the
-link:D4LGTableExpressions-Adorn.html[Adorn] discussion in the D4
+<<D4TableOperators.adoc#D4LGTableExpressions-Adorn, Adorn>> discussion in the D4
 Language Guide.
 
 [[DDGRepresentingDatawithTablesandViews-TableOperators-Extraction]]

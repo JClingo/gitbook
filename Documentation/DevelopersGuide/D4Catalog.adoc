@@ -1,7 +1,7 @@
 = Catalog Elements
 :author: Alphora
 :doctype: book
-:toc:
+
 :data-uri:
 :lang: en
 :encoding: iso-8859-1
@@ -239,7 +239,7 @@ Alter metadata in D4 has the following syntax:
 ....
 
 Metadata tags can be specified in most DDL statements. In addition, some
-operators such as *link:D4LGTableExpressions-Adorn.html[adorn]* allow
+operators such as *<<D4TableOperators.adoc#D4LGTableExpressions-Adorn, adorn>>* allow
 metadata to be added directly in an expression.
 
 Each metadata tag may be either _static_ or __dynamic__. Static metadata
@@ -1521,7 +1521,7 @@ Characteristics].
 
 *See Also*
 
-link:D4LGTableExpressions.html[Table Operators]
+<<D4TableOperators.adoc#D4LGTableExpressions, Table Operators>>
 
 [[D4LGColumns]]
 ==== Columns
@@ -1696,7 +1696,7 @@ post-modification data satisfies the predicate of the view. The
 predicate of the view is, loosely speaking, the meaning of the result
 and is inferred from the defining expression of the view. For a
 discussion of updatability semantics for each operator, see
-link:D4LGTableExpressions.html[Table Operators].
+<<D4TableOperators.adoc#D4LGTableExpressions, Table Operators>>.
 
 The create view statement in D4 has the following syntax:
 
@@ -2364,11 +2364,11 @@ Aggregate operators can be invoked in one of two ways. First, they can
 be invoked as part of the *add* clause of an *group* table operator.
 Second, they invoked stand-alone a scalar aggregate operator invocation.
 For a complete description of the *group* table operator, refer to the
-*link:D4LGTableExpressions-Aggregate.html[group]* discussion in this
+*<<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, group>>* discussion in this
 guide.
 
 Outside the context of a
-*link:D4LGTableExpressions-Aggregate.html[group]* operator, aggregate
+*<<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, group>>* operator, aggregate
 operators must be called using an scalar aggregate operator invocation.
 For example, to compute the sum of the values for a column Data of some
 table Integers, the following expression would be used:
@@ -2439,7 +2439,7 @@ select
 
 *See Also*
 
-link:D4LGTableExpressions-Aggregate.html[Aggregate]
+<<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, Aggregate>>
 
 [[D4LGCatalogElements-Devices]]
 == Device

@@ -1,7 +1,7 @@
 = Comparison With SQL
 :author: Alphora
 :doctype: book
-:toc:
+
 :data-uri:
 :lang: en
 :encoding: iso-8859-1
@@ -583,7 +583,7 @@ the result. In D4, the equivalent query is:
 select Employee where ID > 3;
 ....
 
-The *link:D4LGTableExpressions-Where.html[where]* operator in D4
+The <<D4TableOperators.adoc#D4LGTableExpressions-Where, where>> operator in D4
 performs the same type of filtering on the result.
 
 [[D4LGComparisonWithSQL-MappinganSQLQueryIntoD4-UnravelingtheColumnList]]
@@ -609,8 +609,8 @@ select Employee over { Name };
 ....
 
 Projection in D4 is always done using one of two operators,
-*link:D4LGTableExpressions-OverandRemove.html[over]* and
-**link:D4LGTableExpressions-OverandRemove.html[remove]**. Over allows
+<<link:D4TableOperators.adoc#D4LGTableExpressions-OverandRemove, over>> and
+<<link:D4TableOperators.adoc#D4LGTableExpressions-OverandRemove, remove>>. Over allows
 the desired columns to be specified, while remove allows the unwanted
 columns to be specified. Thus an alternative formulation of the query
 is:
@@ -648,7 +648,7 @@ The equivalent statement in D4 is:
 select Employee add { Length(Name) NameLength };
 ....
 
-The *link:D4LGTableExpressions-Add.html[add]* operator of D4 allows
+The <<link:D4TableOperators.adoc#D4LGTableExpressions-Add, add>> operator of D4 allows
 columns to be added to the result. The values for the new columns are
 given by the expressions in the add clause.
 
@@ -673,8 +673,7 @@ select ID, Name as LastName from Employee
 ....
 
 This query illustrates the third of the four tasks being specified by
-the
-link:D4LGComparisonWithSQL-MappinganSQLQueryIntoD4-UnravelingtheColumnList.html[column
+the link:D4LGComparisonWithSQL-MappinganSQLQueryIntoD4-UnravelingtheColumnList.html[column
 list], that of renaming columns. The optional *as* keyword is used to
 specify a new name for the given column.
 
@@ -684,7 +683,7 @@ In D4, the equivalent query is:
 select Employee rename { Name LastName };
 ....
 
-The *link:D4LGTableExpressions-Rename.html[rename]* operator of D4
+The <<link:D4TableOperators.adoc#D4LGTableExpressions-Rename, rename>> operator of D4
 allows the names of the columns in a result to be changed. This operator
 has no effect on the values of the columns in the result.
 
@@ -724,7 +723,7 @@ On the surface the SQL version of the query looks very similar to the
 extend operator, but in reality, the task is completely different, and
 is the fourth task specified in the
 link:D4LGComparisonWithSQL-MappinganSQLQueryIntoD4-UnravelingtheColumnList.html[column
-list], that of link:D4LGTableExpressions-Aggregate.html[aggregation].
+list], that of <<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, aggregation>>.
 Actually, the task is split between the expressions in the column list,
 and the group by clause, a fact which serves to complicate matters even
 further.
@@ -783,9 +782,9 @@ select Employee
 ....
 
 Note that the actual task of computing the expression to be grouped on
-is relegated to the *link:D4LGTableExpressions-Add.html[add]* operator,
+is relegated to the <<D4TableOperators.adoc#D4LGTableExpressions-Add, add>> operator,
 rather than intermixed with the
-*link:D4LGTableExpressions-Aggregate.html[group]* operator. By cleanly
+<<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, group>> operator. By cleanly
 separating the tasks involved, the complexity of the language is
 reduced, while the power is increased.
 
@@ -816,7 +815,7 @@ select Employee
 
 There is no need to introduce a new concept for filtering, we already
 have that functionality in the
-*link:D4LGTableExpressions-Where.html[where]* operator. Because D4 is an
+<<D4TableOperators.adoc#D4LGTableExpressions-Where, where>> operator. Because D4 is an
 algebra, the result of any operator can be used as an argument to the
 next operator. This allows us to simply add another where referencing
 the EmployeeCount column.
@@ -861,7 +860,7 @@ Because no projection is being performed, it is simply not specified.
 Note also that in D4 there is no *inner* keyword.
 
 To illustrate the next kind of
-link:D4LGTableExpressions-Join.html[join], suppose we are asked 'Get all
+<<D4TableOperators.adoc#D4LGTableExpressions-Join, join>>, suppose we are asked 'Get all
 possible combinations of two employees.' In SQL we write:
 
 ....
@@ -871,7 +870,7 @@ select *
 ....
 
 This is known as the cross-product, or
-*link:D4LGTableExpressions-Times.html[times]* operator, and specifies
+<<D4TableOperators.adoc#D4LGTableExpressions-Times, times>> operator, and specifies
 that for each row in the left table and each row in the right table a
 row should appear in the result that is the concatenation of both rows.
 Note that we now have two of each column in the result, and are faced
@@ -903,7 +902,7 @@ select (Employee rename { ID E1.ID, Name E1.Name })
 ....
 
 Clearly this involves an excessive amount of renaming, so D4 introduces
-a variant of the *link:D4LGTableExpressions-Rename.html[rename]*
+a variant of the <<D4TableOperators.adoc#D4LGTableExpressions-Rename, rename>>
 operator that works for all the columns in a table. Using this operator
 we can rewrite the query as:
 
@@ -914,9 +913,9 @@ select (Employee rename E1) times (Employee rename E2);
 and obtain an equivalent result.
 
 The next kind of join possible in the join clause is called an
-link:D4LGTableExpressions-OuterJoin.html[outer join]. There are three
+<<D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, outer join>>. There are three
 different flavors of outer join in SQL: left, right, and full. Suppose
-we are asked 'Get IDs and Names of all employees toghether with the
+we are asked 'Get IDs and Names of all employees together with the
 PhoneNumbers of those employees, if they have one.' In SQL we write:
 
 ....
@@ -939,13 +938,13 @@ select Employee left join EmployeePhone by ID = Employee_ID;
 The right join simply specifies the right table as the one that should
 have unmatched rows included, and a full join states that both sides
 should have unmatched rows included. D4 supports the right join, with
-the *link:D4LGTableExpressions-OuterJoin.html[right join]* operator, but
+the <<D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, right join>> operator, but
 does not support the full join operator, as it is rarely used, and is
 only shorthand for the union of the left and right joins.
 
 An important difference between the join operators of SQL and D4 is that
 in D4, all joins are required to be
-link:D4LGTableExpressions-Join-NaturalJoins.html[equi-joins]. To see why
+<<D4TableOperators.adoc#D4LGTableExpressions-Join-NaturalJoins, equi-joins>>. To see why
 this is so, we must first show that any join can be expressed using a
 combination of cross-product and restrict:
 
@@ -1018,7 +1017,7 @@ union clause is allowed to include an optional *all* which indicates
 that duplicates should not be eliminated from the result. If a given row
 appears in both the left and right sides of the union, it will appear
 twice in the result. In D4, duplicates are never allowed, so no such
-option is available for the link:D4LGTableExpressions-Union.html[union]
+option is available for the <<D4TableOperators.adoc#D4LGTableExpressions-Union, union>>
 operator.
 
 Next, we consider the intersect operator. If we change our query to 'Get
@@ -1051,7 +1050,7 @@ select
 Again, note that the SQL version of the operator includes an optional
 *all* which specifies that duplicates should not be eliminated from the
 result. D4 has no such option for the
-*link:D4LGTableExpressions-Intersect.html[intersect]* operator.
+<<D4TableOperators.adoc#D4LGTableExpressions-Intersect, intersect>> operator.
 
 Finally, the difference operator. If we change our query to 'Get the IDs
 of all employees that have phones and do not have managers' then the SQL
@@ -1084,7 +1083,7 @@ select
 Once again, the SQL version of the operator includes the *all* keyword
 which specifies that duplicate elimination should not occur. D4 has no
 counterpart for this version of the difference operator,
-link:D4LGTableExpressions-Minus.html[minus].
+<<D4TableOperators.adoc#D4LGTableExpressions-Minus, minus>>.
 
 [[D4LGComparisonWithSQL-MappinganSQLQueryIntoD4-TheOrderByClause]]
 === The Order By Clause
@@ -1151,7 +1150,7 @@ and
 insert Employee redefine { ID := ID + 6 } into Employee;
 ....
 
-Note: the *link:D4LGTableExpressions-Redefine.html[redefine]* operator
+Note: the <<D4TableOperators.adoc#D4LGTableExpressions-Redefine, redefine>> operator
 is shorthand for an equivalent *add-rename-remove* operation.
 
 Several important points should be made about the above statements:

@@ -1,7 +1,7 @@
 = Table Operators
 :author: Alphora
 :doctype: book
-:toc:
+
 :data-uri:
 :lang: en
 :encoding: iso-8859-1
@@ -582,8 +582,9 @@ The explode clause in D4 has the following syntax:
         [<language modifiers>]
 ....
 
-The expressions specified in the by clause and the
-link:D4LGTableExpressions-Where.html[where] clause must be
+The expressions specified in the by clause and the link:
+<<D4TableOperators.adoc#D4LGTableExpressions-Where, where>>
+clause must be
 boolean-valued. The by clause specifies the explode condition, and the
 where clause specifies the root condition. Within the explode condition,
 the values of the current parent row are accessible by the name of the
@@ -947,7 +948,7 @@ inputs to the intersect operator must be of the same table type.
 
 Because *intersect* is a special case of **join**, it has the same
 semantics for type inference and updatability. For this information, see
-**link:D4LGTableExpressions-Join.html[join]**.
+<<D4TableOperators.adoc#D4LGTableExpressions-Join, join>>
 
 The following example illustrates the use of the *intersect* operator:
 
@@ -964,8 +965,8 @@ ID Name
 
 *See Also*
 
-link:D4LGTableExpressions-Join.html[Join] |
-link:D4LGTableExpressions-Times.html[Times] |
+<<D4TableOperators.adoc#D4LGTableExpressions-Join, Join>> |
+<<D4TableOperators.adoc#D4LGTableExpressions-Times, Times>> |
 link:O-System.iJoin.html[Sytem.iJoin]
 
 [[D4LGTableExpressions-Minus]]
@@ -1022,7 +1023,7 @@ ID Name
 *See Also*
 
 link:O-System.iDifference.html[System.iDifference] |
-link:D4LGTableExpressions.html[Table Operators]
+<<D4TableOperators.adoc#D4LGTableExpressions, Table Operators>>
 
 [[D4LGTableExpressions-Times]]
 == Times
