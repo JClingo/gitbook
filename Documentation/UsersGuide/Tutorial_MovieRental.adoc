@@ -16,13 +16,13 @@ your own applications.
 *Concepts*
 
 * link:DUGP1ProductTour-DataphorServer.html[Connecting to a Dataphor Server]
-* link:D4LGCatalogElements-Devices.html[Devices]
+* <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Devices, Devices>>
 * link:D4LGProgrammingTopics-UsingGenerators.html[Auto-incrementing and Generators]
-* link:D4LGCatalogElements-TableVariables.html[Tables]
+* <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-TableVariables, Tables>>
 * link:D4LGDataManipulation-SelectStatement.html[Queries (select)]
 * link:DRTags.html[Tags]
-* link:D4LGCatalogElements-References.html[References] and link:D4LGCatalogElements-Constraints.html[Constraints]
-* link:D4LGCatalogElements-Operators.html[Operators]
+*<<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-References, References>> and <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Constraints, Constraints>>
+* <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Operators, Operators>>
 * link:D4LGScriptsandExecution.html[D4 Scripts] and C#/VB Scripts
 
 *Technical Terms*
@@ -113,7 +113,7 @@ right click on Sample.Rental library, and select Register. The color and
 shape of the icon changes to show that the Sample.Rental library is now
 registered. The Green arrow shows that the library is the current
 library. For more about libraries see
-link:D4LGCatalogElements-Libraries.html[Libraries].
+<<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Libraries, Libraries>>.
 
 image::../Images/RentalTut001.png[Rental Tutorial - 1]
 
@@ -264,8 +264,7 @@ of the current library are searched breadth first until a default device
 is found. Ultimately, the System.Temp memory device will be used. The
 System.Temp device is created and maintained by the Dataphor Server. For
 more information about default devices, see
-link:D4LGCatalogElements-Libraries-DefaultDeviceResolution.html[Default
-Device Resolution].
+<<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Libraries-DefaultDeviceResolution, Default Device Resolution>>.
 
 Also, the SetDefaultDeviceName operator can be used to specify the
 default device. Do this now, so that for the rest of the tutorial you
@@ -363,7 +362,7 @@ Dataphor Server, such as the Frontend Clients and Servers, can use this
 metadata. In the case of the Frontend, metadata is used to control the
 way a form will look when it is derived from the tables and queries. For
 more information about metadata see
-link:D4LGCatalogElements-Objects-Metadata.html[Metadata].
+<<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Objects-Metadata, Metadata>>.
 
 Frontend tags can be specific or general. For example:
 
@@ -744,7 +743,7 @@ reference constraint ensures that values of the Type column of the Movie
 table must be either a value within the ID column of the MovieType
 table, or be a value which has been marked **special**. For more
 information on special values see
-link:D4LGCatalogElements-ScalarTypes-SpecialValues.html[Special Values].
+<<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-ScalarTypes-SpecialValues, Special Values>>.
 
 Every row in the source table of the reference must either be set to a
 *special* or have a corresponding row in the target table for which the
@@ -776,7 +775,7 @@ reference describes a one to many or lookup/detail relationship. This
 information is used by the Dataphor Frontend to derive appropriate
 user interfaces for any given table, view, or even expression. For more
 information about references, see
-link:D4LGCatalogElements-References.html[References].
+<<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-References,References>>.
 
 === Actor Table
 
@@ -1248,7 +1247,7 @@ attach operator AddRental to RentedVideo on after insert;
 ....
 
 For more information on operators see
-link:D4LGCatalogElements-Operators.html[Operators].
+<<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Operators, Operators>>.
 
 A way to view the videos that are currently available would be useful.
 

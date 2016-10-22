@@ -950,6 +950,7 @@ The following aggregate operators are defined in the System library:
 In addition D4 allows user-defined aggregate operators to be created
 using the *create aggregate operator* statement. For more information on
 creating aggregate operators, refer to
+<<D4Catalog.adoc#, >>
 link:D4LGCatalogElements-Operators-AggregateOperators.html[Aggregate
 Operators] in the D4 Language Guide.
 

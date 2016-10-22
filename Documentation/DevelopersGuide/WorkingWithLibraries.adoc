@@ -24,8 +24,8 @@ information given when connecting to the Dataphor Server, and can be
 controlled using the link:O-System.SetLibrary.html[SetLibrary] operator.
 The current library is used for several purposes in the Dataphor Server
 such as default device resolution,
-link:D4LGCatalogElements-Libraries-LibrariesandNamespaces.html[name
-resolution], and is the default library for all newly created objects.
+<<D4LGCatalogElements-Libraries-LibrariesandNamespaces, name resolution>>,
+and is the default library for all newly created objects.
 
 [[D4LGCatalogElements-Libraries]]
 == Status
@@ -198,7 +198,7 @@ an application can be created in the usual manner by the Dataphor
 Administrator.
 
 link:DUGP1UpgradingLibraries.html[Upgrading libraries] is accomplished
-by link:D4LGCatalogElements-Libraries-Versioning.html[versioning] the
+by <<D4LGCatalogElements-Libraries-Versioning, versioning>> the
 library. Each library contains a set of upgrade scripts which, when
 applied in order to a given deployed library, will bring the deployment
 up to the current version of the library. Each change to the schema of a

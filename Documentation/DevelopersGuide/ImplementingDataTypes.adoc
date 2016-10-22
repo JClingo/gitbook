@@ -67,8 +67,8 @@ representation, and can be written directly in D4, or _host-implemented_
 representations, these implementations can be provided automatically by
 the compiler. For a complete discussion of how the compiler chooses a
 system representation, refer to the
-link:D4LGCatalogElements-ScalarTypes-PossibleRepresentations.html[Logical
-Representations] discussion in the D4 Language Guide.
+<<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes-PossibleRepresentations, Logical Representations>>
+discussion in the D4 Language Guide.
 
 At least one representation must be host-implemented, whether that
 implementation is system- or user-provided. Whenever possible, the
@@ -91,9 +91,8 @@ These operators are used by the presentation layer to convert values of
 the type to and from a format suitable for display or manipulation
 within the Frontend. Note that Frontend representations are also logical
 representations available within D4. For more information on native
-accessors, refer to the
-link:D4LGCatalogElements-ScalarTypes-NativeAccessors.html[Native
-Accessors] discussion in the D4 Language Guide.
+accessors, refer to the <<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes-NativeAccessors, Native Accessors>>
+discussion in the D4 Language Guide.
 
 [[DDGImplementingDataTypes-SimpleTypes]]
 == Simple Types

@@ -1,7 +1,6 @@
 = Catalog Elements
 :author: Alphora
 :doctype: book
-
 :data-uri:
 :lang: en
 :encoding: iso-8859-1
@@ -11,14 +10,14 @@
 
 The Catalog is the repository of globally scoped objects within the
 Dataphor Server. It contains the tables, views, business rules
-(link:D4LGCatalogElements-Constraints.html[constraints]) and other items
+(<<D4LGCatalogElements-Constraints, constraints>>) and other items
 that constitute the database schema. The Catalog is also called the the
 Data Dictionary. The Dataphor Server uses the Catalog to describe the
 application schema which represents the core of the database
 application.
 
 Catalog objects are partitioned into logical groups called
-__link:D4LGCatalogElements-Libraries.html[Libraries]__. These libraries
+__<<D4LGCatalogElements-Libraries, Libraries>>__. These libraries
 function as a deployment and dependency tracking unit for Dataphor
 applications. All objects in the catalog belong to a library. For a
 complete disucssion of libraries, refer to the
@@ -98,10 +97,10 @@ See the topics for each type of catalog object for a complete
 description of the syntax for each DDL statement.
 
 For a complete description of the attach, invoke, and detach statements,
-see link:D4LGCatalogElements-EventHandlers.html[Event Handlers].
+see <<D4LGCatalogElements-EventHandlers, Event Handlers>>.
 
 For a complete description of the grant, revoke, and revert statements,
-see link:D4LGCatalogElements-Security.html[Security].
+see <<D4LGCatalogElements-Security, Security>>.
 
 [[D4LGCatalogElements-Objects]]
 == Objects
@@ -205,8 +204,8 @@ Tags are general purpose strings that are identified by a name.
 +
 Order information on a table variable (Table or View) is considered
 metadata because it is ignored within the logical model.
-* *link:D4LGCatalogElements-Objects-ClassDefinitions.html[Class
-Definitions]*
+* *<<D4LGCatalogElements-Objects-ClassDefinitions, Class
+Definitions>>*
 +
 Certain structures within the catalog reference host language (.NET
 Framework) implemented code. Again, the meaning of these references has
@@ -591,13 +590,13 @@ be a logical representation for the scalar type.
 
 The definition of a scalar type may omit the definition of a
 representation if that scalar type is defined to be
-_link:D4LGCatalogElements-Conversions-LikeTypes.html[like]_ some other
+_<<D4LGCatalogElements-Conversions-LikeTypes, like>>_ some other
 scalar type. The
-link:D4LGCatalogElements-ScalarTypes.html[<like clause>] is shorthand
+<<D4LGCatalogElements-ScalarTypes, <like clause>>> is shorthand
 for a <representation definition> in terms of the like type, and the
 definition of implicit conversions to and from the like type. Like type
 definitions will be discussed with
-link:D4LGCatalogElements-Conversions.html[implicit conversions] later in
+<<D4LGCatalogElements-Conversions, implicit conversions>> later in
 this guide.
 
 A logical representation definition in D4 has the following syntax:
@@ -645,13 +644,13 @@ A _selector_ is a D4 operator that allows the values of a type to be
 selected based on values for the properties of that representation.
 
 The
-link:D4LGCatalogElements-ScalarTypes-PossibleRepresentations.html[<selector definition>]
+<<D4LGCatalogElements-ScalarTypes-PossibleRepresentations, <selector definition>>>
 for the representation defines the implementation of the selector
 operator. There are three possibilities. First, the
 <selector definition> may be omitted if this is the system-provided
 representation for the type. Second, the selector may be specified in
 terms of a
-link:D4LGCatalogElements-Objects-ClassDefinitions.html[<class definition>]
+<<D4LGCatalogElements-Objects-ClassDefinitions, <class definition>>>
 which designates a host implementation. Third, the selector may be
 written in D4 as either a simple
 link:D4LGLanguageElements-Expressions.html[<expression>], or a
@@ -677,7 +676,7 @@ a simple and a compound scalar type, they behave the same in every
 respect in the logical model.
 
 If the
-link:D4LGCatalogElements-ScalarTypes-PossibleRepresentations.html[<accessor block>]
+<<D4LGCatalogElements-ScalarTypes-PossibleRepresentations, <accessor block>>>
 is a D4 expression or block, then the type must have at least one
 host-implemented representation. The selector and accessors for the
 host-implemented representation will be available within the D4 code
@@ -857,7 +856,7 @@ The Dataphor Server defines the following native representations:
 |=======================================================================
 |link:Alphora.Dataphor.DAE.Client.DataFieldProperties.html[Native
 Accessor] |Native (.NET Framework)Type
-|link:D4LGCatalogElements-Objects-Metadata.html[Metadata Tag Name]
+|<<D4LGCatalogElements-Objects-Metadata, Metadata Tag Name>>
 
 |AsBoolean |System.Boolean |DAE.AsBoolean
 
@@ -1406,8 +1405,7 @@ All table variables can participate in any number of reference
 constraints. These references are allowed to be declared within a table
 variable declaration for convenience. This mechanism is only shorthand
 for the equivalent reference constraint definition. For a complete
-description of references, refer to
-link:D4LGCatalogElements-References.html[References].
+description of references, refer to <<D4LGCatalogElements-References, References>>.
 
 Reference definitions within table variable declarations in D4 have the
 following syntax:
@@ -1434,7 +1432,7 @@ have the following syntax:
 ....
 
 For a complete description of the <references definition> production
-rule, refer to link:D4LGCatalogElements-References.html[References].
+rule, refer to <<D4LGCatalogElements-References, References>>.
 
 [[D4LGCatalogElements-TableVariables-Tables]]
 === Tables
@@ -1508,16 +1506,14 @@ The <create table statement> includes an optional <device clause> which
 indicates that the table is persisted in the specified device. If no
 device is specified, the compiler will use the default device for the
 table variable. The default device is determined as described in
-link:D4LGCatalogElements-Libraries-DefaultDeviceResolution.html[Default
-Device Resolution]. For more information on how the Dataphor Server maps
+<<D4LGCatalogElements-Libraries-DefaultDeviceResolution, Default Device Resolution>>.
+For more information on how the Dataphor Server maps
 table variables and operators into devices, see
 link:DDGPhysicalRealization.html[Physical Realization].
 
 For a description of the <key definition>, <order definition>,
 <row constraint definition>, and <reference definition> production
-rules, see
-link:D4LGCatalogElements-TableVariables-CommonCharacteristics.html[Common
-Characteristics].
+rules, see <<D4LGCatalogElements-TableVariables-CommonCharacteristics, Common Characteristics>>.
 
 *See Also*
 
@@ -1747,8 +1743,7 @@ session-specific table will hide a global table with the same name.
 For a description of the <key definition>, <order definition>,
 <row constraint definition>, and <reference definition> production
 rules, see
-link:D4LGCatalogElements-TableVariables-CommonCharacteristics.html[Common
-Characteristics].
+<<D4LGCatalogElements-TableVariables-CommonCharacteristics, Common Characteristics>>.
 
 Constraints and keys included in the definition of a view become part of
 the definition of the view. For example, if a constraint is included in
@@ -2088,9 +2083,9 @@ used to resolve which operator has been called in a given invocation.
 This process is called operator resolution.
 
 There are two types of operators in D4,
-link:D4LGCatalogElements-Operators-Operators.html[standard operators],
-and link:D4LGCatalogElements-Operators-AggregateOperators.html[aggregate
-operators]. Aggregate operators are special-purpose operators which have
+<<D4LGCatalogElements-Operators-Operators, standard operators>>,
+and <<D4LGCatalogElements-Operators-AggregateOperators, aggregate operators>>.
+Aggregate operators are special-purpose operators which have
 certain restrictions on the operands and return values allowed in the
 signature, and a specialized calling convention which allows them to be
 used efficiently within aggregate operations in D4.

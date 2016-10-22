@@ -573,8 +573,8 @@ Storage.ShouldReconcile = "true | false"
 
 This section lists the tags recognized by the Frontend.
 Note that these tags may appear in various contexts throughout the metadata, and that the Frontend Server will search for these tags in specific ways, based on the type of user interface being derived.
-For more information on how the Frontend uses these tags, refer to link:DDGPresentationLayer.html[Presentation Layer].
-For more specific information on the use of tags to guide derivation of the user interface see link:DDGTheAutomationofForms-GuidingDerivation.html[Guiding Derivation].
+For more information on how the Frontend uses these tags, refer to <<../DevelopersGuide/PresentationLayer.adoc#DDGPresentationLayer, Presentation Layer>>.
+For more specific information on the use of tags to guide derivation of the user interface see <<../DevelopersGuide/FormAutomation.adoc#DDGTheAutomationofForms-GuidingDerivation, Guiding Derivation>>.
 
 Frontend tags can be specific or general. For example:
 

@@ -77,11 +77,11 @@ all uses of a keyword.
 
 ***link:O-System.iAdorn.html[adorn]**,
 
-**link:D4LGCatalogElements-EventHandlers.html[after]**,
+<<D4Catalog.adoc#D4LGCatalogElements-EventHandlers, after>>,
 
 **link:O-System.iAggregate.html[aggregate]**,
 
-**link:D4LGCatalogElements-Operators-AggregateOperators.html[aggregation]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Operators-AggregateOperators, aggregation>>,
 
 **link:O-System.All.html[all]**,
 
@@ -89,17 +89,17 @@ all uses of a keyword.
 
 ***link:O-System.iAnd.html[and]**,
 
-**link:D4LGCatalogElements-Security.html[apply]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Security, apply>>,
 
 ***link:D4LGLanguageElements-Expressions-TypeOperatorClause.html[as]**,
 
 **link:D4LGOrders.html[asc]**,
 
-***link:D4LGCatalogElements-EventHandlers.html[attach]**,
+<<D4Catalog.adoc#D4LGCatalogElements-EventHandlers, attach>>,
 
-**link:D4LGCatalogElements-Objects-ClassDefinitions.html[attributes]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Objects-ClassDefinitions, attributes>>,
 
-**link:D4LGCatalogElements-EventHandlers.html[before]**,
+<<D4Catalog.adoc#D4LGCatalogElements-EventHandlers, before>>,
 
 ***link:D4LGImperativeStatements-BlocksandScoping.html[begin]**,
 
@@ -113,41 +113,41 @@ all uses of a keyword.
 
 **link:DRD4ParserBNF.html#D4ParserBNFcursorcapabilities[capabilities]**,
 
-**link:D4LGCatalogElements-References.html[cascade]**,
+<<D4Catalog.adoc#D4LGCatalogElements-References, cascade>>,
 
 ***link:D4LGCaseStatement.html[case]**,
 
-**link:D4LGCatalogElements-EventHandlers.html[change]**,
+<<D4Catalog.adoc#D4LGCatalogElements-EventHandlers, change>>,
 
-**link:D4LGCatalogElements-Objects-ClassDefinitions.html[class]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Objects-ClassDefinitions, class>>,
 
-**link:D4LGCatalogElements-References.html[clear]**,
+<<D4Catalog.adoc#D4LGCatalogElements-References, clear>>,
 
 **link:DRD4ParserBNF.html#D4ParserBNFaltercolumndefinition[column]**,
 
 ***link:D4LGImperativeStatements-ExceptionHandling-TryCommitStatement.html[commit]**,
 
-***link:D4LGCatalogElements-Operators-Operators.html[const]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Operators-Operators, const>>,
 
-***link:D4LGCatalogElements-Constraints.html[constraint]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Constraints, constraint>>,
 
 ***link:D4LGBreakandContinue.html[continue]**,
 
-**link:D4LGCatalogElements-Conversions.html[conversion]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Conversions, conversion>>,
 
 ***link:DRD4ParserBNF.html#D4ParserBNFcreatestatement[create]**,
 
 ***link:D4LGLanguageElements-Values-CursorValues.html[cursor]**,
 
-**link:D4LGCatalogElements-ScalarTypes-Defaults.html[default]**,
+<<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes-Defaults, default>>,
 
-***link:D4LGCatalogElements-References.html[delete]**,
+<<D4Catalog.adoc#D4LGCatalogElements-References, delete>>,
 
 **link:D4LGOrders.html[desc]**,
 
-***link:D4LGCatalogElements-EventHandlers.html[detach]**,
+<<D4Catalog.adoc#D4LGCatalogElements-EventHandlers, detach>>,
 
-**link:D4LGCatalogElements-Devices.html[device]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Devices, device>>,
 
 *<<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, distinct>>*,
 
@@ -159,7 +159,7 @@ all uses of a keyword.
 
 ***link:D4LGForStatement.html[downto]**,
 
-***link:D4LGCatalogElements.html[drop]**,
+<<D4Catalog.adoc#D4LGCatalogElements, drop>>,
 
 **link:DRD4ParserBNF.html[dynamic]**,
 
@@ -179,7 +179,7 @@ all uses of a keyword.
 
 ***link:D4LGLexicalElements-ParserLiterals-BooleanParserLiterals.html[false]**,
 
-**link:D4LGCatalogElements-Operators-AggregateOperators.html[finalization]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Operators-AggregateOperators, finalization>>,
 
 ***link:D4LGImperativeStatements-ExceptionHandling-TryFinallyStatement.html[finally]**,
 
@@ -189,7 +189,7 @@ all uses of a keyword.
 
 **link:D4LGLanguageElements-Types.html[generic]**,
 
-***link:D4LGCatalogElements-Security.html[grant]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Security, grant>>,
 
 *<<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, group>>*,
 
@@ -205,9 +205,9 @@ all uses of a keyword.
 
 **link:DRD4ParserBNF.html#D4ParserBNFdevicestoredefinition[indexes]**,
 
-***link:D4LGCatalogElements-Security.html[inherited]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Security, inherited>>,
 
-**link:D4LGCatalogElements-Operators-AggregateOperators.html[initialization]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Operators-AggregateOperators, initialization>>,
 
 ***link:D4LGDataManipulation-InsertStatement.html[insert]**,
 
@@ -215,7 +215,7 @@ all uses of a keyword.
 
 **link:D4LGDataManipulation-InsertStatement.html[into]**,
 
-***link:D4LGCatalogElements-EventHandlers.html[invoke]**,
+<<D4Catalog.adoc#D4LGCatalogElements-EventHandlers, invoke>>,
 
 ***link:D4LGLanguageElements-Expressions-TypeOperatorClause.html[is]**,
 
@@ -229,13 +229,13 @@ all uses of a keyword.
 
 *<<link:D4TableOperators.adoc#D4LGTableExpressions-Explode, level>>*,
 
-***link:D4LGCatalogElements-Conversions-LikeTypes.html[like]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Conversions-LikeTypes, like>>,
 
 ***link:D4LGLanguageElements-Types-ListTypes.html[list]**,
 
 *<<link:D4TableOperators.adoc#D4LGTableExpressions-Join, lookup>>*,
 
-**link:D4LGCatalogElements-Devices.html[master]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Devices, master>>,
 
 ***link:O-System.iMatches.html[matches]**,
 
@@ -243,11 +243,11 @@ all uses of a keyword.
 
 ***link:O-System.iMod.html[mod]**,
 
-**link:D4LGCatalogElements-Devices.html[mode]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Devices, mode>>,
 
 **modify**,
 
-**link:D4LGCatalogElements-Conversions.html[narrowing]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Conversions, narrowing>>,
 
 **link:D4LGRowConstraints.html[new]**,
 
@@ -261,7 +261,7 @@ all uses of a keyword.
 
 ***link:D4LGImperativeStatements-ExceptionHandling-TryExceptStatement.html[on]**,
 
-**link:D4LGCatalogElements-Operators-Operators.html[operator]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Operators-Operators, operator>>,
 
 ***link:O-System.iOr.html[or]**,
 
@@ -277,15 +277,15 @@ all uses of a keyword.
 
 ***link:D4LGProperties.html[read]**,
 
-**link:D4LGCatalogElements-Devices.html[reconciliation]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Devices, reconciliation>>,
 
-**link:D4LGCatalogElements-Security.html[recursively]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Security, recursively>>,
 
 *<<D4TableOperators.adoc#D4LGTableExpressions, redefine>>*,
 
-***link:D4LGCatalogElements-References.html[reference]**,
+<<D4Catalog.adoc#D4LGCatalogElements-References, reference>>,
 
-**link:D4LGCatalogElements-References.html[references]**,
+<<D4Catalog.adoc#D4LGCatalogElements-References, references>>,
 
 *<<D4TableOperators.adoc#D4LGTableExpressions, remove>>*,
 
@@ -293,21 +293,21 @@ all uses of a keyword.
 
 ***link:D4LGRepeatUntilStatement.html[repeat]**,
 
-**link:D4LGCatalogElements-ScalarTypes-PossibleRepresentations.html[representation]**,
+<<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes-PossibleRepresentations, representation>>,
 
-**link:D4LGCatalogElements-References.html[require]**,
+<<D4Catalog.adoc#D4LGCatalogElements-References, require>>,
 
-**link:D4LGCatalogElements-Operators-Operators.html[result]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Operators-Operators, result>>,
 
 *<<D4TableOperators.adoc#D4LGTableExpressions-Quota, return>>*,
 
-***link:D4LGCatalogElements-Security.html[revert]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Security, revert>>,
 
-***link:D4LGCatalogElements-Security.html[revoke]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Security, revoke>>
 
 *<<D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, right>>*,
 
-**link:D4LGCatalogElements-Security.html[role]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Security, role>>,
 
 *<<D4TableOperators.adoc#D4LGTableExpressions-RowExtractor, row>>*,
 
@@ -317,19 +317,19 @@ all uses of a keyword.
 
 ***link:D4LGDataManipulation-SelectStatement.html[select]**,
 
-***link:D4LGCatalogElements-ScalarTypes-PossibleRepresentations.html[selector]**,
+<<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes-PossibleRepresentations, selector>>,
 
 *<<D4TableOperators.adoc#D4LGTableExpressions-Explode, sequence>>*,
 
-**link:D4LGCatalogElements-Operators-Operators.html[session]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Operators-Operators, session>>,
 
-**link:D4LGCatalogElements-References.html[set]**,
+<<D4Catalog.adoc#D4LGCatalogElements-References, set>>,
 
 **link:D4LGOrders.html[sort]**,
 
 ***source**,
 
-**link:D4LGCatalogElements-ScalarTypes-SpecialValues.html[special]**,
+<<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes-SpecialValues, special>>,
 
 **link:DRD4ParserBNF.html#D4ParserBNFcursortype[static]**,
 
@@ -347,7 +347,7 @@ all uses of a keyword.
 
 *<<D4TableOperators.adoc#D4LGTableExpressions, times>>*,
 
-***link:D4LGCatalogElements-Conversions.html[to]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Conversions, to>>,
 
 ***link:D4LGRowConstraints.html[transition]**,
 
@@ -355,9 +355,9 @@ all uses of a keyword.
 
 ***link:D4LGImperativeStatements-ExceptionHandling.html[try]**,
 
-**link:D4LGCatalogElements-ScalarTypes.html[type]**,
+<<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes, type>>,
 
-***link:D4LGCatalogElements-ScalarTypes.html[typeof]**,
+<<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes, typeof>>,
 
 *<<D4TableOperators.adoc#D4LGTableExpressions, union>>*,
 
@@ -365,21 +365,21 @@ all uses of a keyword.
 
 ***link:D4LGDataManipulation-UpdateStatement.html[update]**,
 
-**link:D4LGCatalogElements-Security.html[usage]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Security, usage>>,
 
-**link:D4LGCatalogElements-Security.html[user]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Security, user>>,
 
-**link:D4LGCatalogElements-Security.html[users]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Security, users>>,
 
-**link:D4LGCatalogElements-Sorts.html[using]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Sorts, using>>,
 
-**link:D4LGCatalogElements-EventHandlers.html[validate]**,
+<<D4Catalog.adoc#D4LGCatalogElements-EventHandlers, validate>>,
 
 ***value**,
 
 ***link:D4LGImperativeStatements-Variables-VariableDeclarationStatement.html[var]**,
 
-**link:D4LGCatalogElements-TableVariables-Views.html[view]**,
+<<D4Catalog.adoc#D4LGCatalogElements-TableVariables-Views, view>>,
 
 **link:D4LGCaseStatement.html[when]**,
 
@@ -387,7 +387,7 @@ all uses of a keyword.
 
 ***link:D4LGImperativeStatements-FlowControl-LoopingStatements.html[while]**,
 
-**link:D4LGCatalogElements-Conversions.html[widening]**,
+<<D4Catalog.adoc#D4LGCatalogElements-Conversions, widening>>,
 
 ***link:D4LGLanguageElements-Expressions-LanguageModifiers.html[with]**,
 

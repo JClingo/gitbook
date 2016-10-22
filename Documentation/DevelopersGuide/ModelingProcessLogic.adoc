@@ -798,8 +798,8 @@ invoked. Otherwise, the compiler will report an error indicating why it
 was unable to produce a match.
 
 For a more in-depth discussion of operator resolution, refer to
-link:D4LGCatalogElements-Operators-OperatorResolution.html[Operator
-Resolution] in the D4 Language Guide.
+<<D4Catalog.adoc#D4LGCatalogElements-Operators-OperatorResolution, Operator Resolution>>
+in the D4 Language Guide.
 
 [[DDGModelingProcessLogic-Operators-AggregateOperators]]
 === Aggregate Operators
@@ -824,6 +824,7 @@ three sections inclusive) form a single outer scope, with the
 aggregation section forming its own nested scope.
 
 For a more in-depth discussion of aggregate operators, refer to
+<<D4Catalog.adoc#, >>
 link:D4LGCatalogElements-Operators-AggregateOperators.html[Aggregate
 Operators] in the D4 Language Guide.
 

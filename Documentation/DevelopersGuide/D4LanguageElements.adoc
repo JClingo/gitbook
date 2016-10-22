@@ -88,7 +88,7 @@ internal representation sof the date and time data types all use a
 The following scalar data types are made available by the Dataphor
 Server:
 
-* link:D4LGCatalogElements-ScalarTypes.html[System.Scalar]
+* <<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes, System.Scalar>>
 +
 System.Scalar is the set of all possible scalar values. The type
 constraint for scalar is simply **true**. All scalar types are defined
@@ -202,7 +202,7 @@ the operators defined for existing types, the D4 language allows for the
 definition of __implicit conversions__. An implicit conversion specifies
 that values of some type are implicitly convertable to values of another
 type. For more information on implicit conversions, refer to
-link:D4LGCatalogElements-Conversions.html[Conversions].
+<<D4Catalog.adoc#D4LGCatalogElements-Conversions, Conversions>>.
 
 The following matrix describes the validity and availabity of conversion
 operators. The presence of an E indicates the existence of an operator
@@ -275,8 +275,8 @@ type.
 
 *See Also*
 
-link:D4LGCatalogElements-ScalarTypes.html[Catalog Elements, Scalar
-Types] | link:DRSystemLibrary-ScalarTypes.html[Dataphor Reference,
+<<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes, Scalar Types>> |
+link:DRSystemLibrary-ScalarTypes.html[Dataphor Reference,
 Scalar Types]
 
 [[D4LGLanguageElements-Types-RowTypes]]
@@ -331,7 +331,7 @@ values. Any given table value will be of some specific table type.
 *See Also*
 
 link:D4LGLanguageElements-Values-TableValues.html[Table Values] |
-link:D4LGCatalogElements-TableVariables.html[Table Variables]
+<<D4Catalog.adoc#D4LGCatalogElements-TableVariables, Table Variables>>
 
 [[D4LGLanguageElements-Types-ListTypes]]
 === List Types
@@ -417,7 +417,7 @@ the value described is an atomic value, in that it cannot be broken down
 into smaller components without ceasing to be a value of the type in
 question. For a detailed discussion of scalar values, see the discussion
 in the Catalog Elements chapter on
-link:D4LGCatalogElements-ScalarTypes.html[Scalar Types].
+<<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes, Scalar Types>>.
 
 *See Also*
 
@@ -629,8 +629,9 @@ and the value at any given point is a table value of that same type.
 Conceptually then, all the manipulative operators of the language such
 as **insert**, **update**, and *delete* are just shorthands for some
 equivalent assignment statement. Tables might then more appropriately
-have been called __link:D4LGCatalogElements-TableVariables.html[table
-variables]__, and indeed we refer to them as such throughout the
+have been called
+__<<D4Catalog.adoc#D4LGCatalogElements-TableVariables, table variables>>__
+, and indeed we refer to them as such throughout the
 documentation, but for reasons of brevity and familiarity in the
 language, we chose the more traditional name **table**.
 
@@ -829,7 +830,7 @@ the expression O(V1) >= O(V2) also evaluates to true.
 
 *See Also*
 
-link:D4LGCatalogElements-Operators.html[Catalog Elements, Operators]
+<<D4Catalog.adoc#D4LGCatalogElements-Operators, Catalog Elements\, Operators>>
 
 [[D4LGLanguageElements-Statements]]
 == Statements
@@ -844,7 +845,7 @@ of D4 fall into three basic categories:
 Data Definition Language statements are concerned with describing the
 structure of the database. They allow for the creation, alteration, and
 destruction of catalog level objects. These statements are discussed in
-link:D4LGCatalogElements.html[Catalog Elements].
+<<D4Catalog.adoc#D4LGCatalogElements, Catalog Elements>>.
 
 Data Manipulation Language statements allow for the retrieval and
 modification of the data in the database. These include **select**,
@@ -867,7 +868,7 @@ Statements in D4 have the following syntax:
 ....
 
 For a detailed description of the <ddl statement> production rule see
-link:D4LGCatalogElements.html[Catalog Elements].
+<<D4Catalog.adoc#D4LGCatalogElements, Catalog Elements>>.
 
 For a detailed description of the <dml statement> production rule see
 link:D4LGDataManipulation.html[Data Manipulation].
@@ -1431,7 +1432,7 @@ representation of that type. This type of property access can be an
 expression or an assignment target, depending on which side of an
 assignment statement it appears. For a complete description of logical
 representations and property accessors, refer to
-link:D4LGCatalogElements-ScalarTypes.html[Scalar Types].
+<<D4Catalog.adoc#D4LGCatalogElements, Scalar Types>>.
 
 ==== Dot Invocation
 
@@ -1598,7 +1599,7 @@ are defined, is known as the _operator signature_ and is used by the
 compiler to perform operator resolution. The operator most closely
 matching the call signature is used.
 
-Each link:D4LGCatalogElements-Operators.html[operand] in the signature
+Each <<D4Catalog.adoc#D4LGCatalogElements-Operators, operand>> in the signature
 of an operator has an associated modifier. If this modifier is **var**,
 the call must use the *var* keyword to pass the argument in the
 invocation. This helps to ensure that operator invocations which can
@@ -1609,8 +1610,8 @@ For stand alone aggregate operator invocations, the
 columns, of the invocation. In addition, the syntax provides for the
 possibility of order-dependent aggregate operator invocations. For a
 complete description of aggregate operators, refer to the
-link:D4LGCatalogElements-Operators-AggregateOperators.html[Aggregate
-Operators] discussion in this guide.
+<<D4Catalog.adoc#D4LGCatalogElements-Operators-AggregateOperators, Aggregate Operators>>
+discussion in this guide.
 
 Operator invocations in D4 have the following syntax:
 

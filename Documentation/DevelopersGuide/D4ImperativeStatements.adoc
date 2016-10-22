@@ -89,9 +89,7 @@ This includes properties of representations of scalar values, and
 updatable expressions like table expressions. The expression specified
 by link:D4LGLanguageElements-Expressions.html[<expression>] must be
 _assignment-compatible_ with the assignment target. For a definition of
-assignment-compatibility, refer to the
-link:D4LGCatalogElements-Operators-OperatorResolution.html[Operator
-Resolution] discussion.
+assignment-compatibility, refer to the <<D4Catalog.adoc#D4LGCatalogElements-Operators-OperatorResolution, Operator Resolution>> discussion.
 
 [[D4LGImperativeStatements-BlocksandScoping]]
 == Blocks and Scoping

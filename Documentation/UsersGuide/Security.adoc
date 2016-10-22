@@ -217,5 +217,5 @@ link:O-System.SecurityOperartors.html[Security Operators] in the System
 Library Reference.
 
 For information on the Security statements of D4, refer to
-link:D4LGCatalogElements-Security.html[Security] in the Dataphor
-Developer's Guide.
+<<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Security, Security>>
+in the Dataphor Developer's Guide.

@@ -189,9 +189,9 @@ directories simply specify the default paths that will be searched to
 display available libraries.
 
 For more information on the System Catalog, refer to the
-link:D4LGCatalogElements.html[Catalog Elements] chapter of the D4
-Language Guide in the Dataphor Developer's Guide. For more information
-on Libraries, refer to the link:DDGWorkingWithLibraries.html[Working
+<<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements, Catalog Elements>>
+chapter of the D4 Language Guide in the Dataphor Developer's Guide.
+For more information on Libraries, refer to the link:DDGWorkingWithLibraries.html[Working
 With Libraries] chapter in the Logical Application Design part of the
 Dataphor Developer's Guide.
 

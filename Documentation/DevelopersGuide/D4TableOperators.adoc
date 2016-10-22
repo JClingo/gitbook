@@ -436,8 +436,8 @@ The <aggregate expression> specifies the aggregate operator to be
 invoked. This can be a system-provided operator, or a user-defined
 operator, but it must be an aggregate operator. For a complete
 description of aggregate operators, refer to the
-link:D4LGCatalogElements-Operators-AggregateOperators.html[Aggregate
-Operators] discussion in this guide.
+<<D4Catalog.adoc#D4LGCatalogElements-Operators-AggregateOperators, Aggregate Operators>>
+discussion in this guide.
 
 With the exception of the Count, All, and Any operators, all the
 system-provided aggregate operators return nil when invoked on an empty
@@ -461,8 +461,7 @@ the Dataphor System Library Reference.
 
 *See Also*
 
-link:D4LGCatalogElements-Operators-AggregateOperators.html[Aggregate
-Operators]
+<<D4Catalog.adoc#D4LGCatalogElements-Operators-AggregateOperators, Aggregate Operators>>
 
 [[D4LGTableExpressions-Quota]]
 == Quota
