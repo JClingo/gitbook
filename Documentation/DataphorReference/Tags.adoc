@@ -5,6 +5,7 @@
 :lang: en
 :encoding: iso-8859-1
 
+[[DRTags]]
 == Summary
 
 This chapter describes each Dataphor metadata tag.

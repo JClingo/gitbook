@@ -91,9 +91,9 @@ all uses of a keyword.
 
 <<D4Catalog.adoc#D4LGCatalogElements-Security, apply>>,
 
-***link:D4LGLanguageElements-Expressions-TypeOperatorClause.html[as]**,
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions-TypeOperatorClause, as>>,
 
-**link:D4LGOrders.html[asc]**,
+<<D4Catalog.adoc#D4LGOrders, asc>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-EventHandlers, attach>>,
 
@@ -101,9 +101,9 @@ all uses of a keyword.
 
 <<D4Catalog.adoc#D4LGCatalogElements-EventHandlers, before>>,
 
-***link:D4LGImperativeStatements-BlocksandScoping.html[begin]**,
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-BlocksandScoping, begin>>,
 
-***link:D4LGLanguageElements-Expressions-BetweenClause.html[between]**,
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions-BetweenClause, between>>,
 
 ***link:D4LGBreakandContinue.html[break]**,
 
@@ -125,7 +125,7 @@ all uses of a keyword.
 
 **link:DRD4ParserBNF.html#D4ParserBNFaltercolumndefinition[column]**,
 
-***link:D4LGImperativeStatements-ExceptionHandling-TryCommitStatement.html[commit]**,
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-ExceptionHandling-TryCommitStatement, commit>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-Operators-Operators, const>>,
 
@@ -137,13 +137,13 @@ all uses of a keyword.
 
 ***link:DRD4ParserBNF.html#D4ParserBNFcreatestatement[create]**,
 
-***link:D4LGLanguageElements-Values-CursorValues.html[cursor]**,
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Values-CursorValues, cursor>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes-Defaults, default>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-References, delete>>,
 
-**link:D4LGOrders.html[desc]**,
+<<D4Catalog.adoc#D4LGOrders, desc>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-EventHandlers, detach>>,
 
@@ -151,7 +151,7 @@ all uses of a keyword.
 
 *<<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, distinct>>*,
 
-***link:D4LGLanguageElements-Expressions-ArithmeticExpression.html[div]**,
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions-ArithmeticExpression, div>>,
 
 ***link:DRD4ParserBNF.html#D4ParserBNFbinarytableoperator[divide]**,
 
@@ -165,15 +165,15 @@ all uses of a keyword.
 
 ***link:D4LGIfStatement.html[else]**,
 
-***link:D4LGLanguageElements-Expressions-BetweenClause.html[end]**,
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions-BetweenClause, end>>,
 
-***link:D4LGImperativeStatements-ExceptionHandling-TryExceptStatement.html[except]**,
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-ExceptionHandling-TryExceptStatement, except>>,
 
-**link:D4LGOrders.html[exclude]**,
+<<D4Catalog.adoc#D4LGOrders, exclude>>,
 
 ***link:O-System.iExists.html[exists]**,
 
-***link:D4LGImperativeStatements-FlowControl-ExitStatement.html[exit]**,
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-FlowControl-ExitStatement, exit>>,
 
 *<<link:D4TableOperators.adoc#D4LGTableExpressions, explode>>*,
 
@@ -181,13 +181,13 @@ all uses of a keyword.
 
 <<D4Catalog.adoc#D4LGCatalogElements-Operators-AggregateOperators, finalization>>,
 
-***link:D4LGImperativeStatements-ExceptionHandling-TryFinallyStatement.html[finally]**,
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-ExceptionHandling-TryFinallyStatement, finally>>,
 
 ***link:D4LGForStatement.html[for]**,
 
 *<<D4TableOperators.adoc#D4LGTableExpressions-RowExtractor, from>>*,
 
-**link:D4LGLanguageElements-Types.html[generic]**,
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Types, generic>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-Security, grant>>,
 
@@ -217,7 +217,7 @@ all uses of a keyword.
 
 <<D4Catalog.adoc#D4LGCatalogElements-EventHandlers, invoke>>,
 
-***link:D4LGLanguageElements-Expressions-TypeOperatorClause.html[is]**,
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions-TypeOperatorClause, is>>,
 
 **link:DRD4ParserBNF.html#D4ParserBNFcursorisolation[isolation]**,
 
@@ -231,7 +231,7 @@ all uses of a keyword.
 
 <<D4Catalog.adoc#D4LGCatalogElements-Conversions-LikeTypes, like>>,
 
-***link:D4LGLanguageElements-Types-ListTypes.html[list]**,
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Types-ListTypes, list>>,
 
 *<<link:D4TableOperators.adoc#D4LGTableExpressions-Join, lookup>>*,
 
@@ -251,31 +251,31 @@ all uses of a keyword.
 
 **link:D4LGRowConstraints.html[new]**,
 
-***link:D4LGNilSemantics.html[nil]**,
+<<DocumentsAndDesigners.adoc#D4LGNilSemantics, nil>>,
 
 ***link:O-System.iNot.html[not]**,
 
-**link:D4LGLanguageElements-Values-TableValues.html[of]**,
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Values-TableValues, of>>,
 
 **link:D4LGRowConstraints.html[old]**,
 
-***link:D4LGImperativeStatements-ExceptionHandling-TryExceptStatement.html[on]**,
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-ExceptionHandling-TryExceptStatement, on>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-Operators-Operators, operator>>,
 
 ***link:O-System.iOr.html[or]**,
 
-***link:D4LGOrders.html[order]**,
+<<D4Catalog.adoc#D4LGOrders, order>>,
 
 ***origin**,
 
 *<<D4TableOperators.adoc#D4LGTableExpressions, over>>*,
 
-***link:D4LGLanguageElements-Expressions-Factor.html[parent]**,
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions-Factor, parent>>,
 
-***link:D4LGImperativeStatements-ExceptionHandling-RaiseStatement.html[raise]**,
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-ExceptionHandling-RaiseStatement, raise>>,
 
-***link:D4LGProperties.html[read]**,
+<<D4Catalog.adoc#D4LGProperties, read>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-Devices, reconciliation>>,
 
@@ -313,7 +313,7 @@ all uses of a keyword.
 
 *<<D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, rowexists>>*,
 
-**link:D4LGLanguageElements-Types-ScalarTypes.html[scalar]**,
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Types-ScalarTypes, scalar>>,
 
 ***link:D4LGDataManipulation-SelectStatement.html[select]**,
 
@@ -325,7 +325,7 @@ all uses of a keyword.
 
 <<D4Catalog.adoc#D4LGCatalogElements-References, set>>,
 
-**link:D4LGOrders.html[sort]**,
+<<D4Catalog.adoc#D4LGOrders, sort>>,
 
 ***source**,
 
@@ -353,7 +353,7 @@ all uses of a keyword.
 
 ***link:DRD4LexerBNF.html#D4LexerBNFliteral[true]**,
 
-***link:D4LGImperativeStatements-ExceptionHandling.html[try]**,
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-ExceptionHandling, try>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes, type>>,
 
@@ -377,7 +377,7 @@ all uses of a keyword.
 
 ***value**,
 
-***link:D4LGImperativeStatements-Variables-VariableDeclarationStatement.html[var]**,
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-Variables-VariableDeclarationStatement, var>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-TableVariables-Views, view>>,
 
@@ -385,15 +385,15 @@ all uses of a keyword.
 
 *<<D4TableOperators.adoc#D4LGTableExpressions, where>>*,
 
-***link:D4LGImperativeStatements-FlowControl-LoopingStatements.html[while]**,
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-FlowControl-LoopingStatements, while>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-Conversions, widening>>,
 
-***link:D4LGLanguageElements-Expressions-LanguageModifiers.html[with]**,
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions-LanguageModifiers, with>>,
 
 *<<D4TableOperators.adoc#D4LGTableExpressions-Without, without>>*,
 
-***link:D4LGProperties.html[write]**,
+<<D4Catalog.adoc#D4LGProperties, write>>,
 
 ***link:O-System.iXor.html[xor]**
 
@@ -428,9 +428,9 @@ link:D4LGLexicalElements-Identifiers-QualifiedIdentifiers.html[.],
 
 link:O-System.iDivision.html[/],
 
-link:D4LGLanguageElements-Variables.html[:],
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Variables, :>>,
 
-link:D4LGImperativeStatements-Variables-AssignmentStatement.html[:=],
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-Variables-AssignmentStatement, :=>>,
 
 link:D4LGScriptsandExecution.html[;],
 
@@ -442,11 +442,11 @@ link:O-System.iIndexer.html[]],
 
 link:O-System.iBitwiseXor.html[^],
 
-link:D4LGLanguageElements-Values-ListValues.html[\{],
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Values-ListValues, \{>>,
 
 link:O-System.iBitwiseOr.html[|],
 
-link:D4LGLanguageElements-Values-ListValues.html[}],
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Values-ListValues, \}>>,
 
 link:O-System.iBitwiseNot.html[~],
 

@@ -128,8 +128,8 @@ The current library is used to determine the _name resolution path_ for
 the session, which is used in the name resolution process. The current
 library is also the default container for newly created catalog objects.
 For more information on libraries in D4, refer to the
-link:../DDGWorkingWithLibraries.html[Working With Libraries] chapter in the
-Logical Application Design part of the Dataphor Developer's Guide.
+<<../DevelopersGuide/WorkingWithLibraries.adoc#DDGWorkingWithLibraries, Working with Libraries>>
+chapter in the Logical Application Design part of the Dataphor Developer's Guide.
 
 The default value for this setting is blank, meaning that the Dataphor
 Server will select a suitable default current library. Typically, the
@@ -191,9 +191,9 @@ display available libraries.
 For more information on the System Catalog, refer to the
 <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements, Catalog Elements>>
 chapter of the D4 Language Guide in the Dataphor Developer's Guide.
-For more information on Libraries, refer to the link:DDGWorkingWithLibraries.html[Working
-With Libraries] chapter in the Logical Application Design part of the
-Dataphor Developer's Guide.
+For more information on Libraries, refer to the
+<<../DevelopersGuide/WorkingWithLibraries.adoc#DDGWorkingWithLibraries, Working with Libraries>>
+chapter in the Logical Application Design part of the Dataphor Developer's Guide.
 
 Tracing enabled indicates whether internal tracing of server events is
 enabled. Log errors indicates whether the Dataphor Server will log

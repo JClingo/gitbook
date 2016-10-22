@@ -201,7 +201,7 @@ link:O-System.ListOperators.html[List Operators].
 
 This section describes how to use row selectors and the system-provided
 operators of the Dataphor Server to construct and manipulate
-link:D4LGLanguageElements-Values-RowValues.html[row values].
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Values-RowValues, row values>>.
 
 A row is a set of named values called columns. The row type specifies
 the name and type of each column. A row selector is used to construct a
@@ -212,8 +212,8 @@ var LRow : row { ID : Integer } := row { 5 ID };
 ....
 
 As the preceding example illustrates, variables are allowed to be of any
-link:D4LGLanguageElements-Types-RowTypes.html[row type]. Optionally, the
-type of the row can be specified as part of the row selector. In this
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Types-RowTypes, row type>>.
+Optionally, the type of the row can be specified as part of the row selector. In this
 case, the expressions in the row selector provide values for the columns
 of the row. For example, to define a row with nil for all columns, use a
 type specifier in the selector, but do not provide any expressions in
@@ -767,8 +767,8 @@ binary built-in operators.] operators, operator precedence must be used
 to determine the order of operations performed. Of course, order of
 operation can always be explicitly specified using parentheses. For a
 complete discussion of operator precedence, refer to
-link:D4LGLanguageElements-Expressions-OperatorPrecedence.html[Operator
-Precedence] in the D4 Language Guide.
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions-OperatorPrecedence, Operator Precedence>>
+in the D4 Language Guide.
 
 [[DDGModelingProcessLogic-Operators-OperatorResolution]]
 === Operator Resolution

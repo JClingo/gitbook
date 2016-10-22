@@ -121,8 +121,8 @@ The where clause in D4 has the following syntax:
 ....
 
 The expression specified by
-link:D4LGLanguageElements-Expressions.html[<expression term>] must be
-boolean-valued. Within the expression, access to the values of the input
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, <expression term>>>
+must be boolean-valued. Within the expression, access to the values of the input
 row are available by column name.
 
 The result of a *where* has the same columns, orders, references, and
@@ -877,8 +877,8 @@ The union clause in D4 has the following syntax:
 ....
 
 The expression given by
-link:D4LGLanguageElements-Expressions.html[<expression term>] must be
-table-valued. Both inputs to the *union* operation must be of the same
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, <expression term>>>
+must be table-valued. Both inputs to the *union* operation must be of the same
 table type.
 
 The result of a *union* operation has the same type as the inputs. The
@@ -1244,8 +1244,8 @@ The conditioned join allows the join condition to be specified as part
 of the join. The input tables must have no column names in common.
 
 The expression specified within the by clause by
-link:D4LGLanguageElements-Expressions.html[<expression term>] must be
-boolean-valued and must specify an equi-join. These requirements are
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, <expression term>>>
+must be boolean-valued and must specify an equi-join. These requirements are
 enforced by the compiler. Within the expression, the current values of
 both rows are accessible by column name.
 

@@ -21,8 +21,8 @@ __<<D4LGCatalogElements-Libraries, Libraries>>__. These libraries
 function as a deployment and dependency tracking unit for Dataphor
 applications. All objects in the catalog belong to a library. For a
 complete disucssion of libraries, refer to the
-link:DDGWorkingWithLibraries.html[Working With Libraries] chapter in the
-Logical Application Design part of this guide.
+<<WorkingWithLibraries.adoc#DDGWorkingWithLibraries, Working with Libraries>>
+chapter in the Logical Application Design part of this guide.
 
 Session-Specific ObjectsObjectsSession-SpecificThe D4 language also
 supports the declaration of session-specific objects. These objects are
@@ -186,7 +186,7 @@ created the object, but ownership can be changed with the
 link:O-System.SetObjectOwner.html[SetObjectOwner] operator. All rights
 for the object are implicitly granted to the owner of the object. For
 more information on catalog objects and security, see
-link:DUGP3Security.html[Security].
+<<../UsersGuide/Security.adoc#DUGP3Security, Security>>.
 
 [[D4LGCatalogElements-Objects-Metadata]]
 === Metadata
@@ -197,17 +197,14 @@ the logical model, expressed as a set of named string values.
 
 There are several kinds of metadata in D4, such as:
 
-* *link:FTRTagsDescriptions.html[Tags]*
-+
+[horizontal]
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions, Tags>>::
 Tags are general purpose strings that are identified by a name.
-* *link:D4LGOrders.html[Orders]*
-+
-Order information on a table variable (Table or View) is considered
+
+<<D4LGOrders, Orders>>:: Order information on a table variable (Table or View) is considered
 metadata because it is ignored within the logical model.
-* *<<D4LGCatalogElements-Objects-ClassDefinitions, Class
-Definitions>>*
-+
-Certain structures within the catalog reference host language (.NET
+
+<<D4LGCatalogElements-Objects-ClassDefinitions, Class Definitions>>:: Certain structures within the catalog reference host language (.NET
 Framework) implemented code. Again, the meaning of these references has
 no meaning within the logical model.
 
@@ -238,7 +235,7 @@ Alter metadata in D4 has the following syntax:
 ....
 
 Metadata tags can be specified in most DDL statements. In addition, some
-operators such as *<<D4TableOperators.adoc#D4LGTableExpressions-Adorn, adorn>>* allow
+operators such as <<D4TableOperators.adoc#D4LGTableExpressions-Adorn, adorn>> allow
 metadata to be added directly in an expression.
 
 Each metadata tag may be either _static_ or __dynamic__. Static metadata
@@ -249,7 +246,7 @@ objects when appropriate. For example, a static tag on a scalar type
 will not be inherited by a table variable column defined on that type.
 For a complete description of the metadata tags utilized by the
 different components of the Dataphor Server, refer to
-link:DRTags.html[Tags].
+<<../DataphorReference/Tags.adoc#DRTags, Tags>>.
 
 [[D4LGCatalogElements-Objects-ClassDefinitions]]
 === Class Definitions
@@ -310,9 +307,9 @@ implementation structures.
 Management of the security model in the Dataphor Server is accomplished
 using operators in the system library. These operators provide a
 complete API for creating
-link:DUGP3SecurityPrimitives-Users.html[users], managing
-link:DUGP3SecurityPrimitives-Roles.html[roles], and granting and
-revoking link:DUGP3SecurityPrimitives-Rights.html[rights]. As a
+<<../UsersGuide/Security.adoc#DUGP3SecurityPrimitives-Users, users>>, managing
+<<../UsersGuide/Security.adoc#DUGP3SecurityPrimitives-Roles, roles>>, and granting and
+revoking <<../UsersGuide/Security.adoc#DUGP3SecurityPrimitives-Rights, rights>>. As a
 shorthand, the D4 language includes several statements that provide a
 shorthand for the rights management portions of this API.
 
@@ -415,7 +412,7 @@ specified as strings, while roles, because they are catalog objects, are
 named and specified by a case-sensitive <qualified identifier>.
 
 For a complete discussion of the security model in the Dataphor Server,
-refer to the link:DUGP3Security.html[Security] chapter in the Dataphor
+refer to the <<../UsersGuide/Security.adoc#DUGP3Security, Security>> chapter in the Dataphor
 User's Guide.
 
 [[D4LGCatalogElements-ScalarTypes]]
@@ -506,9 +503,8 @@ with the characteristics given by the rest of the statements.
 Explanations for each of the specific portions of the statements follow.
 
 *See Also*
-
-link:D4LGLanguageElements-Types.html[Language Elements, Types] |
-link:D4LGLanguageElements-Types-ScalarTypes.html[Scalar Types]
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Types, Language Elements\, Types>> |
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Types-ScalarTypes, Scalar Types>>
 
 [[D4LGCatalogElements-ScalarTypes-Conveyors]]
 === Conveyors
@@ -653,8 +649,8 @@ terms of a
 <<D4LGCatalogElements-Objects-ClassDefinitions, <class definition>>>
 which designates a host implementation. Third, the selector may be
 written in D4 as either a simple
-link:D4LGLanguageElements-Expressions.html[<expression>], or a
-link:D4LGImperativeStatements-BlocksandScoping.html[<block>].
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, <expression>>>, or a
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-BlocksandScoping, <block>>>.
 
 If the <selector definition> is omitted, the representation must be the
 system-provided representation for the type, meaning that this
@@ -759,7 +755,7 @@ An alter property definition in D4 has the following syntax:
 The read accessor is a special-purpose operator built by the compiler to
 allow read access to the given property.
 
-The link:D4LGProperties.html[read <accessor block>] for the property
+The <<D4LGProperties, read \<accessor block\>>> for the property
 defines the implementation of the read accessor. If no read accessor
 definition is provided, the representation must be the system-provided
 representation for the type, and the compiler will provide a default
@@ -792,7 +788,7 @@ LInteger = LTimeSpan.DaysPart;
 The write accessor is a special-purpose operator built by the compiler
 to allow write access to the given property.
 
-The link:D4LGProperties.html[write <accessor block>] for the property
+The <<D4LGProperties, write \<accessor block\>>> for the property
 defines the implementation of the write accessor. If no write accessor
 definition is provided, the representation must be the system-provided
 representation for the type, and the compiler will provide a default
@@ -953,7 +949,7 @@ An alter scalar type default definition in D4 has the following syntax:
 ....
 
 For a detailed description of the <expression> production rule see
-link:D4LGLanguageElements-Expressions.html[Expressions].
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, Expressions>>.
 
 [[D4LGCatalogElements-ScalarTypes-TypeConstraints]]
 === Type Constraints
@@ -970,10 +966,10 @@ some value), an error will be raised. Note that if the constraint
 expression evaluates to nil, the constraint is considered satisfied. The
 text of the error message can be specified using metadata on the
 constraint. If the tag
-link:FTRTagsDescriptions-DAETags-MessageorSimpleMessage.html[DAE.SimpleMessage]
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-MessageorSimpleMessage, DAE.SimpleMessage>>
 appears on the constraint, the value of the tag will be used as the
 message of the error. If the tag
-link:FTRTagsDescriptions-DAETags-MessageorSimpleMessage.html[DAE.Message]
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-MessageorSimpleMessage, DAE.Message>>
 appears on the constraint, the value of the tag is a D4 expression that
 is evaluated in the same context as the validation (i.e. the expression
 will have access to the implicit *value* variable, which contains the
@@ -981,8 +977,8 @@ value being validated). The expression is expected to return a value of
 type string that will be the text of the error. If no custom message is
 provided, a generic error will be given stating that the constraint has
 been violated. In either case, the
-link:DUGP1ErrorsandWarnings.html[severity] of the error given will be
-__User__.
+<<../UsersGuide/DocumentsAndDesigners.adoc#DUGP1ErrorsandWarnings, severity>>
+of the error given will be __User__.
 
 A type constraint definition in D4 has the following syntax:
 
@@ -1004,12 +1000,12 @@ An alter type constraint definition in D4 has the following syntax:
 ....
 
 For a detailed description of the <expression> production rule see
-link:D4LGLanguageElements-Expressions.html[Expressions].
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, Expressions>>.
 
 The expression specified must be boolean-valued,
-link:D4LGLanguageElements-Expressions.html[functional], and
-link:D4LGLanguageElements-Expressions.html[deterministic]. In addition,
-the constraint expression is not allowed to reference global database
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, functional>>, and
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
+In addition, the constraint expression is not allowed to reference global database
 state. The compiler enforces these requirements. Within the expression,
 the implicit variable *value* is available, which is the value being
 validated.
@@ -1075,7 +1071,7 @@ defined on the type, and false otherwise.
 
 The <metadata> describes additional information that should be
 associated with this type. For more information on the tags available
-for use with scalar types, refer to link:DRTags.html[Tags].
+for use with scalar types, refer to <<../DataphorReference/Tags.adoc#DRTags, Tags>>.
 
 [[D4LGCatalogElements-ScalarTypes-Examples]]
 === Examples
@@ -1215,8 +1211,8 @@ this type.
 
 In the presence of nilable columns, a key may be defined as either
 __sparse__, or __dense__. As discussed in the section on
-link:D4LGNilSemantics.html[Nil Semantics], for dense keys, the
-definition of row-equality is used to enforce key constraints. This
+<<DocumentsAndDesigners.adoc#D4LGNilSemantics, Nil Semantics>>, for dense keys,
+the definition of row-equality is used to enforce key constraints. This
 means that for a single-column key, a nil in the key column may only
 appear in one row of the table. Sparse keys, by contrast enforce
 uniqueness only among the rows that have values specified for the
@@ -1267,14 +1263,14 @@ of this type.
 An order can consist of any subset of the columns of a table variable in
 any order. Each column can include an optional sort expression, and an
 optional ascending indicator. In addition, the column can specify
-whether or not to include rows with a *link:D4LGNilSemantics.html[nil]*
+whether or not to include rows with a <<DocumentsAndDesigners.adoc#D4LGNilSemantics, nil>>
 for the column in the result.
 
 The sort expression allows the order to use an arbitrary condition for
 sorting. The sort expression must be integer-valued,
-link:D4LGLanguageElements-Expressions.html[functional] and
-link:D4LGLanguageElements-Expressions.html[deterministic]. The
-expression has access to the implicit variables *left.value* and
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, functional>> and
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
+The expression has access to the implicit variables *left.value* and
 **right.value**, which are the values to be compared. The expression
 must return -1 if *left.value* is less than **right.value**, 0 if the
 two values are equal, and 1 if *left.value* is greater than
@@ -1293,7 +1289,7 @@ update is made against the table variable. If a constraint is violated,
 i.e. if the expression evaluates to false for any row, the name of the
 constraint is used to construct an error message. If present on the
 constraint, the metadata tag
-link:FTRTagsDescriptions-DAETags-MessageorSimpleMessage.html[DAE.Message]
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-MessageorSimpleMessage, DAE.Message>>
 is also used to construct the error message.
 
 Row constraint definitions in D4 have the following syntax:
@@ -1347,10 +1343,10 @@ _simple_ constraints and _transition_ constraints.
 
 Simple constraints specify a condition that must hold for every row in
 the table. The constraint expression is required to be boolean-valued,
-link:D4LGLanguageElements-Expressions.html[functional] and
-link:D4LGLanguageElements-Expressions.html[deterministic]. The compiler
-enforces these requirements. Within the constraint expression, access to
-the columns of the row being validated is available by directly
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, functional>> and
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
+The compiler enforces these requirements. Within the constraint expression,
+access to the columns of the row being validated is available by directly
 referencing the column names.
 
 Transition constraints specify a condition that must hold for some
@@ -1358,10 +1354,10 @@ transition of a row within the table. The transition constraint may
 specify a condition that must hold for the __insert__, __update__, and
 _delete_ transition. The constraint expression in every case is required
 to be boolean-valued,
-link:D4LGLanguageElements-Expressions.html[functional] and
-link:D4LGLanguageElements-Expressions.html[deterministic]. The compiler
-enforces these requirements. Within an insert expression, access to the
-columns of the row being inserted is avilable by referencing the column
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, functional>> and
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
+The compiler enforces these requirements. Within an insert expression, access to the
+columns of the row being inserted is available by referencing the column
 names, prefixed with the new keyword. Within an update expression,
 access to the old values of the row being updated is available by
 referencing the column name, prefixed with the old keyword, and access
@@ -1374,18 +1370,17 @@ Both types of constraints are allowed to reference global catalog
 objects. In so doing, the constraint becomes a _deferred_ constraint
 check, meaning that it will not be checked until transaction commit.
 This behavior can be controlled using the
-link:FTRTagsDescriptions-DAETags-IsDeferred.html[DAE.IsDeferred] tag in
-the constraint definition.
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-IsDeferred, DAE.IsDeferred>>
+tag in the constraint definition.
 
 For both row and transition constraints, if the constraint expression
 evaluates to nil, the constraint is considered satisfied.
 
 As with all constraints, the text of the error message can be specified
 using metadata on the constraint. If the tag
-link:FTRTagsDescriptions-DAETags-MessageorSimpleMessage.html[DAE.SimpleMessage]
-appears on the constraint, the value of the tag will be used as the
-message of the error. If the tag
-link:FTRTagsDescriptions-DAETags-MessageorSimpleMessage.html[DAE.Message]
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-MessageorSimpleMessage, DAE.SimpleMessage>>
+appears on the constraint, the value of the tag will be used as the message of the error. If the tag
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-MessageorSimpleMessage, DAE.Message>>
 appears on the constraint, the value of the tag is a D4 expression that
 is evaluated in the same context as the validation. The expression is
 expected to return a value of type string that will be the text of the
@@ -1395,8 +1390,9 @@ used with. For example, the tag DAE.Insert.SimpleMessage specifies the
 text of the message to be used if the insert transition of the
 constraint is violated. If no custom message is provided, a generic
 error will be given stating that the constraint has been violated. In
-either case, the link:DUGP1ErrorsandWarnings.html[severity] of the error
-given will be __User__.
+either case, the
+<<../UsersGuide/DocumentsAndDesigners.adoc#DUGP1ErrorsandWarnings, severity>>
+of the error given will be __User__.
 
 [[D4LGReferences]]
 ==== References
@@ -1527,8 +1523,8 @@ that make up the table structure. Each column has a name that is unique
 within the table variable, a data type which describes the legal values
 for this column, and possibly a default and column constraints. Each
 column also includes a <nilable definition>, which indicates whether or
-not the column is allowed to be link:D4LGNilSemantics.html[nil], or have
-no value.
+not the column is allowed to be <<DocumentsAndDesigners.adoc#D4LGNilSemantics, nil>>, 
+or have no value.
 
 Note that a table variable need not have any columns at all. There are
 exactly two table values with no columns:
@@ -1594,17 +1590,17 @@ considered satisfied.
 
 As with all constraints, the text of the error message can be specified
 using metadata on the constraint. If the tag
-link:FTRTagsDescriptions-DAETags-MessageorSimpleMessage.html[DAE.SimpleMessage]
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-MessageorSimpleMessage, DAE.SimpleMessage>>
 appears on the constraint, the value of the tag will be used as the
 message of the error. If the tag
-link:FTRTagsDescriptions-DAETags-MessageorSimpleMessage.html[DAE.Message]
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-MessageorSimpleMessage, DAE.Message>>
 appears on the constraint, the value of the tag is a D4 expression that
 is evaluated in the same context as the validation. The expression is
 expected to return a value of type string that will be the text of the
 error. If no custom message is provided, a generic error will be given
 stating that the constraint has been violated. In either case, the
-link:DUGP1ErrorsandWarnings.html[severity] of the error given will be
-__User__.
+<<../UsersGuide/DocumentsAndDesigners.adoc#DUGP1ErrorsandWarnings, severity>>
+of the error given will be __User__.
 
 Column constraints are validated in addition to scalar type level
 constraints.
@@ -1629,9 +1625,9 @@ Alter column constraint definitions in D4 have the following syntax:
 ....
 
 The constraint expression must be boolean-valued,
-link:D4LGLanguageElements-Expressions.html[functional] and
-link:D4LGLanguageElements-Expressions.html[deterministic]. In addition,
-the constraint expression is not allowed to reference global database
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, functional>> and
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
+In addition, the constraint expression is not allowed to reference global database
 state. The compiler enforces these requirements. Within the constraint
 expression, the implicit variable *value* is available which represents
 the value being validated.
@@ -1790,17 +1786,17 @@ evaluates to nil, the constraint is considered satisfied.
 
 As with all constraints, the text of the error message can be specified
 using metadata on the constraint. If the tag
-link:FTRTagsDescriptions-DAETags-MessageorSimpleMessage.html[DAE.SimpleMessage]
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-MessageorSimpleMessage, DAE.SimpleMessage>>
 appears on the constraint, the value of the tag will be used as the
 message of the error. If the tag
-link:FTRTagsDescriptions-DAETags-MessageorSimpleMessage.html[DAE.Message]
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-MessageorSimpleMessage, DAE.Message>>
 appears on the constraint, the value of the tag is a D4 expression that
 is evaluated in the same context as the validation. The expression is
 expected to return a value of type string that will be the text of the
 error. If no custom message is provided, a generic error will be given
 stating that the constraint has been violated. In either case, the
-link:DUGP1ErrorsandWarnings.html[severity] of the error given will be
-__User__.
+<<../UsersGuide/DocumentsAndDesigners.adoc#DUGP1ErrorsandWarnings, security>>
+of the error given will be __User__.
 
 The create constraint statement in D4 has the following syntax:
 
@@ -1833,9 +1829,9 @@ which it was created. A session-specific constraint will hide a global
 constraint with the same name.
 
 The constraint expression is required to be boolean-valued,
-link:D4LGLanguageElements-Expressions.html[functional], and
-link:D4LGLanguageElements-Expressions.html[deterministic]. The compiler
-enforces these requirements.
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, functional>>, and
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
+The compiler enforces these requirements.
 
 The following example illustrates the use of the create constraint
 statement. The given constraint enforces that all cats have at least one
@@ -2095,16 +2091,16 @@ translated into the application transaction. By default, operators are
 translated into an application transaction if they are not
 host-implemented, access global state, and are not functional. To change
 the default behavior, use the
-link:FTRTagsDescriptions-DAETags-ShouldTranslate.html[DAE.ShouldTranslate]
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-ShouldTranslate, DAE.ShouldTranslate>>
 tag on the create operator statement. Note also that if the operator is
 being invoked as an event handler, the attach statement may also specify
 a translation behavior using the
-link:FTRTagsDescriptions-DAETags-ShouldTranslate.html[DAE.ShouldTranslate]
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-ShouldTranslate, DAE.ShouldTranslate>>
 tag.
 
 *See Also*
 
-link:D4LGLanguageElements-Operators.html[Language Elements, Operators]
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Operators, Language Elements\, Operators>>
 
 [[D4LGCatalogElements-Operators-OperatorResolution]]
 === Operator Resolution
@@ -2215,7 +2211,7 @@ created. A session-specific operator will hide a global operator with
 the same name and signature.
 
 For a complete description of the <block> production rule, refer to
-link:D4LGImperativeStatements.html[Imperative Statements].
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements, Imperative Statements>>.
 
 The following example illustrates the use of the create operator
 statement:
@@ -2353,7 +2349,7 @@ session-specific aggregate operator will hide a global aggregate
 operator with the same name and signature.
 
 For a complete description of the <block> production rule, refer to
-link:D4LGImperativeStatements.html[Imperative Statements].
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements, Imperative Statements>>.
 
 Aggregate operators can be invoked in one of two ways. First, they can
 be invoked as part of the *add* clause of an *group* table operator.
@@ -2798,8 +2794,8 @@ simplifying the implementation of many types of business rules.
 
 By default, any after table-level event handler is deferred if the
 operator being invoked accesses global state. To change this behavior,
-the link:FTRTagsDescriptions-DAETags-IsDeferred.html[DAE.IsDeferred] tag
-can be specified with the attach statement.
+the <<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-IsDeferred, DAE.IsDeferred>>
+tag can be specified with the attach statement.
 
 In addition, event handlers can be translated into an application
 transaction. By default, all event handlers except after table-level
@@ -2807,10 +2803,9 @@ event handlers are translated into the application transaction. If a
 given event handler is invoked within an application transaction, it
 will not be invoked when the application transaction is committed. To
 disable application transaction translation of an event handler, use the
-link:FTRTagsDescriptions-DAETags-ShouldTranslate.html[DAE.ShouldTranslate]
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-ShouldTranslate, DAE.ShouldTranslate>>
 tag on the attach statement. Note also that the operator being invoked
-may have a
-link:FTRTagsDescriptions-DAETags-ShouldTranslate.html[DAE.ShouldTranslate]
+may have a <<../DataphorReference/Tags.adoc#FTRTagsDescriptions-DAETags-ShouldTranslate, DAE.ShouldTranslate>>
 tag indicating whether the operator body should be translated into the
 application transaction.
 
@@ -2884,7 +2879,7 @@ default sort expression for columns defined on the given scalar type. A
 given scalar type may only have one sort associated with it. Note that
 this sort serves only as a default for ordering, and can always be
 changed for a given result set using the sort clause of the order column
-definition with an link:D4LGOrders.html[<order definition>] or
+definition with an <<D4LGOrders, <order definition>>> or
 link:D4LGDataManipulation-SelectStatement.html[<order clause>].
 
 The create sort statement in D4 has the following syntax:
@@ -2935,8 +2930,7 @@ be safe, i.e. every value of the source type can be represented as a
 value in the target type. Converting a value of type Byte to a value of
 type Integer is a widening conversion. For more information on type
 conversion, narrowning, widening, and a table of available conversions,
-refer to link:D4LGLanguageElements-Types-TypeConversions.html[Type
-Conversion].
+refer to <<D4LGLanguageElements.adoc#D4LGLanguageElements-Types-TypeConversions, Type Conversions>>.
 
 There are two cases where the compiler will attempt to determine a
 conversion path: assignment statements, and operator calls. Assignment

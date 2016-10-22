@@ -303,7 +303,7 @@ value will be of some specific row type.
 
 *See Also*
 
-link:D4LGLanguageElements-Values-RowValues.html[Row Values]
+<<D4LGLanguageElements-Values-RowValues, Row Values>>
 
 [[D4LGLanguageElements-Types-TableTypes]]
 === Table Types
@@ -330,7 +330,7 @@ values. Any given table value will be of some specific table type.
 
 *See Also*
 
-link:D4LGLanguageElements-Values-TableValues.html[Table Values] |
+<<D4LGLanguageElements-Values-TableValues, Table Values>> |
 <<D4Catalog.adoc#D4LGCatalogElements-TableVariables, Table Variables>>
 
 [[D4LGLanguageElements-Types-ListTypes]]
@@ -353,9 +353,8 @@ list value will be of some specific list type.
 
 *See Also*
 
-link:D4LGLanguageElements-Values-ListValues.html[List Values] |
-link:D4LGLanguageElements-Expressions-IndexerExpression.html[Indexer
-Expressions]
+<<D4LGLanguageElements-Values-ListValues, List Values>> |
+<<D4LGLanguageElements-Expressions-IndexerExpression, Indexer Expressions>>
 
 [[D4LGLanguageElements-Types-CursorTypes]]
 === Cursor Types
@@ -378,7 +377,7 @@ values. Any given cursor value will be of some specific cursor type.
 
 *See Also*
 
-link:D4LGLanguageElements-Values-CursorValues.html[Cursor Values] |
+<<D4LGLanguageElements-Values-CursorValues, Cursor Values>> |
 link:D4LGDataManipulation-SelectStatement-CursorType.html[Cursor Type]
 
 [[D4LGLanguageElements-Values]]
@@ -421,7 +420,7 @@ in the Catalog Elements chapter on
 
 *See Also*
 
-link:D4LGLanguageElements-Types-ScalarTypes.html[Scalar Types]
+<<D4LGLanguageElements-Types-ScalarTypes, Scalar Types>>
 
 [[D4LGLanguageElements-Values-RowValues]]
 === Row Values
@@ -457,10 +456,10 @@ syntax:
 ....
 
 For a detailed description of the <type specifier> production rule see
-link:D4LGLanguageElements-Types.html[Types]
+<<D4LGLanguageElements-Types, Types>>
 
 For a detailed description of the <expression term> production rule see
-link:D4LGLanguageElements-Expressions.html[Expressions].
+<<D4LGLanguageElements-Expressions, Expressions>>.
 
 The following example illustrates the use of the row selector:
 
@@ -475,7 +474,7 @@ Rows].
 
 *See Also*
 
-link:D4LGLanguageElements-Types-RowTypes.html[Row Types]
+<<D4LGLanguageElements-Types-RowTypes, Row Types>>
 
 [[D4LGLanguageElements-Values-TableValues]]
 === Table Values
@@ -522,10 +521,11 @@ syntax:
 ....
 
 For a detailed description of the <type specifier> production rule see
-link:D4LGLanguageElements-Types.html[Types]
+<<D4LGLanguageElements-Types, Types>>
 
 For a detailed description of the <expression> production rule see
-link:D4LGLanguageElements-Expressions.html[Expressions].
+
+<<D4LGLanguageElements-Expressions, Expressions>>.
 
 For a detailed description of the <key definition> production rule see
 link:D4LGKeys.html[Keys].
@@ -548,7 +548,7 @@ For more information on using table values in D4, see
 
 *See Also*
 
-link:D4LGLanguageElements-Types-TableTypes.html[Table Types]
+<<D4LGLanguageElements-Types-TableTypes, Table Types>>
 
 [[D4LGLanguageElements-Values-ListValues]]
 === List Values
@@ -566,16 +566,15 @@ syntax:
 ....
 
 For a detailed description of the <expression> production rule see
-link:D4LGLanguageElements-Expressions.html[Expressions].
+<<D4LGLanguageElements-Expressions, Expressions>>
 
 For more information on using list values in D4, see
 link:DDGModelingProcessLogic-ValuesandVariables-UsingLists[Using Lists].
 
 *See Also*
 
-link:D4LGLanguageElements-Types-ListTypes.html[List Types] |
-link:D4LGLanguageElements-Expressions-IndexerExpression.html[Indexer
-Expressions]
+<<D4LGLanguageElements-Types-ListTypes, List Types>> |
+<<D4LGLanguageElements-Expressions-IndexerExpression, Indexer Expressions>>
 
 [[D4LGLanguageElements-Values-CursorValues]]
 === Cursor Values
@@ -607,8 +606,7 @@ Cursors].
 *See Also*
 
 link:DDGP1Cursor.html[Cursor, CLI] |
-link:D4LGLanguageElements-Expressions-IndexerExpression.html[Indexer
-Expressions]
+<<D4LGLanguageElements-Expressions-IndexerExpression, Indexer Expressions>>
 
 [[D4LGLanguageElements-Variables]]
 == Variables
@@ -635,8 +633,8 @@ __<<D4Catalog.adoc#D4LGCatalogElements-TableVariables, table variables>>__
 documentation, but for reasons of brevity and familiarity in the
 language, we chose the more traditional name **table**.
 
-link:D4LGImperativeStatements-Variables-VariableDeclarationStatement.html[Variable
-declaration] in D4 has the following syntax:
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-Variables-VariableDeclarationStatement, Variable declaration>>
+in D4 has the following syntax:
 
 ....
 <variable declaration statement> ::=
@@ -650,7 +648,7 @@ The optional <expression> specifies an initial value for the variable.
 If no initial value is specified, the type of the variable is used to
 determine a default value for the variable. If no default value is
 specified as part of the type definition, the variable is said to be
-_uninitialized_ or __link:D4LGNilSemantics.html[nil]__.
+_uninitialized_ or __<<D4LGNilSemantics, nil>>__.
 
 Note that the <type specifier> in a <variable definition> is optional if
 an initial value is given. In this case, the type of the variable is
@@ -668,14 +666,14 @@ For a detailed description of the <qualified identifier> production rule
 see link:D4LGLexicalElements-Identifiers.html[Identifiers].
 
 For a detailed description of the <type specifier> production rule see
-link:D4LGLanguageElements-Types.html[Types].
+<<D4LGLanguageElements-Types, Types>>.
 
 For a detailed description of the <expression> production rule see
-link:D4LGLanguageElements-Expressions.html[Expressions].
+<<D4LGLanguageElements-Expressions, Expressions>>.
 
 *See Also*
 
-link:D4LGImperativeStatements-Variables.html[Variables]
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-Variables, Variables>>
 
 [[D4LGLanguageElements-Operators]]
 == Operators
@@ -705,7 +703,7 @@ A given D4 operator may be host-implemented (or external). This
 indicates that the implementation of the operator is not a block of D4
 statements, but an external routine referenced via a class definition.
 
-Like link:D4LGLanguageElements-Expressions[expressions], every D4
+Like <<D4LGLanguageElements-Expressions, expressions>>, every D4
 operator has the following
 characteristicsCharacteristicsOperatorOperatorCharacteristics which
 determine its behavior within the Dataphor Server:
@@ -794,7 +792,7 @@ Operators
 Nilable
 +
 A _nilable_ operator is one which may return a
-__link:D4LGNilSemantics.html[nil]__, or no value, at run-time.
+__<<D4LGNilSemantics, nil>>__, or no value, at run-time.
 * Order-Dependent
 +
 Aggregate Operator Characteristic
@@ -855,8 +853,7 @@ link:D4LGDataManipulation.html[Data Manipulation].
 Imperative statements provide the execution framework for the D4
 language. These statements provide functionality such as variable
 declaration, flow control, and exception handling. These statements are
-discussed in detail in link:D4LGImperativeStatements.html[Imperative
-Statements].
+discussed in detail in <<D4LGImperativeStatements.adoc#D4LGImperativeStatements, Imperative>>.
 
 Statements in D4 have the following syntax:
 
@@ -874,7 +871,7 @@ For a detailed description of the <dml statement> production rule see
 link:D4LGDataManipulation.html[Data Manipulation].
 
 For a detailed description of the <imperative statement> production rule
-see link:D4LGImperativeStatements.html[Imperative Statements].
+see <<D4LGImperativeStatements.adoc#D4LGImperativeStatements, Imperative Statements>>.
 
 [[D4LGLanguageElements-Expressions]]
 == Expressions
@@ -883,9 +880,8 @@ A D4 expression is a statement that returns a result. This includes
 link:D4LGLexicalElements-ParserLiterals.html[parser literals] and
 link:D4LGOperatorInvocation.html[operator invocations]. The result of
 evaluating any given expression is either a value or
-__link:D4LGNilSemantics.html[nil]__. Expressions are built according to
-the link:D4LGLanguageElements-Expressions.html[<expression> production
-rule]. The following are examples of valid D4 expressions.
+__<<D4LGNilSemantics, nil>>__. Expressions are built according to
+the <<D4LGLanguageElements-Expressions, [<expression> production rule]>>. The following are examples of valid D4 expressions.
 
 ....
 5
@@ -893,7 +889,7 @@ rule]. The following are examples of valid D4 expressions.
 true and not (Length(MyName) = 0)
 ....
 
-Just like link:D4LGLanguageElements-Operators.html[operators], every D4
+Just like <<D4LGLanguageElements-Operators, operators>>, every D4
 expression has the following
 characteristicsCharacteristicsExpressionExpressionCharacteristics which
 determine its behavior within the Dataphor Server:
@@ -923,7 +919,7 @@ non-deterministic operators.
 Repeatable:: An expression is _repeatable_ if it makes no calls to non-repeatable
 operators.
 Nilable:: An expression is _nilable_ if it may result in a
-__link:D4LGNilSemantics.html[nil]__. In general, expressions are nilable
+__<<D4LGNilSemantics, nil>>__. In general, expressions are nilable
 if they make calls to nilable operators, contain references to nilable
 columns, or contain the *nil* reserved word. Some operators such as
 IsNil will never result in a nil.
@@ -1276,7 +1272,7 @@ value returned from an *as* invocation is guaranteed to be of the
 provided type.
 
 For a detailed description of the <type specifier> production rule see
-link:D4LGLanguageElements-Types.html[Types].
+<<D4LGLanguageElements-Types, Types>>.
 
 [[D4LGLanguageElements-Expressions-BinaryExpression]]
 === Binary Expression
@@ -1683,4 +1679,4 @@ compatible types.
 
 link:D4LGCaseStatement.html[case statement] |
 link:D4LGIfStatement.html[if statement] |
-link:D4LGLanguageElements-Expressions.html[Expressions]
+<<D4LGLanguageElements-Expressions, Expressions>>

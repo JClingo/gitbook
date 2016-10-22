@@ -69,7 +69,7 @@ restrictive right assignment of any role.
 is associated with, the right is considered granted.
 
 For more detailed information on the Dataphor Security Model, refer to
-link:DUGP3Security.html[Security] chapter in the Dataphor User's Guide.
+<<../UsersGuide/Security.adoc#DUGP3Security, Security>> chapter in the Dataphor User's Guide.
 
 [[DDGEnforcingSecurity-DesigningForSecurity]]
 == Designing For Security

@@ -32,7 +32,7 @@ The syntax for a D4 script is:
 
 Note that the semi-colon in a script is a statement separator. A
 detailed description of the <statement> production rule is given in
-link:D4LGLanguageElements-Statements.html[Statements].
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Statements, Statements>>.
 
 [[D4LGScriptsandExecution-Connectivity]]
 == Connectivity
@@ -104,5 +104,4 @@ could not continue compiling the given statement or set of statements.
 
 For more information on the error-handling capabilities of the D4
 language, refer to
-link:D4LGImperativeStatements-ExceptionHandling.html[Exception
-Handling].
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-ExceptionHandling, Exception Handling>>.

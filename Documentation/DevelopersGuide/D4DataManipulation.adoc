@@ -120,7 +120,7 @@ The select statement in D4 has the following syntax:
 
 The basis of the cursor definition is a table expression specified by
 <expression>. For a detailed description of the <expression> production
-rule, refer to link:D4LGLanguageElements-Expressions.html[Expressions].
+rule, refer to <<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, Expressions>>.
 For a complete description of the table operators avaialable in D4,
 refer to <<D4TableOperators.adoc#D4LGTableExpressions, Table Operators>>.
 
@@ -599,8 +599,8 @@ The update statement in D4 has the following syntax:
 The update must not violate any constraint of the database.
 
 The variable or expression given by
-link:D4LGLanguageElements-Expressions.html[<expression>] need not be a
-table variable. The target can be a table expression of arbitrary
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, <expression>>>
+need not be a table variable. The target can be a table expression of arbitrary
 complexity. In this case, the updatability mechanism for views is used
 to perform the update. For more information on how modifications are
 made to views, refer to the documentation for each table operator in
@@ -643,8 +643,8 @@ The delete statement in D4 has the following syntax:
 The delete must not violate any constraint of the database.
 
 The variable or expression given by
-link:D4LGLanguageElements-Expressions.html[<expression>] need not be a
-table variable. The target can be a table expression of arbitrary
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, <expression>>>
+need not be a table variable. The target can be a table expression of arbitrary
 complexity. In this case, the updatability mechanism for views is used
 to perform the delete. For more information on how modifications are
 made to views, refer to the documentation for each table operator in

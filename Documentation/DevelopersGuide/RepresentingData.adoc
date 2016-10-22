@@ -1013,12 +1013,12 @@ end;
 ....
 
 For more information on the table-indexer, refer to the
-link:D4LGLanguageElements-Expressions-IndexerExpression.html[Indexer
-Expression] discussion in the D4 Language Guide.
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions-IndexerExpression, Indexer Expression>>
+discussion in the D4 Language Guide.
 
 For more information on the column extractor, refer to the
-link:D4LGLanguageElements-Expressions-QualifierExpression.html[Qualifier
-Expression] discussion in the D4 Language Guide.
+<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions-QualifierExpression, Qualifier Expression>>
+discussion in the D4 Language Guide.
 
 [[DDGRepresentingDatawithTablesandViews-DerivedTableVariables]]
 == Views

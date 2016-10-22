@@ -1106,7 +1106,7 @@ select Employee order by { Name };
 
 In both languages, the order by is not part of the expression, rather it
 is part of the specification of how the result should be returned. In
-other words, the link:D4LGOrders.html[order] by clause in D4 is not an
+other words, the <<D4Catalog.adoc#D4LGOrders, order>> by clause in D4 is not an
 operator, it is part of the select statement.
 
 [[D4LGComparisonWithSQL-MappinganSQLQueryIntoD4-DataModificationStatements]]
@@ -1202,8 +1202,8 @@ important differences:
 * Assignment operator
 +
 The D4 version of the statement uses the assignment operator
-link:D4LGImperativeStatements-Variables-AssignmentStatement.html[:=] to
-indicate that this is indeed an assignment statement. The current value
+<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-Variables-AssignmentStatement, :=>>
+to indicate that this is indeed an assignment statement. The current value
 of the variable is being replaced by a new value.
 * Restrictions on target
 +

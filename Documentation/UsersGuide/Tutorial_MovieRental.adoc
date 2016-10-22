@@ -20,8 +20,8 @@ your own applications.
 * link:D4LGProgrammingTopics-UsingGenerators.html[Auto-incrementing and Generators]
 * <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-TableVariables, Tables>>
 * link:D4LGDataManipulation-SelectStatement.html[Queries (select)]
-* link:DRTags.html[Tags]
-*<<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-References, References>> and <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Constraints, Constraints>>
+* <<../DataphorReference/Tags.adoc#DRTags, Tags>>
+* <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-References, References>> and <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Constraints, Constraints>>
 * <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Operators, Operators>>
 * link:D4LGScriptsandExecution.html[D4 Scripts] and C#/VB Scripts
 
@@ -381,7 +381,8 @@ would indicate ID will not be visible when the user-inteface (form) is
 in the browse mode. When the user interface is in any other mode, ID
 will be visible.
 
-For more information about tags see link:FTRTagsDescriptions.html[Tags].
+
+For more information about tags see <<../DataphorReference/Tags.adoc#FTRTagsDescriptions, Tags>>.
 
 The Frontend.Width tag on the ID field indicates the display width of
 the field on forms. The Frontend.Preview.Include tag on the Genre column
@@ -1083,7 +1084,7 @@ engine to group them together in a group box, as shown:
 image::../Images/RentalTut008.png[Rental Tutorial - 8]
 
 ****
-For more information about Frontend tags see link:../Reference/Tags.adoc#FTRTagsDescriptions-FrontendTags[Frontend Tags].
+For more information about Frontend tags see <<../DataphorReference/Tags.adoc#FTRTagsDescriptions-FrontendTags, Frontend Tags>>.
 ****
 
 Notice that the JoinedOn and Balance columns are both defaulted on a new
@@ -1093,7 +1094,7 @@ row. The client is able to ask the Dataphor Server what a default row
 The Address2 column type is followed by \{ *nil* }. This tells the
 Dataphor Server that the column is not required and can contain no data
 at all. For more information about the use of *nil* see
-link:D4LGNilSemantics.html[Nil Semantics].
+<<../DevelopersGuide/D4LGLanguageElements.adoc#D4LGNilSemantics, Nil Semantics>>.
 
 The ID column is not visible on the add form (though it is still being
 generated with its default value), yet it is visible on the other forms.
@@ -1156,6 +1157,7 @@ referenced table's forms (which can further be restricted to specific
 forms). If the Detail was not specified, then from the referencing
 table's perspective (SaleItem), the referenced table (Sale) would be
 embedded. For more information about Frontend tags see
+<<../DataphorReference/Tags.adoc#, >>
 link:FTRTagsDescriptions-FrontendTags.html[Frontend Tags].
 
 === Rental Tables

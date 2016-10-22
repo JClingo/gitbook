@@ -192,7 +192,7 @@ Application, refer to the link:DDGLogicalApplicationDesign.html[Logical
 Application Design] part of this manual.
 
 For more information on the security system of the Dataphor Server,
-refer to the link:DUGP3Security.html[Security] chapter of the Dataphor
+refer to the <<../UsersGuide/Security.adoc#DUGP3Security, Security>> chapter of the Dataphor
 User's Guide.
 
 [[DDGDataphorProductAnatomy-DataphorServer-Compiler]]
