@@ -11,6 +11,7 @@
 . link:ScalarTypeMapping.adoc[Scalar Type Mapping]
 . link:OperatorMapping.adoc[Operator Mapping]
 
+[[DDGPhysicalRealization]]
 == Summary
 
 Physical realization is the process of mapping a logical application

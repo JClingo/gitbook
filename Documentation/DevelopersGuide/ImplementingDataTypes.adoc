@@ -81,7 +81,7 @@ If the native representation for a type is simple and system-provided,
 then the device representation for the type will be system-provided as
 well. Otherwise, a scalar type map will have to be provided to determine
 the device representation. For more information on scalar type maps,
-refer to the link:DDGScalarTypeMapping.html[Scalar Type Maps] discussion
+refer to the <<ScalarTypeMapping.adoc#DDGScalarTypeMapping, Scalar Type Maps>> discussion
 in the Physical Realization part of this guide.
 
 For Frontend representations, the Dataphor Server utilizes __native
@@ -561,7 +561,7 @@ end;
 ....
 
 For more information on defining and using operators, refer to the
-link:DDGModelingProcessLogic.html[Modeling Process Logic] chapter.
+<<ModelingProcessLogic.adoc#DDGModelingProcessLogic, Modeling Process Logic>> chapter.
 
 [[DDGImplementingDataTypes-EventHandlers]]
 = Event Handlers

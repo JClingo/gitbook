@@ -103,7 +103,7 @@ and ordering cannot be evaluated, it simply means that the query
 processor will perform the operations, not the device.
 
 For more information on using the memory device, refer to the
-link:DRSystemLibrary.html[System Library Reference].
+<<../DataphorReference.adoc#DRSystemLibrary, System Library Reference>>.
 
 [[DDGDevices-AvailableDevices-SimpleDevice]]
 === Simple Device

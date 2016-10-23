@@ -127,8 +127,8 @@ Microsoft Windows 2000 or later.
 
 For more information on transaction management in the Dataphor Server,
 refer to the
-link:DDGModelingProcessLogic-TransactionManagement.html[Transaction
-Management] section of the Modeling Process Logic chapter of the Logical
+<<../DevelopersGuide/ModelingProcessLogic.adoc#DDGModelingProcessLogic-TransactionManagement, Transaction Management>>
+section of the Modeling Process Logic chapter of the Logical
 Application Design part of the Dataphor Developer's Guide.
 
 [[DUGP1DefaultUseImplicitTransactions]]

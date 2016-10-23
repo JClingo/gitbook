@@ -503,8 +503,8 @@ with the characteristics given by the rest of the statements.
 Explanations for each of the specific portions of the statements follow.
 
 *See Also*
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Types, Language Elements\, Types>> |
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Types-ScalarTypes, Scalar Types>>
+<<D4LanguageElements.adoc#D4LGLanguageElements-Types, Language Elements\, Types>> |
+<<D4LanguageElements.adoc#D4LGLanguageElements-Types-ScalarTypes, Scalar Types>>
 
 [[D4LGCatalogElements-ScalarTypes-Conveyors]]
 === Conveyors
@@ -649,8 +649,8 @@ terms of a
 <<D4LGCatalogElements-Objects-ClassDefinitions, <class definition>>>
 which designates a host implementation. Third, the selector may be
 written in D4 as either a simple
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, <expression>>>, or a
-<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-BlocksandScoping, <block>>>.
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, <expression>>>, or a
+<<D4ImperativeStatements.adoc#D4LGImperativeStatements-BlocksandScoping, <block>>>.
 
 If the <selector definition> is omitted, the representation must be the
 system-provided representation for the type, meaning that this
@@ -672,7 +672,7 @@ a simple and a compound scalar type, they behave the same in every
 respect in the logical model.
 
 If the
-<<D4LGCatalogElements-ScalarTypes-PossibleRepresentations, <accessor block>>>
+<<D4CatalogElements-ScalarTypes-PossibleRepresentations, <accessor block>>>
 is a D4 expression or block, then the type must have at least one
 host-implemented representation. The selector and accessors for the
 host-implemented representation will be available within the D4 code
@@ -949,7 +949,7 @@ An alter scalar type default definition in D4 has the following syntax:
 ....
 
 For a detailed description of the <expression> production rule see
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, Expressions>>.
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, Expressions>>.
 
 [[D4LGCatalogElements-ScalarTypes-TypeConstraints]]
 === Type Constraints
@@ -1000,11 +1000,11 @@ An alter type constraint definition in D4 has the following syntax:
 ....
 
 For a detailed description of the <expression> production rule see
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, Expressions>>.
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, Expressions>>.
 
 The expression specified must be boolean-valued,
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, functional>>, and
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, functional>>, and
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
 In addition, the constraint expression is not allowed to reference global database
 state. The compiler enforces these requirements. Within the expression,
 the implicit variable *value* is available, which is the value being
@@ -1268,8 +1268,8 @@ for the column in the result.
 
 The sort expression allows the order to use an arbitrary condition for
 sorting. The sort expression must be integer-valued,
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, functional>> and
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, functional>> and
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
 The expression has access to the implicit variables *left.value* and
 **right.value**, which are the values to be compared. The expression
 must return -1 if *left.value* is less than **right.value**, 0 if the
@@ -1343,8 +1343,8 @@ _simple_ constraints and _transition_ constraints.
 
 Simple constraints specify a condition that must hold for every row in
 the table. The constraint expression is required to be boolean-valued,
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, functional>> and
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, functional>> and
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
 The compiler enforces these requirements. Within the constraint expression,
 access to the columns of the row being validated is available by directly
 referencing the column names.
@@ -1354,8 +1354,8 @@ transition of a row within the table. The transition constraint may
 specify a condition that must hold for the __insert__, __update__, and
 _delete_ transition. The constraint expression in every case is required
 to be boolean-valued,
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, functional>> and
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, functional>> and
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
 The compiler enforces these requirements. Within an insert expression, access to the
 columns of the row being inserted is available by referencing the column
 names, prefixed with the new keyword. Within an update expression,
@@ -1505,7 +1505,7 @@ table variable. The default device is determined as described in
 <<D4LGCatalogElements-Libraries-DefaultDeviceResolution, Default Device Resolution>>.
 For more information on how the Dataphor Server maps
 table variables and operators into devices, see
-link:DDGPhysicalRealization.html[Physical Realization].
+<<PhysicalRealization.adoc#DDGPhysicalRealization, Physical Realization>>.
 
 For a description of the <key definition>, <order definition>,
 <row constraint definition>, and <reference definition> production
@@ -1523,7 +1523,7 @@ that make up the table structure. Each column has a name that is unique
 within the table variable, a data type which describes the legal values
 for this column, and possibly a default and column constraints. Each
 column also includes a <nilable definition>, which indicates whether or
-not the column is allowed to be <<DocumentsAndDesigners.adoc#D4LGNilSemantics, nil>>, 
+not the column is allowed to be <<DocumentsAndDesigners.adoc#D4LGNilSemantics, nil>>,
 or have no value.
 
 Note that a table variable need not have any columns at all. There are
@@ -1625,8 +1625,8 @@ Alter column constraint definitions in D4 have the following syntax:
 ....
 
 The constraint expression must be boolean-valued,
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, functional>> and
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, functional>> and
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
 In addition, the constraint expression is not allowed to reference global database
 state. The compiler enforces these requirements. Within the constraint
 expression, the implicit variable *value* is available which represents
@@ -1829,8 +1829,8 @@ which it was created. A session-specific constraint will hide a global
 constraint with the same name.
 
 The constraint expression is required to be boolean-valued,
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, functional>>, and
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, functional>>, and
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions, deterministic>>.
 The compiler enforces these requirements.
 
 The following example illustrates the use of the create constraint
@@ -2100,7 +2100,7 @@ tag.
 
 *See Also*
 
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Operators, Language Elements\, Operators>>
+<<D4LanguageElements.adoc#D4LGLanguageElements-Operators, Language Elements\, Operators>>
 
 [[D4LGCatalogElements-Operators-OperatorResolution]]
 === Operator Resolution
@@ -2211,7 +2211,7 @@ created. A session-specific operator will hide a global operator with
 the same name and signature.
 
 For a complete description of the <block> production rule, refer to
-<<D4LGImperativeStatements.adoc#D4LGImperativeStatements, Imperative Statements>>.
+<<D4ImperativeStatements.adoc#D4LGImperativeStatements, Imperative Statements>>.
 
 The following example illustrates the use of the create operator
 statement:
@@ -2349,7 +2349,7 @@ session-specific aggregate operator will hide a global aggregate
 operator with the same name and signature.
 
 For a complete description of the <block> production rule, refer to
-<<D4LGImperativeStatements.adoc#D4LGImperativeStatements, Imperative Statements>>.
+<<D4ImperativeStatements.adoc#D4LGImperativeStatements, Imperative Statements>>.
 
 Aggregate operators can be invoked in one of two ways. First, they can
 be invoked as part of the *add* clause of an *group* table operator.
@@ -2374,7 +2374,7 @@ of the column, or columns, being aggregated. If the operator resolved is
 not an aggregate operator, the compiler will raise an error.
 
 For a complete description of aggregate operator invocation syntax,
-refer to the link:D4LGOperatorInvocation.html[operator invocations]
+refer to the <<D4LGOperatorInvocation.adoc#D4LGOperatorInvocation, operator invocations>>
 discussion in this guide.
 
 The following example creats an aggregate operator, and uses it in some
@@ -2464,8 +2464,8 @@ device, as well as any user-specific settings for the device. These
 mappings are created through the use of system library operators.
 
 For a complete discussion of all these topics, refer to the
-link:DDGStorageIntegrationArchitecture.html[Storage Integration
-Architecture] chapter in the Physical Realization part of this guide.
+<<StorageIntegrationArchitecture.adoc#DDGStorageIntegrationArchitecture, Storage Integration Architecture>>
+chapter in the Physical Realization part of this guide.
 
 The create device statement in D4 has the following syntax:
 
@@ -2880,7 +2880,7 @@ given scalar type may only have one sort associated with it. Note that
 this sort serves only as a default for ordering, and can always be
 changed for a given result set using the sort clause of the order column
 definition with an <<D4LGOrders, <order definition>>> or
-link:D4LGDataManipulation-SelectStatement.html[<order clause>].
+<<D4DataManipulation.adoc#D4LGDataManipulation-SelectStatement, \<order clause\>>>.
 
 The create sort statement in D4 has the following syntax:
 
@@ -2930,7 +2930,7 @@ be safe, i.e. every value of the source type can be represented as a
 value in the target type. Converting a value of type Byte to a value of
 type Integer is a widening conversion. For more information on type
 conversion, narrowning, widening, and a table of available conversions,
-refer to <<D4LGLanguageElements.adoc#D4LGLanguageElements-Types-TypeConversions, Type Conversions>>.
+refer to <<D4LanguageElements.adoc#D4LGLanguageElements-Types-TypeConversions, Type Conversions>>.
 
 There are two cases where the compiler will attempt to determine a
 conversion path: assignment statements, and operator calls. Assignment

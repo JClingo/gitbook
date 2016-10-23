@@ -317,7 +317,7 @@ has a result type of Integer. The result type of the expression is
 therefore Integer, and the type inference is complete.
 
 Characteristic inference will be discussed in more detail in the
-link:DDGModelingProcessLogic.html[Modeling Process Logic] chapter.
+<<ModelingProcessLogic.adoc#DDGModelingProcessLogic, Modeling Process Logic>> chapter.
 
 For table operators, the process is somewhat more involved than for
 scalar operators, due to the amount of information that must be inferred
@@ -1013,11 +1013,11 @@ end;
 ....
 
 For more information on the table-indexer, refer to the
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions-IndexerExpression, Indexer Expression>>
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions-IndexerExpression, Indexer Expression>>
 discussion in the D4 Language Guide.
 
 For more information on the column extractor, refer to the
-<<D4LGLanguageElements.adoc#D4LGLanguageElements-Expressions-QualifierExpression, Qualifier Expression>>
+<<D4LanguageElements.adoc#D4LGLanguageElements-Expressions-QualifierExpression, Qualifier Expression>>
 discussion in the D4 Language Guide.
 
 [[DDGRepresentingDatawithTablesandViews-DerivedTableVariables]]

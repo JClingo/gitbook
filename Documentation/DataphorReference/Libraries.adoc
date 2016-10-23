@@ -6,6 +6,7 @@
 :lang: en
 :encoding: iso-8859-1
 
+[[DRSystemLibrary]]
 == Summary
 
 This section includes the documentation for the standard libraries available to Dataphor users.

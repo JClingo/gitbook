@@ -161,7 +161,7 @@ consistent use of date and time values within D4, the concept of
 _acceptable range_ is introduced as a guideline. All devices that ship
 with the Dataphor product are capable of storing values within the
 acceptable ranges for these types. For more information on acceptable
-range, see link:DDGScalarTypeMapping.html[Scalar Type Mapping].]
+range, see <<ScalarTypeMapping.adoc#DDGScalarTypeMapping, Scalar Type Mapping>>.]
 * link:T-System.Date.html[System.Date]
 +
 System.Date is the set of all possible dates from a fixed point. The
@@ -276,8 +276,7 @@ type.
 *See Also*
 
 <<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes, Scalar Types>> |
-link:DRSystemLibrary-ScalarTypes.html[Dataphor Reference,
-Scalar Types]
+<<../DataphorReference.adoc#DRSystemLibrary-ScalarTypes, Dataphor Reference\, Scalar Types>>
 
 [[D4LGLanguageElements-Types-RowTypes]]
 === Row Types
@@ -378,7 +377,7 @@ values. Any given cursor value will be of some specific cursor type.
 *See Also*
 
 <<D4LGLanguageElements-Values-CursorValues, Cursor Values>> |
-link:D4LGDataManipulation-SelectStatement-CursorType.html[Cursor Type]
+<<D4DataManipulation.adoc#D4LGDataManipulation-SelectStatement-CursorType, Cursor Type>>
 
 [[D4LGLanguageElements-Values]]
 == Values
@@ -389,9 +388,9 @@ integer constant 3, or as complex as a list of table values. Values are
 the mechanism for data representation in D4.
 
 Values are introduced into D4 expressions and statements through the use
-of special operators called __link:D4LGSelector.html[selectors]__.
-link:D4LGLexicalElements-ParserLiterals.html[Parser literals] are a kind
-of built-in selector for certain system data types. For example, the
+of special operators called __<<D4Catalog.adoc#D4LGSelector, selectors>>__.
+<<D4LexicalElements.adoc#D4LGLexicalElements-ParserLiterals, Parser Literals>>
+are a kind of built-in selector for certain system data types. For example, the
 parser literal 1 is a selector for the System.Integer value 1.
 Similarly, *row* \{ 5 ID } is a selector for the row value containing a
 column named ID with the System.Integer value 5.
@@ -469,8 +468,7 @@ select row of { Age : Integer, EyeColor : String } { };
 ....
 
 For more information on using row values in D4, see
-link:DDGModelingProcessLogic-ValuesandVariables-UsingRows.html[Using
-Rows].
+<<ModelingProcessLogic.adoc#DDGModelingProcessLogic-ValuesandVariables-UsingRows, Using Rows>>.
 
 *See Also*
 
@@ -528,7 +526,7 @@ For a detailed description of the <expression> production rule see
 <<D4LGLanguageElements-Expressions, Expressions>>.
 
 For a detailed description of the <key definition> production rule see
-link:D4LGKeys.html[Keys].
+<<D4Catalog.adoc#D4LGKeys, Keys>>.
 
 The following example illustrates the use of the table selector:
 
@@ -569,7 +567,7 @@ For a detailed description of the <expression> production rule see
 <<D4LGLanguageElements-Expressions, Expressions>>
 
 For more information on using list values in D4, see
-link:DDGModelingProcessLogic-ValuesandVariables-UsingLists[Using Lists].
+<<ModelingProcessLogic.adoc#DDGModelingProcessLogic-ValuesandVariables-UsingLists, Using Lists>>.
 
 *See Also*
 
@@ -584,8 +582,7 @@ to table values. Selecting a cursor value allocates system resources
 that must be released by calling link:O-System.Close.html[Close()] on
 the cursor. For a detailed description of the operators available for
 cursors, see
-link:DDGModelingProcessLogic-ValuesandVariables-UsingCursors.html[Using
-Cursors].
+<<ModelingProcessLogic.adoc#DDGModelingProcessLogic-ValuesandVariables-UsingCursors, Using Cursors>>.
 
 Cursor SelectorSelectorsCursor SelectorCursor selectors have the
 following syntax:
@@ -597,15 +594,14 @@ following syntax:
 
 For a detailed description of the <cursor definition> production rule
 see the select statement syntax in
-link:D4LGDataManipulation-SelectStatement.html[Select Statement].
+<<D4DataManipulation.adoc#D4LGDataManipulation-SelectStatement, Select Statement>>.
 
 For more information on using cursor values in D4, see
-link:DDGModelingProcessLogic-ValuesandVariables-UsingCursors.html[Using
-Cursors].
+<<ModelingProcessLogic.adoc#DDGModelingProcessLogic-ValuesandVariables-UsingCursors, Using Cursors>>.
 
 *See Also*
 
-link:DDGP1Cursor.html[Cursor, CLI] |
+<<ModelingProcessLogic.adoc#DDGModelingProcessLogic-ValuesandVariables-UsingCursors, Cursor>> |
 <<D4LGLanguageElements-Expressions-IndexerExpression, Indexer Expressions>>
 
 [[D4LGLanguageElements-Variables]]
@@ -633,7 +629,7 @@ __<<D4Catalog.adoc#D4LGCatalogElements-TableVariables, table variables>>__
 documentation, but for reasons of brevity and familiarity in the
 language, we chose the more traditional name **table**.
 
-<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-Variables-VariableDeclarationStatement, Variable declaration>>
+<<D4ImperativeStatements.adoc#D4LGImperativeStatements-Variables-VariableDeclarationStatement, Variable declaration>>
 in D4 has the following syntax:
 
 ....
@@ -663,7 +659,7 @@ declares a variable of type System.Integer named LInteger and assigns it
 the integer value 5.
 
 For a detailed description of the <qualified identifier> production rule
-see link:D4LGLexicalElements-Identifiers.html[Identifiers].
+see <<D4LexicalElements.adoc#D4LGLexicalElements-Identifiers, Identifiers>>.
 
 For a detailed description of the <type specifier> production rule see
 <<D4LGLanguageElements-Types, Types>>.
@@ -673,7 +669,7 @@ For a detailed description of the <expression> production rule see
 
 *See Also*
 
-<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-Variables, Variables>>
+<<D4ImperativeStatements.adoc#D4LGImperativeStatements-Variables, Variables>>
 
 [[D4LGLanguageElements-Operators]]
 == Operators
@@ -848,12 +844,12 @@ destruction of catalog level objects. These statements are discussed in
 Data Manipulation Language statements allow for the retrieval and
 modification of the data in the database. These include **select**,
 **insert**, **update**, and **delete**, and are discussed in
-link:D4LGDataManipulation.html[Data Manipulation].
+<<D4DataManipulation.adoc#D4LGDataManipulation, Data Manipulation>>.
 
 Imperative statements provide the execution framework for the D4
 language. These statements provide functionality such as variable
 declaration, flow control, and exception handling. These statements are
-discussed in detail in <<D4LGImperativeStatements.adoc#D4LGImperativeStatements, Imperative>>.
+discussed in detail in <<D4ImperativeStatements.adoc#D4LGImperativeStatements, Imperative>>.
 
 Statements in D4 have the following syntax:
 
@@ -868,17 +864,17 @@ For a detailed description of the <ddl statement> production rule see
 <<D4Catalog.adoc#D4LGCatalogElements, Catalog Elements>>.
 
 For a detailed description of the <dml statement> production rule see
-link:D4LGDataManipulation.html[Data Manipulation].
+<<D4DataManipulation.adoc#D4LGDataManipulation, Data Manipulation>>.
 
 For a detailed description of the <imperative statement> production rule
-see <<D4LGImperativeStatements.adoc#D4LGImperativeStatements, Imperative Statements>>.
+see <<D4ImperativeStatements.adoc#D4LGImperativeStatements, Imperative Statements>>.
 
 [[D4LGLanguageElements-Expressions]]
 == Expressions
 
 A D4 expression is a statement that returns a result. This includes
-link:D4LGLexicalElements-ParserLiterals.html[parser literals] and
-link:D4LGOperatorInvocation.html[operator invocations]. The result of
+<<D4LexicalElements.adoc#D4LGLexicalElements-ParserLiterals, parser literals>>
+and <<D4LGOperatorInvocation, operator invocations>>. The result of
 evaluating any given expression is either a value or
 __<<D4LGNilSemantics, nil>>__. Expressions are built according to
 the <<D4LGLanguageElements-Expressions, [<expression> production rule]>>. The following are examples of valid D4 expressions.
@@ -1420,7 +1416,7 @@ overloaded. It serves the following functions:
 
 For a description of how the qualifier behaves for the purposes of
 namespace resolution, refer to
-link:D4LGLexicalElements-Identifiers.html[Identifiers].
+<<D4LexicalElements.adoc#D4LGLexicalElements-Identifiers, Identifiers>>.
 
 If the target of the qualifier is a scalar-valued expression, the
 qualifier can be used to access the properties of any logical
@@ -1635,8 +1631,8 @@ Conditional expressions are a kind of inline function in that they are
 equivalent to writing an operator that uses branching.
 
 There are two types of conditional expressions in D4, the
-_link:D4LGIfStatement.html[if] expression_ and the
-__link:D4LGCaseStatement.html[case] expression__.
+_<<D4ImperativeStatements.adoc#D4LGIfStatement, if>> expression_
+and the __<<D4ImperativeStatements.adoc#D4LGCaseStatement, case>> expression__.
 
 These operators are system-provided and cannot be overloaded.
 
@@ -1677,6 +1673,6 @@ compatible types.
 
 *See Also*
 
-link:D4LGCaseStatement.html[case statement] |
-link:D4LGIfStatement.html[if statement] |
+<<D4ImperativeStatements.adoc#D4LGCaseStatement, case statement>> |
+<<D4ImperativeStatements.adoc#D4LGIfStatement, if statement>> |
 <<D4LGLanguageElements-Expressions, Expressions>>

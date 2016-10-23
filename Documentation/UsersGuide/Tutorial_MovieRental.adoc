@@ -19,11 +19,11 @@ your own applications.
 * <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Devices, Devices>>
 * link:D4LGProgrammingTopics-UsingGenerators.html[Auto-incrementing and Generators]
 * <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-TableVariables, Tables>>
-* link:D4LGDataManipulation-SelectStatement.html[Queries (select)]
+* <<../DevelopersGuide/D4DataManipulation.adoc#D4LGDataManipulation-SelectStatement, Queries (select)>>
 * <<../DataphorReference/Tags.adoc#DRTags, Tags>>
 * <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-References, References>> and <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Constraints, Constraints>>
 * <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Operators, Operators>>
-* link:D4LGScriptsandExecution.html[D4 Scripts] and C#/VB Scripts
+* <<D4LGScriptsandExecution.adoc#D4LGScriptsandExecution, D4 Scripts>> and C#/VB Scripts
 
 *Technical Terms*
 
@@ -1094,7 +1094,7 @@ row. The client is able to ask the Dataphor Server what a default row
 The Address2 column type is followed by \{ *nil* }. This tells the
 Dataphor Server that the column is not required and can contain no data
 at all. For more information about the use of *nil* see
-<<../DevelopersGuide/D4LGLanguageElements.adoc#D4LGNilSemantics, Nil Semantics>>.
+<<../DevelopersGuide/D4LanguageElements.adoc#D4LGNilSemantics, Nil Semantics>>.
 
 The ID column is not visible on the add form (though it is still being
 generated with its default value), yet it is visible on the other forms.

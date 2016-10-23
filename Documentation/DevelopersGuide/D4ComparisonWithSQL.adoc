@@ -134,7 +134,7 @@ of a single data manipulation language statement.
 In order to describe the Common SQL language, we will use a modified
 version of Extended Backus-Naur Form (EBNF) notation. For a complete
 description of this notation, refer to
-link:D4LGIntroduction-SyntacticConventions.html[Syntactic Conventions].
+<<D4Introduction.adoc#D4LGIntroduction-SyntacticConventions, Syntactic Conventions>>.
 
 Here then is the syntax for the data manipulation language statement in
 Common SQL:
@@ -154,8 +154,8 @@ The bulk of our discussion will center around the select statement, as
 the mapping for the modification statements is relatively
 straightforward.
 
-The select statement in link:D4LGComparisonWithSQL-CommonSQL.html[Common
-SQL] has the following syntax:
+The select statement in <<D4LGComparisonWithSQL-CommonSQL, CommonSQL>>
+has the following syntax:
 
 ....
 <select statement> ::=
@@ -237,7 +237,7 @@ The <from clause> is required and specifies the initial table from which
 the result should be gathered. Note that the <table specifier> is
 allowed to be a <query expression> in itself. This is known as a _nested
 from_ and is only supported by some systems. We choose to support it in
-link:D4LGComparisonWithSQL-CommonSQL.html[Common SQL] because it is an
+<<D4LGComparisonWithSQL-CommonSQL, Common SQL>> because it is an
 _extremely_ useful extension to SQL. Indeed, without it, SQL is not
 relationally complete.
 
@@ -293,7 +293,7 @@ the result.
 
 The insert statement in SQL allows a row or rows to be inserted into a
 given table variable. The insert statement in
-link:D4LGComparisonWithSQL-CommonSQL.html[Common SQL] has the following
+<<D4LGComparisonWithSQL-CommonSQL, Common SQL>> has the following
 syntax:
 
 ....
@@ -310,7 +310,7 @@ syntax:
 
 The update statement in SQL allows the data in a given table variable to
 be updated. The update statement in
-link:D4LGComparisonWithSQL-CommonSQL.html[Common SQL] has the following
+<<D4LGComparisonWithSQL-CommonSQL, Common SQL>> has the following
 syntax:
 
 ....
@@ -325,7 +325,7 @@ syntax:
 
 The delete statement in SQL allows the data in a given table variable to
 be deleted. The delete statement in
-link:D4LGComparisonWithSQL-CommonSQL.html[Common SQL] has the following
+<<D4LGComparisonWithSQL-CommonSQL, Common SQL>> has the following
 syntax:
 
 ....
@@ -342,7 +342,7 @@ languages. Each DBMS has its own definition of what the language is,
 what features it supports, how it manages data, and what the syntax of
 specific statements is. This section discusses a few of the more
 pervasive implementations, and how they differ from
-link:D4LGComparisonWithSQL-CommonSQL.html[Common SQL], and from each
+<<D4LGComparisonWithSQL-CommonSQL, Common SQL>>, and from each
 other.
 
 Note that the differences outlined here are mainly syntactic in nature.
@@ -562,8 +562,8 @@ statements become more complex, these differences will become more and
 more apparent.
 
 Also note that unlike SQL, the keyword
-*link:D4LGDataManipulation-SelectStatement.html[select]* in D4 is only
-part of the statement, it is not part of the expression.
+<<D4DataManipulation.adoc#D4LGDataManipulation-SelectStatement, select>>
+in D4 is only part of the statement, it is not part of the expression.
 
 [[D4LGComparisonWithSQL-MappinganSQLQueryIntoD4-TheWhereClause]]
 === The Where Clause
@@ -638,9 +638,9 @@ select ID, Name, Length(Name) from Employee
 ....
 
 This query illustrates the second of the four tasks specified in the
-link:D4LGComparisonWithSQL-MappinganSQLQueryIntoD4-UnravelingtheColumnList.html[column
-list], that of extension. In SQL, an expression is allowed to define the
-value for a given column in the result.
+<<D4LGComparisonWithSQL-MappinganSQLQueryIntoD4-UnravelingtheColumnList, column list>>,
+that of extension. In SQL, an expression is allowed to define the value for a
+given column in the result.
 
 The equivalent statement in D4 is:
 
@@ -648,7 +648,7 @@ The equivalent statement in D4 is:
 select Employee add { Length(Name) NameLength };
 ....
 
-The <<link:D4TableOperators.adoc#D4LGTableExpressions-Add, add>> operator of D4 allows
+The <<D4TableOperators.adoc#D4LGTableExpressions-Add, add>> operator of D4 allows
 columns to be added to the result. The values for the new columns are
 given by the expressions in the add clause.
 
@@ -673,8 +673,8 @@ select ID, Name as LastName from Employee
 ....
 
 This query illustrates the third of the four tasks being specified by
-the link:D4LGComparisonWithSQL-MappinganSQLQueryIntoD4-UnravelingtheColumnList.html[column
-list], that of renaming columns. The optional *as* keyword is used to
+the <<D4LGComparisonWithSQL-MappinganSQLQueryIntoD4-UnravelingtheColumnList, column list>>,
+that of renaming columns. The optional *as* keyword is used to
 specify a new name for the given column.
 
 In D4, the equivalent query is:
@@ -722,8 +722,8 @@ select Employee group add { Count() EmployeeCount };
 On the surface the SQL version of the query looks very similar to the
 extend operator, but in reality, the task is completely different, and
 is the fourth task specified in the
-link:D4LGComparisonWithSQL-MappinganSQLQueryIntoD4-UnravelingtheColumnList.html[column
-list], that of <<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, aggregation>>.
+<<D4LGComparisonWithSQL-MappinganSQLQueryIntoD4-UnravelingtheColumnList, column list>>,
+that of <<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, aggregation>>.
 Actually, the task is split between the expressions in the column list,
 and the group by clause, a fact which serves to complicate matters even
 further.
@@ -977,7 +977,7 @@ to be equi-joins.
 Union CompatibleNow that we have described the <select expression>, we
 discuss the <table operator clause>, which allows complete select
 expressions to be used as arguments to the
-_link:D4LGQueryExpression.html[union-compatible]_ binary table
+_<<D4LGQueryExpression, union-compatible>>_ binary table
 operators: union, intersection and difference. Two tables in SQL are
 union-compatible if they have the same number of columns, and the
 columns have assignment-compatible data types, from left to right (i.e.
@@ -1113,16 +1113,16 @@ operator, it is part of the select statement.
 === Data Modification Statements
 
 The syntax for the
-link:D4LGDataManipulation-InsertStatement.html[insert],
-link:D4LGDataManipulation-UpdateStatement.html[update], and
-link:D4LGDataManipulation-DeleteStatement.html[delete] statements in SQL
-and D4 is very similar, even identical in some respects, so the mapping
-is relatively straightforward. There are some important logical
+<<D4DataManipulation.adoc#D4LGDataManipulation-InsertStatement, insert>>,
+<<D4DataManipulation.adoc#D4LGDataManipulation-UpdateStatement, update>>, and
+<<D4DataManipulation.adoc#D4LGDataManipulation-DeleteStatement, delete>>
+statements in SQL and D4 is very similar, even identical in some respects,
+so the mapping is relatively straightforward. There are some important logical
 differences between the semantics of the operators, particularly for the
 insert and update.
 
 First, we discuss the
-link:D4LGDataManipulation-InsertStatement.html[insert] statement.
+<<D4DataManipulation.adoc#D4LGDataManipulation-InsertStatement, insert>> statement.
 Suppose we want to add a new employee into the list of Employees. In
 SQL, we have:
 
@@ -1182,7 +1182,7 @@ i.e. the expression could consist of joins, projections, restrictions,
 etc.,.
 
 Next, we discuss the
-link:D4LGDataManipulation-UpdateStatement.html[update] statement.
+<<D4DataManipulation.adoc#D4LGDataManipulation-UpdateStatement, update>> statement.
 Suppose we discover that the employee with ID 6 is really named 'John'.
 In SQL, we would write:
 
@@ -1202,7 +1202,7 @@ important differences:
 * Assignment operator
 +
 The D4 version of the statement uses the assignment operator
-<<D4LGImperativeStatements.adoc#D4LGImperativeStatements-Variables-AssignmentStatement, :=>>
+<<D4ImperativeStatements.adoc#D4LGImperativeStatements-Variables-AssignmentStatement, :=>>
 to indicate that this is indeed an assignment statement. The current value
 of the variable is being replaced by a new value.
 * Restrictions on target

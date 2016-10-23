@@ -79,7 +79,7 @@ target system. The scalar type map is responsible for translating values
 from the native representation of a value within the Dataphor Server to
 the device representation of the value within the target system, and
 vice versa. Scalar type maps will be discussed in detail in
-link:DDGScalarTypeMapping.html[Scalar Type Mapping]
+<<ScalarTypeMapping.adoc#DDGScalarTypeMapping, Scalar Type Mapping>>.
 
 Operator maps provide the translation services for operator invocations
 from D4 to the corresponding invocation within the target system. These

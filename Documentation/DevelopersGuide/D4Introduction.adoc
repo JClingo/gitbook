@@ -169,4 +169,5 @@ These extensions are the same as those used in reference [3].
 
 The BNF fragments included in this language guide are somewhat modified
 in order to facilitate presentation. For a complete BNF reference, refer
-to the link:DRBnfDiagrams.html[D4 BNF Language Diagrams].
+to the
+<<D4LanguageGrammar.adoc#DRBnfDiagrams, D4 BNF Language Diagrams>>.
