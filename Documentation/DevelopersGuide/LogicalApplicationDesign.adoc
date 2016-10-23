@@ -16,6 +16,7 @@
 . link:WorkingWithLibraries.adoc[Working With Libraries]
 . link:DatabaseDesignTechniques.adoc[Database Design Techniques]
 
+[[DDGLogicalApplicationDesign]]
 == Summary
 
 This part approaches the problem of declarative application development

@@ -111,8 +111,8 @@ taken from the Shipping application.
 == Values and Variables
 
 In addition to the scalar types discussed in the
-link:DDGImplementingDataTypes.html[Implementing Data Types] chapter, the
-D4 language provides the following categories of types:
+<<ImplementingDataTypes.adoc#DDGImplementingDataTypes, Implementing Data Types>>
+chapter, the D4 language provides the following categories of types:
 
 * Lists
 * Rows
@@ -375,11 +375,10 @@ type of the initializer expression.
 
 The various operators that can be performed on table values have already
 been discussed in detail in
-link:DDGRepresentingDataWithTablesAndViews.html[Representing Data with
-Tables and Views]. As mentioned previously, D4 also allows for the
-definition of local table variables, and for parameters and return
-values to be table-typed. There are several points to be made regarding
-this functionality.
+<<RepresentingData.adoc#DDGRepresentingDataWithTablesAndViews, Representing Data with Tables and Views>>.
+As mentioned previously, D4 also allows for the definition of local table
+variables, and for parameters and return values to be table-typed. There are
+several points to be made regarding this functionality.
 
 Chunking BoundaryFirst, local table variables are allocated within the
 query processor directly, rather than as part of a device. As such, they
@@ -721,8 +720,8 @@ within D4.
 
 D4 operators can be written in D4, or host-implemented. For more
 information on host-implemented operators, refer to the
-link:DDGImplementingDataTypes-Host-ImplementedTypesandOperators[Host-Implemented
-Types And Operators] discussion in Implementing Data Types.
+<<ImplementingDataTypes.adoc#DDGImplementingDataTypes-Host-ImplementedTypesandOperators, Host-Implemented Types and Operators>>
+discussion in Implementing Data Types.
 
 [[DDGModelingProcessLogic-Operators-OperatorInvocation]]
 === Operator Invocation
@@ -1590,7 +1589,7 @@ physical drive without the knowledge of the system in order to produce a
 violation of previously validated data.].
 
 For more information on dynamic execution, see the
-link:D4LGProgrammingTopics-DynamicExecution.html[Dynamic Execution]
+<<D4LGProgrammingTopics-DynamicExecution, Dynamic Execution>>
 section.
 
 [[D4LGProgrammingTopics-DynamicExecution]]
@@ -1633,8 +1632,7 @@ mechanisms of the compiler do not occur until runtime. As a result, the
 Dataphor Server cannot determine the actual characteristics of a given
 statement or expression. For a discussion of how to override these
 characteristics at compiler-time, refer to the
-link:D4LGProgrammingTopics-DynamicExecution.html[Dynamic Execution]
-section.
+<<D4LGProgrammingTopics-DynamicExecution, Dynamic Execution>> section.
 
 [[DDGModelingProcessLogic-Session-SpecificObjects]]
 == Session-specific Objects

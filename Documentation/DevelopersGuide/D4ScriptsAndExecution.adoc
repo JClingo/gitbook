@@ -40,9 +40,7 @@ detailed description of the <statement> production rule is given in
 Communication with the Dataphor Server is accomplished through the
 Call-Level Interface. Connectivity with the server is established by
 opening a session. This session represents the user context for all
-subsequent operations against the Dataphor Server. For a detailed
-description of this interface, refer to the
-link:DDGP1Manager.html[Client Access, Call-Level Interface].
+subsequent operations against the Dataphor Server.
 
 [[D4LGScriptsandExecution-ErrorHandling]]
 == Error Handling

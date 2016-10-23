@@ -188,8 +188,8 @@ For more information on each of these types of objects, see the
 Language Guide in this manual.
 
 For more information on using these elements to construct a Dataphor
-Application, refer to the link:DDGLogicalApplicationDesign.html[Logical
-Application Design] part of this manual.
+Application, refer to the <<LogicalApplicationDesign#DDGLogicalApplicationDesign.adoc, Logical Application Design]>>
+part of this manual.
 
 For more information on the security system of the Dataphor Server,
 refer to the <<../UsersGuide/Security.adoc#DUGP3Security, Security>> chapter of the Dataphor

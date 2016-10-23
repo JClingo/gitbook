@@ -16,6 +16,7 @@
 . link:D4ImperativeStatements.adoc[Imperative Statements]
 . link:D4ComparisonWithSQL.adoc[Comparison with SQL]
 
+[[D4LG]]
 == Summary
 
 This part introduces the D4 language and discusses its intentions and

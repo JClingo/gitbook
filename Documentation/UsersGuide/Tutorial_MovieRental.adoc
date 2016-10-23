@@ -15,9 +15,8 @@ your own applications.
 
 *Concepts*
 
-* link:DUGP1ProductTour-DataphorServer.html[Connecting to a Dataphor Server]
+* <<DataphorServer.adoc#DUGP1ProductTour-DataphorServer, Connecting to a Dataphor Server>>
 * <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-Devices, Devices>>
-* link:D4LGProgrammingTopics-UsingGenerators.html[Auto-incrementing and Generators]
 * <<../DevelopersGuide/D4Catalog.adoc#D4LGCatalogElements-TableVariables, Tables>>
 * <<../DevelopersGuide/D4DataManipulation.adoc#D4LGDataManipulation-SelectStatement, Queries (select)>>
 * <<../DataphorReference/Tags.adoc#DRTags, Tags>>
@@ -298,8 +297,6 @@ EnsureGenerators();
 Then when you want to make a column auto-increment you set the default
 for the column to invoke GetNextGenerator and pass it the name of the
 generator to increment. An example of this is shown in the Movie table.
-For more information about generators see
-link:D4LGProgrammingTopics-UsingGenerators.html[Using Generators].
 
 === Chart of Tables
 

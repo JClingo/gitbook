@@ -157,7 +157,7 @@ all uses of a keyword.
 
 <<D4ImperativeStatements.adoc#D4LGDoWhileStatement, do>>,
 
-***link:D4LGForStatement.html[downto]**,
+<<D4ImperativeStatements.adoc#D4LGForStatement, downto>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements, drop>>,
 
@@ -175,7 +175,7 @@ all uses of a keyword.
 
 <<D4ImperativeStatements.adoc#D4LGImperativeStatements-FlowControl-ExitStatement, exit>>,
 
-*<<link:D4TableOperators.adoc#D4LGTableExpressions, explode>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions, explode>>,
 
 <<D4LGLexicalElements-ParserLiterals-BooleanParserLiterals, false>>,
 
@@ -183,17 +183,17 @@ all uses of a keyword.
 
 <<D4ImperativeStatements.adoc#D4LGImperativeStatements-ExceptionHandling-TryFinallyStatement, finally>>,
 
-***link:D4LGForStatement.html[for]**,
+<<D4ImperativeStatements.adoc#D4LGForStatement, for>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions-RowExtractor, from>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions-RowExtractor, from>>,
 
 <<D4LanguageElements.adoc#D4LGLanguageElements-Types, generic>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-Security, grant>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, group>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions-Aggregate, group>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions-Having, having>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions-Having, having>>,
 
 <<D4ImperativeStatements.adoc#D4LGIfStatement, if>>,
 
@@ -211,7 +211,7 @@ all uses of a keyword.
 
 <<D4DataManipulation.adoc#D4LGDataManipulation-InsertStatement, insert>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions, intersect>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions, intersect>>,
 
 <<D4DataManipulation.adoc#D4LGDataManipulation-InsertStatement, into>>,
 
@@ -221,25 +221,25 @@ all uses of a keyword.
 
 <<../DataphorReference/D4LanguageGrammar.adoc#DRD4ParserBNF, isolation>>,
 
-*<<link:D4TableOperators.adoc#D4LGTableExpressions, join>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions, join>>,
 
 <<D4Catalog.adoc#D4LGKeys, keys>>,
 
-*<<link:D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, left>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, left>>,
 
-*<<link:D4TableOperators.adoc#D4LGTableExpressions-Explode, level>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions-Explode, level>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-Conversions-LikeTypes, like>>,
 
 <<D4LanguageElements.adoc#D4LGLanguageElements-Types-ListTypes, list>>,
 
-*<<link:D4TableOperators.adoc#D4LGTableExpressions-Join, lookup>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions-Join, lookup>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-Devices, master>>,
 
 ***link:O-System.iMatches.html[matches]**,
 
-*<<link:D4TableOperators.adoc#D4LGTableExpressions, minus>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions, minus>>,
 
 ***link:O-System.iMod.html[mod]**,
 
@@ -249,7 +249,7 @@ all uses of a keyword.
 
 <<D4Catalog.adoc#D4LGCatalogElements-Conversions, narrowing>>,
 
-**link:D4LGRowConstraints.html[new]**,
+<<D4Catalog.adoc#D4LGRowConstraints, new>>,
 
 <<DocumentsAndDesigners.adoc#D4LGNilSemantics, nil>>,
 
@@ -257,7 +257,7 @@ all uses of a keyword.
 
 <<D4LanguageElements.adoc#D4LGLanguageElements-Values-TableValues, of>>,
 
-**link:D4LGRowConstraints.html[old]**,
+<<D4Catalog.adoc#D4LGRowConstraints, old>>,
 
 <<D4ImperativeStatements.adoc#D4LGImperativeStatements-ExceptionHandling-TryExceptStatement, on>>,
 
@@ -269,7 +269,7 @@ all uses of a keyword.
 
 ***origin**,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions, over>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions, over>>,
 
 <<D4LanguageElements.adoc#D4LGLanguageElements-Expressions-Factor, parent>>,
 
@@ -281,15 +281,15 @@ all uses of a keyword.
 
 <<D4Catalog.adoc#D4LGCatalogElements-Security, recursively>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions, redefine>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions, redefine>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-References, reference>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-References, references>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions, remove>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions, remove>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions, rename>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions, rename>>,
 
 <<D4LGLexicalElements.adoc#D4LGRepeatUntilStatement, repeat>>,
 
@@ -299,19 +299,19 @@ all uses of a keyword.
 
 <<D4Catalog.adoc#D4LGCatalogElements-Operators-Operators, result>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions-Quota, return>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions-Quota, return>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-Security, revert>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-Security, revoke>>
 
-*<<D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, right>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, right>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-Security, role>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions-RowExtractor, row>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions-RowExtractor, row>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, rowexists>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions-OuterJoin, rowexists>>,
 
 <<D4LanguageElements.adoc#D4LGLanguageElements-Types-ScalarTypes, scalar>>,
 
@@ -319,7 +319,7 @@ all uses of a keyword.
 
 <<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes-PossibleRepresentations, selector>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions-Explode, sequence>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions-Explode, sequence>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-Operators-Operators, session>>,
 
@@ -333,11 +333,11 @@ all uses of a keyword.
 
 <<../DataphorReference/D4LanguageGrammar.adoc#DRD4ParserBNF, static>>,
 
-***link:D4LGForStatement.html[step]**,
+<<D4ImperativeStatements.adoc#D4LGForStatement, do>>,
 
 <<../DataphorReference/D4LanguageGrammar.adoc#DRD4ParserBNF, store>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions, table>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions, table>>,
 
 <<../DataphorReference/D4LanguageGrammar.adoc#DRD4ParserBNF, tags>>,
 
@@ -345,13 +345,13 @@ all uses of a keyword.
 
 <<D4ImperativeStatements.adoc#D4LGCaseStatement, then>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions, times>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions, times>>,
 
 <<D4Catalog.adoc#D4LGCatalogElements-Conversions, to>>,
 
-***link:D4LGRowConstraints.html[transition]**,
+<<D4Catalog.adoc#D4LGRowConstraints, transition>>,
 
-***link:DRD4LexerBNF.html#D4LexerBNFliteral[true]**,
+<<D4LanguageGrammar.adoc#DRD4LexerBNF, true>>,
 
 <<D4ImperativeStatements.adoc#D4LGImperativeStatements-ExceptionHandling, try>>,
 
@@ -359,7 +359,7 @@ all uses of a keyword.
 
 <<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes, typeof>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions, union>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions, union>>,
 
 <<D4LGLexicalElements.adoc#D4LGRepeatUntilStatement, until>>,
 
@@ -383,7 +383,7 @@ all uses of a keyword.
 
 <<D4ImperativeStatements.adoc#D4LGCaseStatement, when>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions, where>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions, where>>,
 
 <<D4ImperativeStatements.adoc#D4LGImperativeStatements-FlowControl-LoopingStatements, while>>,
 
@@ -391,7 +391,7 @@ all uses of a keyword.
 
 <<D4LanguageElements.adoc#D4LGLanguageElements-Expressions-LanguageModifiers, with>>,
 
-*<<D4TableOperators.adoc#D4LGTableExpressions-Without, without>>*,
+<<D4TableOperators.adoc#D4LGTableExpressions-Without, without>>,
 
 <<D4Catalog.adoc#D4LGProperties, write>>,
 
@@ -422,7 +422,7 @@ link:O-System.iMultiplication.html[*],
 
 link:O-System.iPower.html[**],
 
-link:DRD4LexerBNF.html[,],
+<<D4LanguageGrammar.adoc#DRD4LexerBNF, \,>>,
 
 <<D4LGLexicalElements-Identifiers-QualifiedIdentifiers, .>>,
 

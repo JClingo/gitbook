@@ -1044,7 +1044,7 @@ must have no column names in common.
 
 Because *times* is a special case of **join**, it has the same semantics
 for type inference and updatability. For this information, see
-**link:D4LGTableExpressions-Join.html[join]**.
+<<D4LGTableExpressions-Join, join>>.
 
 The following example illustrates the use of the *times* operator:
 
@@ -1090,7 +1090,7 @@ ID Name FirstName
 *See Also*
 
 link:O-System.iJoin.html[System.iJoin] |
-link:D4LGTableExpressions.html[Table Operators]
+<<D4LGTableExpressions, Table Operators>>
 
 [[D4LGTableExpressions-Join]]
 == Join
@@ -1272,7 +1272,7 @@ E.ID   E.Name    EP.Phone
 *See Also*
 
 link:O-System.iJoin.html[System.iJoin] |
-link:D4LGTableExpressions.html[Table Operators]
+<<D4LGTableExpressions, Table Operators>>
 
 [[D4LGTableExpressions-OuterJoin]]
 == Outer Join
@@ -1334,7 +1334,7 @@ In addition, for conditioned joins only one column from each join
 condition will appear in any given key.
 
 Order and reference inference for an outer *join* is the same as for a
-standard **link:D4LGTableExpressions-Join.html[join]**.
+standard <<D4LGTableExpressions-Join, join>>.
 
 The optional *rowexists* column is used to indicate whether a row is an
 actual join match, or is included in the result because the *join* is
@@ -1443,7 +1443,7 @@ ID Name  Phone
 link:O-System.iJoin.html[System.iJoin] |
 link:O-System.iLeftJoin.html[System.iLeftJoin] |
 link:O-System.iRightJoin.html[System.iRightJoin] |
-link:D4LGTableExpressions.html[Table Operators]
+<<D4LGTableExpressions, Table Operators>>
 
 [[D4LGTableExpressions-Having]]
 == Semijoin
@@ -1540,7 +1540,7 @@ condition. The language modifier can be set to "true" or "false", with
 *See Also*
 
 link:O-System.iJoin.html[System.iHaving] |
-link:D4LGTableExpressions.html[Table Operators]
+<<D4LGTableExpressions, Table Operators>>
 
 [[D4LGTableExpressions-Without]]
 == Semiminus
@@ -1629,7 +1629,7 @@ condition. The language modifier can be set to "true" or "false", with
 *See Also*
 
 link:O-System.iWithout.html[System.iWithout] |
-link:D4LGTableExpressions.html[Table Operators]
+<<D4LGTableExpressions, Table Operators>>
 
 [[D4LGTableExpressions-ComparisonOperators]]
 == Comparison Operators

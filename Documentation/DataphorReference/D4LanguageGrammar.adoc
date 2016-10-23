@@ -6,6 +6,9 @@
 :encoding: iso-8859-1
 
 [[DRBNFDiagrams]]
+== Summary
+
+[[DRD4LexerBNF]]
 == D4 Lexer BNF
 ....
 The following non terminals in the Lexer BNF are referenced by the D4 BNF with equivalent meaning:

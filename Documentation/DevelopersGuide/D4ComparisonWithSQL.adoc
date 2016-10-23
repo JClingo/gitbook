@@ -609,8 +609,8 @@ select Employee over { Name };
 ....
 
 Projection in D4 is always done using one of two operators,
-<<link:D4TableOperators.adoc#D4LGTableExpressions-OverandRemove, over>> and
-<<link:D4TableOperators.adoc#D4LGTableExpressions-OverandRemove, remove>>. Over allows
+<<D4TableOperators.adoc#D4LGTableExpressions-OverandRemove, over>> and
+<<D4TableOperators.adoc#D4LGTableExpressions-OverandRemove, remove>>. Over allows
 the desired columns to be specified, while remove allows the unwanted
 columns to be specified. Thus an alternative formulation of the query
 is:
@@ -683,7 +683,7 @@ In D4, the equivalent query is:
 select Employee rename { Name LastName };
 ....
 
-The <<link:D4TableOperators.adoc#D4LGTableExpressions-Rename, rename>> operator of D4
+The <<D4TableOperators.adoc#D4LGTableExpressions-Rename, rename>> operator of D4
 allows the names of the columns in a result to be changed. This operator
 has no effect on the values of the columns in the result.
 
