@@ -125,8 +125,8 @@ favor of a default specified in the type definition. Any constraint
 definitions specified on the column are enforced in addition to any
 constraints defined in the type definition. Defaults and constraints
 will be discussed in more detail in the
-link:DDGEnforcingBusinessRulesDeclaratively.html[Enforcing Business
-Rules Declaratively] chapter.
+<<EnforcingBusinessRules.adoc#DDGEnforcingBusinessRulesDeclaratively, Enforcing Business Rules Declaratively>>
+chapter.
 
 Column definitions also contain a nilability indicator that determines
 whether the column is required to have a value. Note that disallowing
@@ -209,8 +209,8 @@ perspective of the referenced table variable, the reference is called a
 __target reference__.
 
 Constraints and references will be discussed in more detail in the
-link:DDGEnforcingBusinessRulesDeclaratively.html[Enforcing Business
-Rules Declaratively] chapter.
+<<EnforcingBusinessRules.adoc#DDGEnforcingBusinessRulesDeclaratively, Enforcing Business Rules Declaratively>>
+chapter.
 
 [[DDGRepresentingDatawithTablesandViews-TableOperators]]
 == Table Operators
@@ -950,9 +950,8 @@ The following aggregate operators are defined in the System library:
 In addition D4 allows user-defined aggregate operators to be created
 using the *create aggregate operator* statement. For more information on
 creating aggregate operators, refer to
-<<D4Catalog.adoc#, >>
-link:D4LGCatalogElements-Operators-AggregateOperators.html[Aggregate
-Operators] in the D4 Language Guide.
+<<D4Catalog.adoc#D4LGCatalogElements-Operators-AggregateOperators, Aggregate Operators>>
+in the D4 Language Guide.
 
 [[DDGRepresentingDatawithTablesandViews-TableOperators-Adorn]]
 === Specifying Metadata
@@ -1127,8 +1126,8 @@ The Dataphor Server also supports completely redefining a given data
 modification statement using "instead-of" event handlers. These event
 handlers can completely take the place of a given data modification.
 These, and other types of event handlers will be discussed in the
-link:DDGEnforcingStimulus-ResponseRules.html[Enforcing Stimulus-Response
-Rules] chapter.
+<<EnforcingStimulus-ResponseRules.adoc#DDGEnforcingStimulus-ResponseRules, Enforcing Stimulus-Response Rules>>
+chapter.
 
 The following sections discuss the default update propagation rules for
 each table-valued operator of the D4 language. Again, examples are taken

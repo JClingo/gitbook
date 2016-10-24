@@ -27,7 +27,7 @@ your own applications.
 *Technical Terms*
 
 [horizontal]
-link:DUGP1UsingDataphorApplications-Forms.html[Form]:: A user interface to the application and data.
+<<UsingDataphorForms.adoc#DUGP1UsingDataphorApplications-Forms, Form>>:: A user interface to the application and data.
 link:dilrefAlphora.Dataphor.Frontend.Client.IFrame.html[Frame]:: An embedded user interface (form) as an element of a form.
 Component:: A Dataphor form component. e.g., Source
 Control:: A visible Dataphor form component. e.g., TextBox
@@ -62,13 +62,13 @@ If you are not using the "in-process" server, you will need to know the
 port number of the Dataphor Server when you try to connect to it from
 the Frontend Client and the Application Server.
 
-See link:DUGP1Dataphoria-Aliases.html[Aliases] for more information on
+See <<Aliases.adoc#DUGP1Dataphoria-Aliases, Aliases>> for more information on
 how to connect to the Dataphor Server with Dataphoria.
 
 Once you are connected the Dataphoria Integrated Design Environment
 (IDE) is displayed. See
-link:DUGP1Dataphoria-Introduction-Environment.html[Environment] for an
-explanation of this screen.
+<<Dataphoria.adoc#DUGP1Dataphoria-Introduction-Environment, Environment>>
+for an explanation of this screen.
 
 == Developing the Movie Database
 
@@ -205,10 +205,10 @@ MSSQLDevice library to the Requisites.
 
 image::../Images/RentalTut001.2.png[Rental Tutorial - 1.2]
 
-The link:DDGReconciliation.html[reconciliation] settings control how the
-Dataphor Server will reconcile its catalog with the tables in the
-Device. In this case it is saying that the target system should be
-considered the master copy of the schema and that the reconciliation
+The <<StorageIntegrationArchitecture.adoc#DDGStorageIntegrationArchitecture-Reconciliation, reconciliation>>
+settings control how the Dataphor Server will reconcile its catalog with the
+tables in the Device. In this case it is saying that the target system should
+be considered the master copy of the schema and that the reconciliation
 will occur when a command uses a particular table.
 
 The attributes specify the name of the server running the MS SQL server
@@ -216,7 +216,7 @@ and the database name to connect to. Other attributes can also be
 specified.
 
 For more information on the options available when creating a device,
-see the various devices listed in link:DRLibraries.html[Libraries].
+see the various devices listed in <<../DataphorReference/Libraries.adoc#DRSystemLibrary, Libraries>>.
 
 After the MS SQL device is created CreateDeviceUser is called to tell
 the Dataphor Server what MS SQL account to use for each Dataphor Server
@@ -616,7 +616,7 @@ statement use the *order by* clause of the *select* statement. Because
 tables are conceptually unordered, if the position were not retained as
 a column, then the insertion order would be lost. For a full explanation
 on why tables are conceptually unordered, see
-link:DDGP1StructuralAspect.html[Structural Aspect].
+<<../DevelopersGuide/DatabaseManagementConcepts.adoc#DDGP1StructuralAspect, Structural Aspect>>.
 
 ....
 select MovieRating
@@ -1154,8 +1154,7 @@ referenced table's forms (which can further be restricted to specific
 forms). If the Detail was not specified, then from the referencing
 table's perspective (SaleItem), the referenced table (Sale) would be
 embedded. For more information about Frontend tags see
-<<../DataphorReference/Tags.adoc#, >>
-link:FTRTagsDescriptions-FrontendTags.html[Frontend Tags].
+<<../DataphorReference/Tags.adoc#FTRTagsDescriptions-FrontendTags, Frontend Tags>>.
 
 === Rental Tables
 
@@ -1832,9 +1831,8 @@ This setup makes the TotalSource participate in the Application
 Transaction that will be underway when the AddSale form is in use. The
 expression will give the Total of the the sale items and will be updated
 each time anything changes. For more information about Application
-Transactions see link:DDGP1TransactionManagement.html[Transaction
-Management] and link:bk02pt01ch04s02s06s04.html[Application
-Transaction].
+Transactions see
+<<../DevelopersGuide/DatabaseManagementConcepts.adoc#DDGP1TransactionManagement, Transaction Management>>.
 
 Add a TextBox as a child of RootBrowseColumn and name it TotalTextBox.
 Set the Source property to TotalSource. Set the ColumnName property to
@@ -2052,8 +2050,7 @@ Transaction that the Add Sale form is running in, set the _EnlistWith_
 property to __Main__. By doing this, the changes to the _SaleItem_ and
 _Account_ tables will not be committed until the entire sale is
 completed. For more information about Application Transactions see
-link:DDGP1TransactionManagement.html[Transaction Management] and
-link:bk02pt01ch04s02s06s04.html[Application Transaction].
+<<../DevelopersGuide/DatabaseManagementConcepts.adoc#DDGP1TransactionManagement, Transaction Management>>.
 * Add a Non Visual _DataArgument_ as a child of _PayFeesOperatorScript_
 and name it __PayFeesData__. Set the _Columns_ property to Main.ID,
 Account.ID, Account.Balance and the _Source_ property to __Main__.

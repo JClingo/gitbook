@@ -822,9 +822,8 @@ three sections inclusive) form a single outer scope, with the
 aggregation section forming its own nested scope.
 
 For a more in-depth discussion of aggregate operators, refer to
-<<D4Catalog.adoc#, >>
-link:D4LGCatalogElements-Operators-AggregateOperators.html[Aggregate
-Operators] in the D4 Language Guide.
+<<D4Catalog.adoc#D4LGCatalogElements-Operators-AggregateOperators, Aggregate Operators>>
+in the D4 Language Guide.
 
 [[DDGModelingProcessLogic-FlowControl]]
 == Flow Control
@@ -1141,8 +1140,8 @@ kinds of transaction management services: first, traditional two-phase
 commit transaction management, and second, application transactions.
 
 For a complete discussion of transaction management issues, refer to
-link:DDGP1TransactionManagement.html[Transaction Management] in Part I
-of this guide.
+<<DatabaseManagementConcepts.adoc#DDGP1TransactionManagement, Transaction Management>>
+in Part I of this guide.
 
 [[DDGModelingProcessLogic-TransactionManagement-TransactionManagementServices]]
 === Transaction Management Services
@@ -1245,8 +1244,8 @@ concurrent transactions that are used by Dataphor Frontend Clients to
 enable data entry in the presence of the business rules being enforced
 on the server. For a complete discussion of application transactions,
 refer to
-link:DDGTheSpaceBetweentheData-ApplicationTransactions.html[Application
-Transactions] in the Presentation Layer part of this guide.
+<<SpaceBetweenData.adoc#DDGTheSpaceBetweentheData-ApplicationTransactions, Application Transactions>>
+in the Presentation Layer part of this guide.
 
 [[DDGModelingProcessLogic-Characteristics]]
 == Characteristics
@@ -1706,7 +1705,7 @@ resulting value as the type we know it will be using the *as* operator.
 This operator can then be used to construct the views and operators for
 the order entry user interfaces. For a continued discussion of these
 interfaces, refer to
-link:DDGPuttingItAllTogether-InvoiceManagement.html[Invoice Management]
+<<PuttingItAllTogether.adoc#DDGPuttingItAllTogether-InvoiceManagement, Invoice Management>>
 in the Presentation Layer part of this guide.
 
 [[DDGModelingProcessLogic-InvoiceProcessingExample]]

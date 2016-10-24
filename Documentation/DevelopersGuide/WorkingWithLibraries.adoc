@@ -32,14 +32,13 @@ and is the default library for all newly created objects.
 
 Available LibrariesRegistered LibrariesSuspect LibrariesEach library in
 the Dataphor Server is either
-link:DUGP1Dataphoria-DataphorExplorer-Libraries.html[__available__,
-__registered__, or _suspect_]. An available library is simply the
-definition of the library. A registered library is an active catalog
-repository in the Dataphor Server. A suspect library is one that has
-encountered some error while attempting to load the library. The
-Dataphor Server uses the catalog directory specified at startup to
-persist which libraries have been registered, and the catalog state for
-each library.
+<<../UsersGuide/DataphoriaLibraries.adoc#DUGP1Dataphoria-DataphorExplorer-Libraries, __available__\, __registered__\, or __suspect__>>.
+An available library is simply the definition of the library. A registered
+library is an active catalog repository in the Dataphor Server. A suspect
+library is one that has encountered some error while attempting to load the
+library. The Dataphor Server uses the catalog directory specified at startup to
+persist which libraries have been registered, and the catalog state for each
+library.
 
 [[DDGWorkingWithLibraries-Versioning]]
 == Versioning
@@ -197,8 +196,8 @@ required set of libraries for a given application has been registered,
 an application can be created in the usual manner by the Dataphor
 Administrator.
 
-link:DUGP1UpgradingLibraries.html[Upgrading libraries] is accomplished
-by <<D4LGCatalogElements-Libraries-Versioning, versioning>> the
+<<../UsersGuide/DataphoriaLibraries.adoc#DUGP1UpgradingLibraries, Upgrading libraries>>
+is accomplished by <<D4LGCatalogElements-Libraries-Versioning, versioning>> the
 library. Each library contains a set of upgrade scripts which, when
 applied in order to a given deployed library, will bring the deployment
 up to the current version of the library. Each change to the schema of a

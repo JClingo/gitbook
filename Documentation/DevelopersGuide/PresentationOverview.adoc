@@ -368,7 +368,7 @@ or using pessimistic transactions. The resulting user interfaces
 naturally manage concurrency issues and minimize resource contention.
 
 Each of these services will be discussed in detail in
-link:DDGTheSpaceBetweentheData.html[The Space Between the Data].
+<<SpaceBetweenData.adoc#DDGTheSpaceBetweentheData, The Space Between the Data>>.
 
 == Forms
 

@@ -581,11 +581,10 @@ The explode clause in D4 has the following syntax:
         [<language modifiers>]
 ....
 
-The expressions specified in the by clause and the link:
+The expressions specified in the by clause and the
 <<D4TableOperators.adoc#D4LGTableExpressions-Where, where>>
-clause must be
-boolean-valued. The by clause specifies the explode condition, and the
-where clause specifies the root condition. Within the explode condition,
+clause must be boolean-valued. The by clause specifies the explode condition,
+and the where clause specifies the root condition. Within the explode condition,
 the values of the current parent row are accessible by the name of the
 column preceded by the *parent* keyword.
 
