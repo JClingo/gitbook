@@ -68,7 +68,7 @@ restrictive right assignment of any role.
 * If the user is the owner of the right, or the catalog object the right
 is associated with, the right is considered granted.
 
-For more detailed information on the Dataphor Security Model, refer to
+For more detailed information on the Dataphor Security Model, refer to the
 <<../UsersGuide/Security.adoc#DUGP3Security, Security>> chapter in the Dataphor User's Guide.
 
 [[DDGEnforcingSecurity-DesigningForSecurity]]
