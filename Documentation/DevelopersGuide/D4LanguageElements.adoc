@@ -40,14 +40,6 @@ System.Integer }`. There are several different categories of types, each
 of which describes a specific kind of value. D4 supports the following
 categories of types: Scalar, Row, Table, List, and Cursor.
 
-Generic
-
-Types
-
-Generic
-
-Type Specifiers
-
 Types are specified in D4 using __type specifiers__. Type specifiers
 have the following syntax:
 
@@ -88,67 +80,46 @@ internal representation sof the date and time data types all use a
 The following scalar data types are made available by the Dataphor
 Server:
 
-* <<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes, System.Scalar>>
-+
+<<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes, System.Scalar>>::
 System.Scalar is the set of all possible scalar values. The type
 constraint for scalar is simply **true**. All scalar types are defined
 as some subset of the values in the scalar type.
-* link:T-System.Decimal.html[System.Decimal]
-+
-System.Decimal is the set of all possible decimal numbers. Values of
+link:T-System.Decimal.html[System.Decimal]:: System.Decimal is the set of all possible decimal numbers. Values of
 this type are represented physically by a 96-bit signed scaled integer,
 so in practice, the available values are negative
 79,228,162,514,264,337,593,543,950,335 (-2^96^-1) through positive
 79,228,162,514,264,337,593,543,950,335 (2^96^-1).
-* link:T-System.Long.html[System.Long]
-+
-System.Long is the set of all integer values in the range negative
+link:T-System.Long.html[System.Long]:: System.Long is the set of all integer values in the range negative
 9,223,372,036,854,775,808 (-2^63^) through positive
 9,223,372,036,854,775,807 (2^63^-1). The physical representation for
 values of this type is a signed 64-bit integer.
-* System.Integer
-+
-link:T-System.Integer.html[System.Integer] is the set of all integer
+link:T-System.Integer.html[System.Integer]:: is the set of all integer
 values in the range negative 2,147,483,648 (-2^31^) through positive
 2,147,483,647 (2^31^-1). The physical representation for values of this
 type is a signed 32-bit integer.
-* link:T-System.Short.html[System.Short]
-+
-System.Short is the set of all integer values in the range negative
+link:T-System.Short.html[System.Short]:: System.Short is the set of all integer values in the range negative
 32768 (-2^15^) through positive 32767 (2^15^-1). The physical
 representation for values of this type is a signed 16-bit integer.
-* link:T-System.Byte.html[System.Byte]
-+
-System.Byte is the set of all integer values in the range 0 through
+link:T-System.Byte.html[System.Byte]:: System.Byte is the set of all integer values in the range 0 through
 positive 255 (2^8^-1). The physical representation for values of this
 type is an unsigned 8-bit integer.
-* link:T-System.Boolean.html[System.Boolean]
-+
-System.Boolean consists of the truth values *true* and **false**.
-* link:T-System.String.html[System.String]
-+
-System.String is the set of all character strings. The physical
+link:T-System.Boolean.html[System.Boolean]:: System.Boolean consists of the truth values *true* and **false**.
+link:T-System.String.html[System.String]:: System.String is the set of all character strings. The physical
 representation for values of this type is a Unicode string with a
 maximum length of 2^31^-1. The comparison operators for this type are
 defined case-sensitively.
-* link:T-System.Guid.html[System.Guid]
-+
-System.Guid is the set of all possible Globally Unique Identifiers
+link:T-System.Guid.html[System.Guid]::System.Guid is the set of all possible Globally Unique Identifiers
 (GUIDs). The physical representation for values of this type is a
 128-bit unsigned integer. The operator NewGuid() generates a new
 globally unique identifier.
-* link:T-System.TimeSpan.html[System.TimeSpan]
-+
-System.TimeSpan is the set of all possible lengths of time. The physical
+link:T-System.TimeSpan.html[System.TimeSpan]:: System.TimeSpan is the set of all possible lengths of time. The physical
 representation for values of this type is a 64-bit signed integer
 representing the number of ticks in the time value. This means that the
 range of values for this type is from negative 10675199 days, 2 hours,
 48 minutes, 5.4775808 seconds through positive 10675199 days, 2 hours,
 48 minutes, 5.4775807 seconds. The granularity for values of this type
 is one tick.
-* link:T-System.DateTime.html[System.DateTime]
-+
-System.DateTime is the set of all possible dates, with a time component
+link:T-System.DateTime.html[System.DateTime]::System.DateTime is the set of all possible dates, with a time component
 specified, from a fixed point. The physical representation for values of
 this type is a 64-bit signed integer representing the number of ticks
 since 12:00 midnight, January 1, 1 C.E. (Common Era) in the Gregorian
@@ -162,33 +133,23 @@ _acceptable range_ is introduced as a guideline. All devices that ship
 with the Dataphor product are capable of storing values within the
 acceptable ranges for these types. For more information on acceptable
 range, see <<ScalarTypeMapping.adoc#DDGScalarTypeMapping, Scalar Type Mapping>>.]
-* link:T-System.Date.html[System.Date]
-+
-System.Date is the set of all possible dates from a fixed point. The
+link:T-System.Date.html[System.Date]::System.Date is the set of all possible dates from a fixed point. The
 physical representation for values of this type is a 64-bit signed
 integer representing the number of ticks since January 1, 1 C.E. (Common
 Era) in the Gregorian calendar. This means that the range of values for
 this type is from January 1, 0001 C.E. to December 31, 9999 C.E.
-* link:T-System.Time.html[System.Time]
-+
-System.Time is the set of all possible times. The physical
+link:T-System.Time.html[System.Time]:: System.Time is the set of all possible times. The physical
 representation for values of this type is a 64-bit signed integer
 representing the number of ticks since 12:00 midnight. This means that
 the range of values for this type is from 12:00:00 midnight to 11:59:59
 P.M. The granularity for values of this type is 1 second.
-* link:T-System.Money.html[System.Money]
-+
-System.Money is the set of all monetary values in the range negative
+link:T-System.Money.html[System.Money]:: System.Money is the set of all monetary values in the range negative
 $79,228,162,514,264,337,593,543,950,335 (-$2^96^-1) through positive
 $79,228,162,514,264,337,593,543,950,335 ($2^96^-1). The physical
 representation for values of this type is 96-bit signed scaled integer.
-* link:T-System.Binary.html[System.Binary]
-+
-System.Binary is the set of all byte streams of data with length less
+link:T-System.Binary.html[System.Binary]:: System.Binary is the set of all byte streams of data with length less
 than or equal to 2,147,483,647 (2^31^-1).
-* link:T-System.Error.html[System.Error]
-+
-System.Error is the set of all error values. Values of this type are
+link:T-System.Error.html[System.Error]:: System.Error is the set of all error values. Values of this type are
 used to implement the exception-handling mechanisms of D4.
 
 [[D4LGLanguageElements-Types-TypeConversions]]
@@ -276,7 +237,7 @@ type.
 *See Also*
 
 <<D4Catalog.adoc#D4LGCatalogElements-ScalarTypes, Scalar Types>> |
-<<../DataphorReference.adoc#DRSystemLibrary-ScalarTypes, Dataphor Reference\, Scalar Types>>
+<<../DataphorReference.adoc#DRSystemLibrary-ScalarTypes, Dataphor Reference, Scalar Types>>
 
 [[D4LGLanguageElements-Types-RowTypes]]
 === Row Types
@@ -704,66 +665,18 @@ operator has the following
 characteristicsCharacteristicsOperatorOperatorCharacteristics which
 determine its behavior within the Dataphor Server:
 
-* Literal
-+
-Operators
-+
-Characteristics
-+
-Literal
-+
-Operators
-+
-Literal
-+
-A _literal_ operator is one which does not reference global state, i.e.
+Literal:: A _literal_ operator is one which does not reference global state, i.e.
 it does not reference any table variable in the database. In other
 words, a literal operator is one which could be evaluated at
 compile-time.
-* Functional
-+
-Operators
-+
-Characteristics
-+
-Functional
-+
-Operators
-+
-Functional
-+
-A _functional_ operator is one which does not change global state, i.e.
+Functional:: A _functional_ operator is one which does not change global state, i.e.
 it does not update any table variable in the database. Functional
 operators are required in certain contexts such as constraint
 expressions.
-* Deterministic
-+
-Operators
-+
-Characteristics
-+
-Deterministic
-+
-Operators
-+
-Deterministic
-+
-A _deterministic_ operator is one which always returns the same value
+Deterministic:: A _deterministic_ operator is one which always returns the same value
 for the same set of inputs. Deterministic operators are required in
 certain contexts such as constraint expressions.
-* Repeatable
-+
-Operators
-+
-Characteristics
-+
-Repeatable
-+
-Operators
-+
-Repeatable
-+
-A _repeatable_ operator is one which always returns the same value for
+Repeatable:: A _repeatable_ operator is one which always returns the same value for
 the same set of inputs within the same transaction context. Note that if
 an operator is deterministic, it is also repeatable, but that a
 non-deterministic operator may or may not be repeatable. For example,
@@ -775,48 +688,14 @@ different value on successive invocations within a transaction.
 +
 As with deterministic operators, repeatable operators are required in
 certain contexts such as restriction conditions.
-* Nilable
-+
-Operators
-+
-Characteristics
-+
-Nilable
-+
-Operators
-+
-Nilable
-+
-A _nilable_ operator is one which may return a
+Nilable:: A _nilable_ operator is one which may return a
 __<<D4LGNilSemantics, nil>>__, or no value, at run-time.
-* Order-Dependent
-+
-Aggregate Operator Characteristic
-+
-Characteristics
-+
-Order-dependent
-+
-Order-dependent
-+
-An _order-dependent_ aggregate operator is one whose semantics depend on
+Order-Dependent:: An _order-dependent_ aggregate operator is one whose semantics depend on
 the order in which the rows of the input are aggregated. If an aggregate
 operator is marked order-dependent, the compile will issue a warning if
 the actual argument to that operator is not well-ordered (ordered by at
 least a key).
-* Order Preserving
-+
-Operators
-+
-Characteristics
-+
-Order Preserving
-+
-Operators
-+
-Order Preserving
-+
-An _order preserving_ operator is one which preserves the ordering
+Order Preserving:: An _order preserving_ operator is one which preserves the ordering
 semantics of the value. Formally, a unary operator O with argument type
 Ta and result type Tr is order preserving if for every pair of values V1
 and V2 of type Ta for which the expression V1 >= V2 evaluates to true,
@@ -824,7 +703,7 @@ the expression O(V1) >= O(V2) also evaluates to true.
 
 *See Also*
 
-<<D4Catalog.adoc#D4LGCatalogElements-Operators, Catalog Elements\, Operators>>
+<<D4Catalog.adoc#D4LGCatalogElements-Operators, Catalog Elements, Operators>>
 
 [[D4LGLanguageElements-Statements]]
 == Statements

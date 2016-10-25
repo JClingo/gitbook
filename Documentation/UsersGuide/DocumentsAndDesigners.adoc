@@ -36,7 +36,7 @@ Frontend.DocumentTypes table. Document types can be added to this table
 as needed to extend the capabilities of Dataphoria. The following table
 lists the default document types available:
 
-.Document Types TableDocument Types
+.Document Types
 [cols=",,,",options="header",]
 |=======================================================================
 |ID |Description |Data Type |Default Designer

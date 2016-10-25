@@ -46,27 +46,18 @@ Regardless of the size or usage requirements of a given database, some
 fundamental characteristics emerge that are vital to the functionality
 of the application consuming the data. These include:
 
-* Persistence
-+
-Persistence: The application must be able to ensure that the data in the
+[horizontal]
+Persistence:: The application must be able to ensure that the data in the
 database is available, or 'saved' to long-term storage.
-* Efficiency
-+
-Efficiency: The application must be able to provide efficient access to
+Efficiency:: The application must be able to provide efficient access to
 the data.
-* Concurrency
-+
-Concurrency: If multiple requests are made to the same data, the
+Concurrency:: If multiple requests are made to the same data, the
 application must be able to ensure that the results of each operation
 are correct.
-* Recovery
-+
-Recovery: If the application crashes, or the environment becomes
+Recovery:: If the application crashes, or the environment becomes
 unstable, the application must be able to guarantee that the database
 can be recovered.
-* Integrity
-+
-Integrity: The application must always be able to guarantee that the
+Integrity:: The application must always be able to guarantee that the
 data in the database is correct, or conforms to all the business rules
 described by the application.
 
@@ -81,22 +72,21 @@ section, we examine the benefits of using such a system.
 Clearly we can gain numerous advantages by implementing a system which
 handles these issues generically. Among these are:
 
-* Reusability: The solutions to data management issues are often quite
+[horizontal]
+Reusability:: The solutions to data management issues are often quite
 complex. By providing a generic solution one time, we are able to
 leverage development time and stability from a system designed
 specifically to handle these issues.
-* Sharing: Different applications can access the same database. For
+Sharing:: Different applications can access the same database. For
 example, the human resources application and the payroll application may
 both share the same list of employees.
-* Centralization: By maintaining all the data for a particular
+Centralization:: By maintaining all the data for a particular
 enterprise in a single system, an enterprise can gain greater control
 over the data.
-* Control: Because all the data is in a central location, the database
+Control:: Because all the data is in a central location, the database
 management system can manage issues like security and policy or business
 rules enforcement.
-* Physical Data Independence
-+
-Data Independence: Ideally, the database system will be capable of
+Physical Data Independence:: Ideally, the database system will be capable of
 changing physical details about the database without affecting the
 applications that use it. This is known as Physical Data Independence
 (PDI) and is of critical importance in a database system.
@@ -109,17 +99,11 @@ architecture is layered to isolate the details of the system from the
 users of the system. This layering can loosely be categorized into three
 views of the system:
 
-* Internal Level
-+
-The _internal level_ (also called the physical level) is concerned with
+Internal Level:: The _internal level_ (also called the physical level) is concerned with
 the physical storage of the data.
-* External Level
-+
-The _external level_ is concerned with the user's perception of the
+External Level:: The _external level_ is concerned with the user's perception of the
 data.
-* Conceptual Level
-+
-The _conceptual level_ (also called the logical level) provides a level
+Conceptual Level:: The _conceptual level_ (also called the logical level) provides a level
 of indirection between the two.
 
 These three categories serve as a conceptual foundation for the
@@ -561,7 +545,7 @@ browse or higher, each transaction is guaranteed to run at the isolation
 level it has selected [12].
 
 [[DDGP1Durability]]
-=== DurabilityDurability
+=== Durability
 
 Durability guarantees that if a transaction commits, its changes are
 made permanent. In the event of system or hardware failure, a database

@@ -503,7 +503,7 @@ with the characteristics given by the rest of the statements.
 Explanations for each of the specific portions of the statements follow.
 
 *See Also*
-<<D4LanguageElements.adoc#D4LGLanguageElements-Types, Language Elements\, Types>> |
+<<D4LanguageElements.adoc#D4LGLanguageElements-Types, Language Elements, Types>> |
 <<D4LanguageElements.adoc#D4LGLanguageElements-Types-ScalarTypes, Scalar Types>>
 
 [[D4LGCatalogElements-ScalarTypes-Conveyors]]
@@ -2100,7 +2100,7 @@ tag.
 
 *See Also*
 
-<<D4LanguageElements.adoc#D4LGLanguageElements-Operators, Language Elements\, Operators>>
+<<D4LanguageElements.adoc#D4LGLanguageElements-Operators, Language Elements, Operators>>
 
 [[D4LGCatalogElements-Operators-OperatorResolution]]
 === Operator Resolution

@@ -608,7 +608,7 @@ user interface, this allows the customization to be made without
 impacting the dynamic nature of the application.
 
 [[DDGDataphorProductAnatomy-FrontendServer-User-InterfaceDerivation]]
-=== User-Interface Derivation
+=== User Interface Derivation
 
 The Frontend Server also exposes an API for automatically producing
 Dataphor Form Documents based on the application schema. Various types

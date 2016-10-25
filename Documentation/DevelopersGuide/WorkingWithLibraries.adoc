@@ -32,7 +32,7 @@ and is the default library for all newly created objects.
 
 Available LibrariesRegistered LibrariesSuspect LibrariesEach library in
 the Dataphor Server is either
-<<../UsersGuide/DataphoriaLibraries.adoc#DUGP1Dataphoria-DataphorExplorer-Libraries, __available__\, __registered__\, or __suspect__>>.
+<<../UsersGuide/DataphoriaLibraries.adoc#DUGP1Dataphoria-DataphorExplorer-Libraries, __available__, __registered__, or __suspect__>>.
 An available library is simply the definition of the library. A registered
 library is an active catalog repository in the Dataphor Server. A suspect
 library is one that has encountered some error while attempting to load the

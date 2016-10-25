@@ -152,35 +152,11 @@ be declared at many different levels. The following list illustrates
 these possibilities:
 
 * Type Constraints
-+
-As Application Schema
-+
-Type Constraints
 * Column Constraints
-+
-As Application Schema
-+
-Column Constraints
 * Row Constraints
-+
-As Application Schema
-+
-Row Constraints
 * Table Constraints
-+
-As Application Schema
-+
-Table Constraints
 * Transition Constraints
-+
-As Application Schema
-+
-Transition Constraints
 * Database Constraints
-+
-As Application Schema
-+
-Database Constraints
 
 Type constraints are concerned with defining the set of valid values of
 a given data type. For example, the SSN type could ensure that values of
@@ -477,28 +453,21 @@ development process itself. These benefits are chiefly due to the high
 degree of physical and logical data independence that are achieved by
 such a system. Some of these benefits include:
 
-* Productivity
-+
-Because the system can automate large portions of the development
+[horizontal]
+Productivity:: Because the system can automate large portions of the development
 process, the obvious initial benefit is development time. Both
 development time and maintenance time are dramatically reduced.
 Developers can spend more time solving the actual problems presented by
 the application, rather than wrestling with the details of the
 implementation.
-* Deployment
-+
-Deployment of an application based on a declarative platform is simply a
+Deployment:: Deployment of an application based on a declarative platform is simply a
 matter of deploying the definition of the application to the system.
-* Maintenance
-+
-The centralized schema and automated user interface derivation features
+Maintenance:: The centralized schema and automated user interface derivation features
 of the system allow changes to the application schema to be made without
 necessarily having to make the corresponding changes to the presentation
 layer. The applications simply react to the change. These changes could
 be automatically coordinated with the physical layer as well.
-* Training
-+
-Due to platform independence, the software environment of the
+Training:: Due to platform independence, the software environment of the
 application can change without the need to re-train developers on the
 new software environment. They still utilize the same conceptual
 environment exposed by the system.
