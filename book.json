@@ -2,11 +2,15 @@
     "plugins": [
         "navigator",
         "expandable-chapters-small",
-        "addcssjs"
+        "addcssjs",
+        "theme-api"
     ],
     "pluginsConfig": {
-    "addcssjs": {
-        "js": ["Documentation/Scripts/scroll-to-hash.js"]
+      "addcssjs": {
+          "js": ["Documentation/Scripts/scroll-to-hash.js"]
+        },
+      "theme-api": {
+          "theme": "dark"
         }
     }
 }
