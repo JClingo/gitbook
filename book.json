@@ -1,6 +1,12 @@
 {
     "plugins": [
         "navigator",
-        "expandable-chapters-small"
-    ]
+        "expandable-chapters-small",
+        "addcssjs"
+    ],
+    "pluginsConfig": {
+    "addcssjs": {
+        "js": ["Documentation/Scripts/scroll-to-hash.js"]
+        }
+    }
 }
