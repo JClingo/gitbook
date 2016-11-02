@@ -1,5 +1,4 @@
 = Dataphor
-
 :author: Alphora
 :doctype: chapter
 :data-uri:
@@ -7,7 +6,8 @@
 :encoding: iso-8859-1
 
 Dataphor is an open source application development platform designed to streamline the process of designing, developing, and maintaining software applications.
-Dataphor is not just another set of application framework components, or yet another take on building applications using today's common patterns, such as MVC/MVP; Dataphor re-approaches the problem from a fresh perspective, building from first principles.
+Dataphor is not just another set of application framework components, or yet another take on building applications using today's common patterns, such as MVC/MVP;
+Dataphor re-approaches the problem from a fresh perspective, building from first principles.
 
 See our https://github.com/DBCG/Dataphor[Github] for the newest source code.
 For more information, check out our http://dataphor.org[website].
